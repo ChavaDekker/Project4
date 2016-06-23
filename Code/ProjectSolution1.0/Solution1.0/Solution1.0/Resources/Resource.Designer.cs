@@ -61,7 +61,28 @@ namespace Solution1._0
 		{
 			
 			// aapt resource value: 0x7f050000
-			public const int MyButton = 2131034112;
+			public const int M1 = 2131034112;
+			
+			// aapt resource value: 0x7f050001
+			public const int M2 = 2131034113;
+			
+			// aapt resource value: 0x7f050002
+			public const int M3 = 2131034114;
+			
+			// aapt resource value: 0x7f050003
+			public const int M4 = 2131034115;
+			
+			// aapt resource value: 0x7f050004
+			public const int M5 = 2131034116;
+			
+			// aapt resource value: 0x7f050005
+			public const int M6 = 2131034117;
+			
+			// aapt resource value: 0x7f050006
+			public const int S1 = 2131034118;
+			
+			// aapt resource value: 0x7f050007
+			public const int S2 = 2131034119;
 			
 			static Id()
 			{
