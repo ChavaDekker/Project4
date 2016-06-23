@@ -8,7 +8,7 @@ public class ARGB
     public byte g;
     public byte b;
 
-    public ARGB(ref byte a, ref byte r, ref byte g, ref byte b)
+    public ARGB(byte a, byte r, byte g, byte b)
     {
         this.a = a;
         this.r = r;
