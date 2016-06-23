@@ -4,15 +4,15 @@ using System.Collections.Generic;
 //Marcel
 
 public class Piechart : AbstractGraph  {
-	private static ARGB[] _Circle;
+	private static ARGB[,] _Circle;
 
-	private ARGB[] Cut(ref object aARGB) {
+	private ARGB[,] Cut(ref object aARGB) {
 		throw new System.Exception("Not implemented");
 	}
-	public override ARGB[] Legenda(ref List<Duodata<string,int>> aDuodataList) {
+	public override ARGB[,] Legenda(ref List<Duodata<string,int>> aDuodataList) {
 		throw new System.Exception("Not implemented");
 	}
-	public override ARGB[] Make(ref List<Duodata<string,int>> aDuodataList) {
+	public override ARGB[,] Make(ref List<Duodata<string,int>> aDuodataList) {
         int sizepiechart = 500;
         ARGB[,] piechart = new ARGB[sizepiechart, sizepiechart];
 
