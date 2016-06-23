@@ -58,10 +58,12 @@
     <Compile Include="Universal Logic\Barchart.cs" />
     <Compile Include="Universal Logic\Data.cs" />
     <Compile Include="Universal Logic\DataAccess.cs" />
-    <Compile Include="Universal Logic\Duodata.cs" />
+    <Compile Include="Universal Logic\generic duodata.cs" />
     <Compile Include="Universal Logic\Heatmap.cs" />
     <Compile Include="Universal Logic\Linechart.cs" />
     <Compile Include="Universal Logic\Piechart.cs" />
+    <Compile Include="Universal Logic\UitDatabase.cs" />
+    <Compile Include="Universal Logic\UitFile.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
