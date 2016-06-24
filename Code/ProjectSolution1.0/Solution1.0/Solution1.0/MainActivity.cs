@@ -57,9 +57,9 @@ namespace Solution1._0
             };
 
             m6Button.Click += (object sender, EventArgs e) =>
-             {
+            {
 
-             };
+            };
 
             s1Button.Click += (object sender, EventArgs e) =>
             {
