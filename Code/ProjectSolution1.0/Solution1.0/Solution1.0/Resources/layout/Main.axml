@@ -10,7 +10,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="75dip"
         android:layout_marginRight="75dip"
-        android:id="@+id/M1" />
+        android:id="@+id/M1Button" />
     <Button
         android:text="M2"
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="75dip"
         android:layout_marginRight="75dip"
-        android:id="@+id/M2" />
+        android:id="@+id/M2Button" />
     <Button
         android:text="M3"
         android:layout_width="match_parent"
@@ -26,7 +26,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="75dip"
         android:layout_marginRight="75dip"
-        android:id="@+id/M3" />
+        android:id="@+id/M3Button" />
     <Button
         android:text="M4"
         android:layout_width="match_parent"
@@ -34,7 +34,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="75dip"
         android:layout_marginRight="75dip"
-        android:id="@+id/M4" />
+        android:id="@+id/M4Button" />
     <Button
         android:text="M5"
         android:layout_width="match_parent"
@@ -42,7 +42,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="75dip"
         android:layout_marginRight="75dip"
-        android:id="@+id/M5" />
+        android:id="@+id/M5Button" />
     <Button
         android:text="M6"
         android:layout_width="match_parent"
@@ -50,7 +50,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="75dip"
         android:layout_marginRight="75dip"
-        android:id="@+id/M6" />
+        android:id="@+id/M6Button" />
     <Button
         android:text="S1"
         android:layout_width="match_parent"
@@ -58,7 +58,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="75dip"
         android:layout_marginRight="75dip"
-        android:id="@+id/S1" />
+        android:id="@+id/S1Button" />
     <Button
         android:text="S2"
         android:layout_width="match_parent"
@@ -66,5 +66,5 @@
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="75dip"
         android:layout_marginRight="75dip"
-        android:id="@+id/S2" />
+        android:id="@+id/S2Button" />
 </LinearLayout>
