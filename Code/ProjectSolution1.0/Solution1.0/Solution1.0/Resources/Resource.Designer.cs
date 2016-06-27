@@ -60,29 +60,35 @@ namespace Solution1._0
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int M1Button = 2131034112;
-			
 			// aapt resource value: 0x7f050001
-			public const int M2Button = 2131034113;
+			public const int M1Button = 2131034113;
 			
 			// aapt resource value: 0x7f050002
-			public const int M3Button = 2131034114;
+			public const int M2Button = 2131034114;
 			
 			// aapt resource value: 0x7f050003
-			public const int M4Button = 2131034115;
+			public const int M3Button = 2131034115;
 			
 			// aapt resource value: 0x7f050004
-			public const int M5Button = 2131034116;
+			public const int M4Button = 2131034116;
 			
 			// aapt resource value: 0x7f050005
-			public const int M6Button = 2131034117;
+			public const int M5Button = 2131034117;
 			
 			// aapt resource value: 0x7f050006
-			public const int S1Button = 2131034118;
+			public const int M6Button = 2131034118;
 			
 			// aapt resource value: 0x7f050007
-			public const int S2Button = 2131034119;
+			public const int S1Button = 2131034119;
+			
+			// aapt resource value: 0x7f050009
+			public const int S2Act = 2131034121;
+			
+			// aapt resource value: 0x7f050008
+			public const int S2Button = 2131034120;
+			
+			// aapt resource value: 0x7f050000
+			public const int textView1 = 2131034112;
 			
 			static Id()
 			{
@@ -98,7 +104,31 @@ namespace Solution1._0
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int M1Activity = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int M2Activity = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int M3Activity = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int M4Activity = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int M5Activity = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int M6Activity = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int Main = 2130903046;
+			
+			// aapt resource value: 0x7f030007
+			public const int S1Activity = 2130903047;
+			
+			// aapt resource value: 0x7f030008
+			public const int S2Activity = 2130903048;
 			
 			static Layout()
 			{

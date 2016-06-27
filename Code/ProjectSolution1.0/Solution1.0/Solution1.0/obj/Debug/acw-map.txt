@@ -1,0 +1,8 @@
+Solution1._0.M1Activity, Solution1.0;md55436c99ee8988f7eba7a69b3ef9ea891.M1Activity
+Solution1._0.M1Activity, Solution1.0, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55436c99ee8988f7eba7a69b3ef9ea891.M1Activity
+Solution1._0.M1Activity;md55436c99ee8988f7eba7a69b3ef9ea891.M1Activity
+solution1._0.M1Activity;md55436c99ee8988f7eba7a69b3ef9ea891.M1Activity
+Solution1._0.MainActivity, Solution1.0;md55436c99ee8988f7eba7a69b3ef9ea891.MainActivity
+Solution1._0.MainActivity, Solution1.0, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55436c99ee8988f7eba7a69b3ef9ea891.MainActivity
+Solution1._0.MainActivity;md55436c99ee8988f7eba7a69b3ef9ea891.MainActivity
+solution1._0.MainActivity;md55436c99ee8988f7eba7a69b3ef9ea891.MainActivity
