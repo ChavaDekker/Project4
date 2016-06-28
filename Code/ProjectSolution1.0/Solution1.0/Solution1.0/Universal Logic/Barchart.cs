@@ -26,15 +26,23 @@ public class Barchart : AbstractGraph  {
             total += i.GetAttr2();
         }
 
-        foreach (Duodata<string, int> i in aDuodataList)
+        for (int x = 0; x < GWidth; x++)
         {
-            iteration += 1;
+            for (int y = 0; x < GWidth; x++)
+            {
+                barchart[x, y] = new ARGB(0, 0, 0, 0); //draw transparent array
+            }
+        }
+
+            foreach (Duodata<string, int> i in aDuodataList)
+        {
+            iteration += 1; //because I'm too bad to figure out how to call the iterator count in a foreach-loop
             double percentage = i.GetAttr2() / total * 100;
             for (int x = 0; x < GWidth; x++)
             {
                 for (int y = 0; y < GHeight; y++)
                 {
-                    if (x < percentage * GWidth / 100 && GHeight / GIndex * iteration < y &&  y <= GHeight / GIndex * iteration + GBarSize)
+                    if (x < percentage * GWidth / 100 && GHeight / GIndex * iteration < y &&  y <= GHeight / GIndex * iteration + GBarSize) //if pixel on [x,y] falls within drawable bounds of the bar in the current iteration
                     {
                         barchart[x, y] = new ARGB(255, 0, 0, 0);
                     }
