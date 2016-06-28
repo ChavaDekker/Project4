@@ -36,7 +36,7 @@ public class Piechart : AbstractGraph
 
         foreach (Duodata<string, int> i in aDuodataList)
         {
-            colortofill = new ARGB(/*random values*/)
+            colortofill = new ARGB(0, 0, 0, 0);
             if (i.GetAttr2() > total / 2)
             {
                 throw new System.Exception("Not implemented");
