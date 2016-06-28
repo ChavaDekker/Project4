@@ -3,16 +3,20 @@ using System.Collections.Generic;
 
 //Marcel
 
-public class Piechart : AbstractGraph  {
-	private static ARGB[,] _Circle;
+public class Piechart : AbstractGraph
+{
+    private static ARGB[,] _Circle;
 
-	private ARGB[,] Cut(ref object aARGB) {
-		throw new System.Exception("Not implemented");
-	}
-	public override ARGB[,] Legenda(ref List<Duodata<string,int>> aDuodataList) {
-		throw new System.Exception("Not implemented");
-	}
-	public override ARGB[,] Make(ref List<Duodata<string,int>> aDuodataList) {
+    private ARGB[,] Cut(ref object aARGB)
+    {
+        throw new System.Exception("Not implemented");
+    }
+    public override ARGB[,] Legenda(ref List<Duodata<string, int>> aDuodataList)
+    {
+        throw new System.Exception("Not implemented");
+    }
+    public override ARGB[,] Make(ref List<Duodata<string, int>> aDuodataList)
+    {
         int sizepiechart = 500;
         ARGB[,] piechart = new ARGB[sizepiechart, sizepiechart];
 
@@ -25,15 +29,15 @@ public class Piechart : AbstractGraph  {
         ARGB colortofill;
 
         int total = 0;
-        foreach(Duodata<string, int> i in aDuodataList)
+        foreach (Duodata<string, int> i in aDuodataList)
         {
             total += i.GetAttr2();
         }
 
-        foreach(Duodata<string, int> i in aDuodataList)
+        foreach (Duodata<string, int> i in aDuodataList)
         {
             colortofill = new ARGB(/*random values*/)
-            if(i.GetAttr2() > total / 2)
+            if (i.GetAttr2() > total / 2)
             {
                 throw new System.Exception("Not implemented");
             }
@@ -45,18 +49,18 @@ public class Piechart : AbstractGraph  {
                 newVec.y = Math.Sin(newangle);
                 oldVec.x = Math.Cos(lastAngle);
                 oldVec.y = Math.Sin(lastAngle);
-                for (int x = 0; x<sizepiechart; x++)
+                for (int x = 0; x < sizepiechart; x++)
                 {
-                    for(int y = 0; y<sizepiechart; y++)
+                    for (int y = 0; y < sizepiechart; y++)
                     {
-                        if(Math.Sqrt(Math.Pow(x-sizepiechart/2, 2) + Math.Pow(y-sizepiechart/2, 2)) < sizepiechart / 2)
+                        if (Math.Sqrt(Math.Pow(x - sizepiechart / 2, 2) + Math.Pow(y - sizepiechart / 2, 2)) < sizepiechart / 2)
                         {
-                            if(isCounterClockwise(newVec, new SimpleVector(x,y)) && !isCounterClockwise(oldVec, new SimpleVector(x, y)))
+                            if (isCounterClockwise(newVec, new SimpleVector(x, y)) && !isCounterClockwise(oldVec, new SimpleVector(x, y)))
                             {
                                 piechart[x, y] = new ARGB(255, 0, 0, 0);
                             }
 
-                            
+
                         }
                         else
                         {
@@ -68,8 +72,8 @@ public class Piechart : AbstractGraph  {
         }
 
 
-		throw new System.Exception("Not implemented");
-	}
+        throw new System.Exception("Not implemented");
+    }
 
     public bool isCounterClockwise(SimpleVector line, SimpleVector point)
     {
