@@ -1,20 +1,24 @@
 using System;
-public class Duodata<T, U>
+namespace Solution1._0.Universal_Logic
 {
-    private T _Attr1;
-    private U _Attr2;
+    public class Duodata<T, U>
+    {
+        private T Attr1;
+        private U Attr2;
 
-    public T GetAttr1()
-    {
-        throw new System.Exception("Not implemented");
-    }
-    public U GetAttr2()
-    {
-        throw new System.Exception("Not implemented");
-    }
-    public Duodata(T aAttr1, U aAttr2)
-    {
-        throw new System.Exception("Not implemented");
-    }
+        public T GetAttr1()
+        {
+            return Attr1;
+        }
+        public U GetAttr2()
+        {
+            return Attr2;
+        }
+        public Duodata(T attr1, U attr2)
+        {
+            Attr1 = attr1;
+            Attr2 = attr2;
+        }
 
+    }
 }
