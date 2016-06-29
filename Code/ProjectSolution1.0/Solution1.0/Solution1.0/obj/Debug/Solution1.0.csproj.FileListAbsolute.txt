@@ -44,3 +44,4 @@ C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\Solution1.0\Solu
 C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\Solution1.0\Solution1.0\obj\Debug\res\layout\s1activity.xml
 C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\Solution1.0\Solution1.0\obj\Debug\res\layout\s2activity.xml
 C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\Solution1.0\Solution1.0\obj\Debug\Solution1.0.dll.mdb
+C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\Solution1.0\Solution1.0\bin\Debug\Solution1.0.dll.mdb

@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-                android:background="#E2E2E2">
+    android:background="#E2E2E2">
     <TextView
         android:text="M3 Activity"
         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -12,5 +12,5 @@
         android:id="@+id/textView1"
         android:gravity="center"
         android:layout_centerInParent="true"
-        android:textColor="black" />
+        android:textColor="#000000" />
 </RelativeLayout>
