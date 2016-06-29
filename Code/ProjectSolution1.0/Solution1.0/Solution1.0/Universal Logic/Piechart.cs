@@ -6,22 +6,111 @@ namespace Solution1._0.Universal_Logic
 {
     public static class PieChart
     {
+        public static List<ARGB> ListOfColorsToUse = createColorList();
+
+        public static List<ARGB> createColorList()
+        {
+            Random RNG = new Random();
+            List<ARGB> listofcolorstouse = new List<ARGB>();
+            listofcolorstouse.Add(new ARGB(255, 255, 0, 0));//red
+            listofcolorstouse.Add(new ARGB(255, 0, 255, 0));//green
+            listofcolorstouse.Add(new ARGB(255, 0, 0, 255));//blue
+
+            listofcolorstouse.Add(new ARGB(255, 255, 255, 0));//yellow
+            listofcolorstouse.Add(new ARGB(255, 255, 0, 255));//purple
+            listofcolorstouse.Add(new ARGB(255, 0, 255, 255));//cyan
+
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255))); //random colours to be generated upon starting of program. Consisten for use in legend and piechart.
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+            listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255)));
+
+            return listofcolorstouse;
+        }
+
         public static ARGB[,] Legenda(List<Duodata<string, int>> aDuodataList)
         {
             throw new System.Exception("Not implemented");
         }
+
+        public static ARGB[,] DrawSlice(ARGB[,] Target, double startangle, double angletodraw, ARGB color)
+        {
+            int sizepiechart = Target.GetLength(0);
+            SimpleVector oldVec, newVec;
+            oldVec = new SimpleVector();
+            newVec = new SimpleVector();
+            newVec.x = Math.Cos(angletodraw);
+            newVec.y = Math.Sin(angletodraw);
+            oldVec.x = Math.Cos(startangle);
+            oldVec.y = Math.Sin(startangle);
+            for (int x = 0; x < sizepiechart; x++)
+            {
+                for (int y = 0; y < sizepiechart; y++)
+                {
+                    if (Math.Sqrt(Math.Pow(x - sizepiechart / 2, 2) + Math.Pow(y - sizepiechart / 2, 2)) < sizepiechart / 2)
+                    {
+                        if (isCounterClockwise(newVec, new SimpleVector(x, y)) && !isCounterClockwise(oldVec, new SimpleVector(x, y)))
+                        {
+                            Target[x, y] = color;
+                        }
+                    }
+                }
+            }
+            return Target;
+        }
+
         public static ARGB[,] Make(List<Duodata<string, int>> aDuodataList)
         {
             int sizepiechart = 500;
             ARGB[,] piechart = new ARGB[sizepiechart, sizepiechart];
-
-            float lastAngle = 0;
+            
+            double lastAngle = 0;
             double newangle;
-            float percentage;
-            SimpleVector oldVec, newVec;
-            oldVec = new SimpleVector();
-            newVec = new SimpleVector();
+            double percentage;
             ARGB colortofill;
+
+
+
+            for (int x = 0; x<sizepiechart; x++)
+            {
+                for (int y = 0; y < sizepiechart; y++)
+                {
+                    piechart[x, y] = new ARGB(0, 0, 0, 0);
+                }
+            }
 
             int total = 0;
             foreach (Duodata<string, int> i in aDuodataList)
@@ -29,45 +118,35 @@ namespace Solution1._0.Universal_Logic
                 total += i.GetAttr2();
             }
 
-            foreach (Duodata<string, int> i in aDuodataList)
+            for(int j=0; j<aDuodataList.Count; j++)
             {
-                colortofill = new ARGB(0, 0, 0, 0);
+                Duodata<string, int> i = aDuodataList[j];
+
+                colortofill = ListOfColorsToUse[j];
                 if (i.GetAttr2() > total / 2)
                 {
-                    throw new System.Exception("Not implemented");
+
+                    percentage = (double)i.GetAttr2() / (double)total * 100 / 2;
+                    newangle = lastAngle + 2 * Math.PI * percentage;
+                    piechart = DrawSlice(piechart, lastAngle, newangle, colortofill);
+                    lastAngle = newangle;
+
+
+                    percentage = (double)i.GetAttr2() / (double)total * 100 / 2;
+                    newangle = lastAngle + 2 * Math.PI * percentage;
+                    piechart = DrawSlice(piechart, lastAngle, newangle, colortofill);
+                    lastAngle = newangle;
                 }
                 else
                 {
-                    percentage = (float)i.GetAttr2() / (float)total * 100f;
+                    percentage = (double)i.GetAttr2() / (double)total * 100;
                     newangle = lastAngle + 2 * Math.PI * percentage;
-                    newVec.x = Math.Cos(newangle);
-                    newVec.y = Math.Sin(newangle);
-                    oldVec.x = Math.Cos(lastAngle);
-                    oldVec.y = Math.Sin(lastAngle);
-                    for (int x = 0; x < sizepiechart; x++)
-                    {
-                        for (int y = 0; y < sizepiechart; y++)
-                        {
-                            if (Math.Sqrt(Math.Pow(x - sizepiechart / 2, 2) + Math.Pow(y - sizepiechart / 2, 2)) < sizepiechart / 2)
-                            {
-                                if (isCounterClockwise(newVec, new SimpleVector(x, y)) && !isCounterClockwise(oldVec, new SimpleVector(x, y)))
-                                {
-                                    piechart[x, y] = new ARGB(255, 0, 0, 0);
-                                }
-
-
-                            }
-                            else
-                            {
-                                piechart[x, y] = new ARGB(0, 0, 0, 0);
-                            }
-                        }
-                    }
+                    piechart = DrawSlice(piechart, lastAngle, newangle, colortofill);
+                    lastAngle = newangle;
                 }
             }
 
-
-            throw new System.Exception("Not implemented");
+            return piechart;
         }
 
         public static bool isCounterClockwise(SimpleVector line, SimpleVector point)
