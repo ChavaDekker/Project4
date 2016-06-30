@@ -21,9 +21,9 @@ namespace Solution1._0
         {
             base.OnCreate(savedInstanceState);
 
-            ImageView imageviewtest = FindViewById<ImageView>(Resource.Id.imageView1);
+            //ImageView imageviewtest = FindViewById<ImageView>(Resource.Id.imageView1);
 
-            //imageviewtest.SetImageResource()
+            //ImageSource.FromResource("WorkingWithImages.beach.jpg");
 
             //BitmapFactory.
             // Create your application here
