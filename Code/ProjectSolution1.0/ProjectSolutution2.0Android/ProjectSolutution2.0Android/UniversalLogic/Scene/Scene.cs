@@ -16,12 +16,30 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 {
     public class Scene
     {
-        Point Offset;
-        string Id;
+        protected Point Offset;
+        private string Id;
+        private Point MaxPosOffset = new Point(0);
+        private Point MaxNegOffset = new Point(0);
 
         private void ScreenOffset()
         {
-            throw new Exception("Not Implemented");
+            Offset += InputAcces.input.GetDeltaSwipe();
+            if (Offset.X < MaxNegOffset.X)
+            {
+                Offset.X = MaxNegOffset.X;
+            }
+            if (Offset.Y < MaxNegOffset.Y)
+            {
+                Offset.Y = MaxNegOffset.Y;
+            }
+            if (Offset.X > MaxPosOffset.X)
+            {
+                Offset.X = MaxPosOffset.X;
+            }
+            if (Offset.Y > MaxPosOffset.Y)
+            {
+                Offset.Y = MaxPosOffset.Y;
+            }
         }
 
         public void AndroidUpdate()
@@ -42,11 +60,11 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         {
 
         }
-        virtual public void AndroidDraw(SpriteBatch spritebatch)
+        virtual public void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
 
         }
-        virtual public void WindowsDraw(SpriteBatch spritebatch)
+        virtual public void WindowsDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
 
         }
@@ -56,5 +74,8 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         {
             this.Id = ID;
         }
+
+        public Point Maxnegoffset { get { return MaxNegOffset; } set { MaxNegOffset = value; } }
+        public Point Maxposoffset { get { return MaxPosOffset; } set { MaxPosOffset = value; } }
     }
 }

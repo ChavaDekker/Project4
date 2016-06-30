@@ -19,8 +19,8 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 
         public static void ChangeScene(string ID)
         {
-
-            throw new Exception("Not Implemented");
+            PopSceneFromStack();
+            AddSceneOnStack(ID);
         }
 
         public static Scene GetCurrentScene()
@@ -30,23 +30,35 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 
         public static void AddSceneOnStack(string ID)
         {
-
-            throw new Exception("Not Implemented");
+            if (SceneDict.ContainsKey(ID))
+            {
+                SceneStack.Add(SceneDict[ID]);
+            }
+            else
+            {
+                throw new Exception("Scene does not exist! Scene: " + ID);
+            }
         }
         public static void PopSceneFromStack()
         {
-
-            throw new Exception("Not Implemented");
+            SceneStack.RemoveAt(SceneStack.Count - 1);
         }
         public static bool AddSceneToDict(Scene scene)
         {
-
-            throw new Exception("Not Implemented");
+            if (SceneDict.ContainsKey(scene.ID))
+            {
+                return false;
+            }
+            SceneDict.Add(scene.ID, scene);
+            return true;
         }
         public static Scene GetSceneBelow(string OwnID)
         {
-
-            throw new Exception("Not Implemented");
+            if(SceneStack.IndexOf(SceneDict[OwnID]) == 0)
+            {
+                return null;
+            }
+            return SceneStack[SceneStack.IndexOf(SceneDict[OwnID]) - 1];
         }
     }
 }

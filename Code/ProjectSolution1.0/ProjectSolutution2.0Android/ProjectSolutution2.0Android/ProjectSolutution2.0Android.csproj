@@ -62,6 +62,25 @@
     <Compile Include="Game1.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UniversalLogic\AndroidInput.cs" />
+    <Compile Include="UniversalLogic\ARGBtoTexture2D.cs" />
+    <Compile Include="UniversalLogic\Button.cs" />
+    <Compile Include="UniversalLogic\Delegates.cs" />
+    <Compile Include="UniversalLogic\DynamicButtonHorizontal.cs" />
+    <Compile Include="UniversalLogic\GenericButton.cs" />
+    <Compile Include="UniversalLogic\Input.cs" />
+    <Compile Include="UniversalLogic\InputAcces.cs" />
+    <Compile Include="UniversalLogic\Picture.cs" />
+    <Compile Include="UniversalLogic\Scene\Testscene.cs" />
+    <Compile Include="UniversalLogic\Scene\Button1Scene.cs" />
+    <Compile Include="UniversalLogic\Scene\Button2Scene.cs" />
+    <Compile Include="UniversalLogic\Scene\Button3Scene.cs" />
+    <Compile Include="UniversalLogic\Scene\Button4Scene.cs" />
+    <Compile Include="UniversalLogic\Scene\Button5Scene.cs" />
+    <Compile Include="UniversalLogic\Scene\Button6Scene.cs" />
+    <Compile Include="UniversalLogic\Scene\Button7Scene.cs" />
+    <Compile Include="UniversalLogic\Scene\Button8Scene.cs" />
+    <Compile Include="UniversalLogic\Scene\MainMenuScene.cs" />
     <Compile Include="UniversalLogic\Scene\Scene.cs" />
     <Compile Include="UniversalLogic\Scene\SceneManager.cs" />
   </ItemGroup>

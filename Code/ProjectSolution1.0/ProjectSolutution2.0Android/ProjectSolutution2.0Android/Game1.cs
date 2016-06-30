@@ -1,6 +1,8 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using ProjectSolutution2._0Android.UniversalLogic.Scene;
+using ProjectSolutution2._0Android.UniversalLogic;
 
 namespace ProjectSolutution2._0Android
 {
@@ -32,7 +34,6 @@ namespace ProjectSolutution2._0Android
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
             base.Initialize();
         }
 
@@ -45,6 +46,9 @@ namespace ProjectSolutution2._0Android
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            SceneManager.AddSceneToDict(new Testscene(this.GraphicsDevice, "TestScene"));
+            SceneManager.AddSceneToDict(new Button1Scene(this.GraphicsDevice, "Button1Scene"));
+            SceneManager.AddSceneOnStack("TestScene");
             // TODO: use this.Content to load your game content here
         }
 
@@ -68,7 +72,11 @@ namespace ProjectSolutution2._0Android
                 Exit();
 
             // TODO: Add your update logic here
+            SceneManager.GetCurrentScene().AndroidUpdate();
 
+
+
+            InputAcces.input.Update();
             base.Update(gameTime);
         }
 
@@ -79,6 +87,12 @@ namespace ProjectSolutution2._0Android
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
+
+            spriteBatch.Begin();
+
+            SceneManager.GetCurrentScene().AndroidDraw(spriteBatch);
+
+            spriteBatch.End();
 
             // TODO: Add your drawing code here
 
