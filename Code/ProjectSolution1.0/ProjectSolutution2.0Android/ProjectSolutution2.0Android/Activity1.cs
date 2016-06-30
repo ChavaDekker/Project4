@@ -3,15 +3,15 @@ using Android.Content.PM;
 using Android.OS;
 using Android.Views;
 
-namespace Game1
+namespace ProjectSolutution2._0Android
 {
-    [Activity(Label = "Game1"
+    [Activity(Label = "ProjectSolutution2.0Android"
         , MainLauncher = true
         , Icon = "@drawable/icon"
         , Theme = "@style/Theme.Splash"
         , AlwaysRetainTaskState = true
         , LaunchMode = Android.Content.PM.LaunchMode.SingleInstance
-        , ScreenOrientation = ScreenOrientation.Portrait
+        , ScreenOrientation = ScreenOrientation.SensorLandscape
         , ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.Keyboard | ConfigChanges.KeyboardHidden | ConfigChanges.ScreenSize)]
     public class Activity1 : Microsoft.Xna.Framework.AndroidGameActivity
     {

@@ -2,7 +2,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
-namespace Game1
+namespace ProjectSolutution2._0Android
 {
     /// <summary>
     /// This is the main type for your game.
@@ -11,7 +11,6 @@ namespace Game1
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        Texture2D test;
 
         public Game1()
         {
@@ -45,10 +44,7 @@ namespace Game1
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            test = new Texture2D(this.GraphicsDevice, 1, 1);
-            Color[] meme = new Color[1];
-            meme[0] = Color.Yellow;
-            test.SetData<Color>(meme);
+
             // TODO: use this.Content to load your game content here
         }
 
@@ -82,15 +78,10 @@ namespace Game1
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.Red);
+            GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            //// TODO: Add your drawing code here
-            spriteBatch.Begin();
+            // TODO: Add your drawing code here
 
-            spriteBatch.Draw(test, new Rectangle(0, 0, 50, 50), Color.White);
-            //spriteBatch.Draw(Cursor, new Rectangle(Mouse.GetState(this.Window).X, Mouse.GetState(this.Window).Y, Cursor.Width, Cursor.Height), Color.White);
-
-            spriteBatch.End();
             base.Draw(gameTime);
         }
     }

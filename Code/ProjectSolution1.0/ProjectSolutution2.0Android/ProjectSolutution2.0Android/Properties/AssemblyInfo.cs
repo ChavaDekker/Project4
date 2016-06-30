@@ -6,8 +6,8 @@ using Android.App;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Game1")]
-[assembly: AssemblyProduct("Game1")]
+[assembly: AssemblyTitle("ProjectSolutution2.0Android")]
+[assembly: AssemblyProduct("ProjectSolutution2.0Android")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyCompany("")]
@@ -21,7 +21,7 @@ using Android.App;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("0db664f4-61e9-4d38-b0b2-72aa766c7589")]
+[assembly: Guid("f92f1cca-14d5-4886-9815-67cbb887cf58")]
 
 // Version information for an assembly consists of the following four values:
 //
