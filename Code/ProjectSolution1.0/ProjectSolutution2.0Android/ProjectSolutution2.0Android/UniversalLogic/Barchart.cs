@@ -52,7 +52,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
                         }
                         else
                         {
-                            ;
+                            barchart[x, y] = new ARGB(255, 50, 50, 50);
                         }
                     }
                 }
