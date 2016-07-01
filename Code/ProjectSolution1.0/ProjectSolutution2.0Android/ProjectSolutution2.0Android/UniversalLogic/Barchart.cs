@@ -40,7 +40,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
 
             foreach (Duodata<string, int> i in aDuodataList)
             {
-                double percentage = i.GetAttr2() / total * 100;
+                double percentage = i.GetAttr2() / total;
                 for (int x = 0; x < GWidth; x++)
                 {
                     for (int y = 0; y < GHeight; y++)
