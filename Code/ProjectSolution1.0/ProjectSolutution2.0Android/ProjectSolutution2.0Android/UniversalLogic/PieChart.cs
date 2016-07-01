@@ -76,13 +76,15 @@ namespace ProjectSolutution2._0Android.UniversalLogic
             newVec.y = Math.Sin(angletodraw);
             oldVec.x = Math.Cos(startangle);
             oldVec.y = Math.Sin(startangle);
+            SimpleVector point;
             for (int x = 0; x < sizepiechart; x++)
             {
                 for (int y = 0; y < sizepiechart; y++)
                 {
                     if (Math.Sqrt(Math.Pow(x - sizepiechart / 2, 2) + Math.Pow(y - sizepiechart / 2, 2)) < sizepiechart / 2)
                     {
-                        if (isCounterClockwise(newVec, new SimpleVector(x, y)) && !isCounterClockwise(oldVec, new SimpleVector(x, y)))
+                        point = new SimpleVector(x - sizepiechart / 2, y - sizepiechart / 2);
+                        if (isCounterClockwise(newVec, point) && !isCounterClockwise(oldVec, point))
                         {
                             Target[x, y] = color;
                         }

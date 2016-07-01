@@ -16,14 +16,27 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 {
     public class Button1Scene : Scene
     {
-
+        Picture meme;
+        GenericButton testo;
         public Button1Scene(GraphicsDevice graphDevice, string ID) : base(graphDevice, ID)
         {
+            List<Duodata<string, int>> testdata = new List<Duodata<string, int>>();
+            testdata.Add(new Duodata<string, int>("lol", 10));
+            testdata.Add(new Duodata<string, int>("lol", 10));
+            testdata.Add(new Duodata<string, int>("lol", 10));
+            testdata.Add(new Duodata<string, int>("lol", 10));
+            testdata.Add(new Duodata<string, int>("lol", 10));
+            testdata.Add(new Duodata<string, int>("lol", 10));
+            Texture2D temp = ARGBtoTexture2D.ARGBtoTexture2d(BarChart.Make(testdata), graphDevice);
+            meme = new Picture(temp, new Point(0), new Point(temp.Width, temp.Height));
+
+            testo = new GenericButton(new Point(0), new Point(10), Color.Azure, graphDevice);
         }
 
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
-            graphDevice.Clear(Color.Aquamarine);
+            meme.draw(spritebatch, Offset);
+            testo.Draw(spritebatch, Offset);
         }
         public override void WindowsDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
