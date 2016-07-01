@@ -41,10 +41,11 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
+            graphDevice.Clear(Color.CornflowerBlue);
             genericlol.Draw(spritebatch, Offset);
             dynamiclol.Draw(spritebatch, Offset);
-            dynamiclol2.Draw(spritebatch, Offset);
-            memes.draw(spritebatch, Offset);
+            //dynamiclol2.Draw(spritebatch, Offset);
+            //memes.draw(spritebatch, Offset);
         }
         public override void WindowsDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
@@ -53,7 +54,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         protected override void AndroidLogic()
         {
             dynamiclol.Click(Offset);
-            dynamiclol2.Click(Offset);
+            //dynamiclol2.Click(Offset);
         }
         protected override void WindowsLogic()
         {
@@ -62,7 +63,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 
         public void ExampleMoveButtons()
         {
-            SceneManager.ChangeScene("Button1Scene");
+            SceneManager.ChangeScene("Button4Scene");
         }
     }
 }
