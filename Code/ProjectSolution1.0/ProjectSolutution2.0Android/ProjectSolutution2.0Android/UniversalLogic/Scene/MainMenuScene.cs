@@ -37,11 +37,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             genericlol6 = new GenericButton(new Point(10,310), new Point(100, 50), Color.Crimson, graphDevice);
             genericlol7 = new GenericButton(new Point(10,370), new Point(100, 50), Color.Crimson, graphDevice);
             genericlol8 = new GenericButton(new Point(10,430), new Point(100, 50), Color.Crimson, graphDevice);
-
-            Texture2D temp = new Texture2D(graphDevice, 1, 1);
-            Color[] lolz = new Color[1];
-            lolz[0] = new Color(255, 0, 255, 255);
-            temp.SetData<Color>(lolz);
+            
         }
 
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)

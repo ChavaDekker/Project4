@@ -49,7 +49,8 @@ namespace ProjectSolutution2._0Android
             SceneManager.AddSceneToDict(new Testscene(this.GraphicsDevice, "TestScene"));
             SceneManager.AddSceneToDict(new Button1Scene(this.GraphicsDevice, "Button1Scene"));
             SceneManager.AddSceneToDict(new Button2Scene(this.GraphicsDevice, "Button2Scene"));
-            SceneManager.AddSceneOnStack("TestScene");
+            SceneManager.AddSceneToDict(new MainMenuScene(this.GraphicsDevice, "MainMenuScene"));
+            SceneManager.AddSceneOnStack("MainMenuScene");
             // TODO: use this.Content to load your game content here
         }
 
@@ -91,7 +92,7 @@ namespace ProjectSolutution2._0Android
 
             spriteBatch.Begin();
 
-            SceneManager.GetCurrentScene().AndroidDraw(spriteBatch, GraphicsDevice);
+            SceneManager.GetCurrentScene().AndroidDrawBase(spriteBatch, GraphicsDevice);
 
             spriteBatch.End();
 
