@@ -20,11 +20,11 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             
         }
 
-        public override void AndroidDraw(SpriteBatch spritebatch)
+        public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
 
         }
-        public override void WindowsDraw(SpriteBatch spritebatch)
+        public override void WindowsDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
 
         }

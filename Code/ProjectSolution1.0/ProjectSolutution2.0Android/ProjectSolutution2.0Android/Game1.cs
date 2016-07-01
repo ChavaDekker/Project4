@@ -86,11 +86,11 @@ namespace ProjectSolutution2._0Android
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            //GraphicsDevice.Clear(Color.CornflowerBlue);
 
             spriteBatch.Begin();
 
-            SceneManager.GetCurrentScene().AndroidDraw(spriteBatch);
+            SceneManager.GetCurrentScene().AndroidDraw(spriteBatch, GraphicsDevice);
 
             spriteBatch.End();
 

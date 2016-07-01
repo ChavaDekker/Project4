@@ -31,7 +31,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
             {
                 for (int xi = 0; xi < y; xi++)
                 {
-                    colorarray[index] = new Color(Image[xi, yi]);
+                    colorarray[index] = new Color(Image[xi, yi].r, Image[xi, yi].g, Image[xi, yi].b, Image[xi, yi].a);
                     index++;
                 }
             }
