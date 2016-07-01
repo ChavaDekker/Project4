@@ -16,40 +16,48 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 {
     public class MainMenuScene : Scene
     {
-        GenericButton genericlol1;
-        GenericButton genericlol2;
-        GenericButton genericlol3;
-        GenericButton genericlol4;
-        GenericButton genericlol5;
-        GenericButton genericlol6;
-        GenericButton genericlol7;
-        GenericButton genericlol8;
+        DynamicButtonHorizontal dynamiclol1;
+        DynamicButtonHorizontal dynamiclol2;
+        DynamicButtonHorizontal dynamiclol3;
+        DynamicButtonHorizontal dynamiclol4;
+        DynamicButtonHorizontal dynamiclol5;
+        DynamicButtonHorizontal dynamiclol6;
+        DynamicButtonHorizontal dynamiclol7;
+        DynamicButtonHorizontal dynamiclol8;
 
         public MainMenuScene(GraphicsDevice graphDevice, string ID) : base(graphDevice, ID)
         {
-            Maxnegoffset = new Point(0, -400);
+            Maxnegoffset = new Point(0, -1000);
             Maxposoffset = new Point(0, 0);
-            genericlol1 = new GenericButton(new Point(10), new Point(100, 50), Color.Crimson, graphDevice);
-            genericlol2 = new GenericButton(new Point(10, 70), new Point(100, 50), Color.Crimson, graphDevice);
-            genericlol3 = new GenericButton(new Point(10,130), new Point(100, 50), Color.Crimson, graphDevice);
-            genericlol4 = new GenericButton(new Point(10,190), new Point(100, 50), Color.Crimson, graphDevice);
-            genericlol5 = new GenericButton(new Point(10,250), new Point(100, 50), Color.Crimson, graphDevice);
-            genericlol6 = new GenericButton(new Point(10,310), new Point(100, 50), Color.Crimson, graphDevice);
-            genericlol7 = new GenericButton(new Point(10,370), new Point(100, 50), Color.Crimson, graphDevice);
-            genericlol8 = new GenericButton(new Point(10,430), new Point(100, 50), Color.Crimson, graphDevice);
-            
+            dynamiclol1 = new DynamicButtonHorizontal(200, 200, 0, 0.50, Color.Crimson, graphDevice);
+            dynamiclol2 = new DynamicButtonHorizontal(400, 200, 0.50, 1, Color.Crimson, graphDevice);
+            dynamiclol3 = new DynamicButtonHorizontal(600, 200, 1, 1.50, Color.Crimson, graphDevice);
+            dynamiclol4 = new DynamicButtonHorizontal(800, 200, 1.50, 2, Color.Crimson, graphDevice);
+            dynamiclol5 = new DynamicButtonHorizontal(1000, 200, 2, 2.50, Color.Crimson, graphDevice);
+            dynamiclol6 = new DynamicButtonHorizontal(1200, 200, 2.50, 3, Color.Crimson, graphDevice);
+            dynamiclol7 = new DynamicButtonHorizontal(1400, 200, 3, 3.50, Color.Crimson, graphDevice);
+            dynamiclol8 = new DynamicButtonHorizontal(1600, 200, 3.50, 4, Color.Crimson, graphDevice);
+
+            dynamiclol1.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
+            dynamiclol2.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
+            dynamiclol3.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
+            dynamiclol4.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
+            dynamiclol5.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
+            dynamiclol6.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
+            dynamiclol7.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
+            dynamiclol8.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
         }
 
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
-            genericlol1.Draw(spritebatch, Offset);
-            genericlol2.Draw(spritebatch, Offset);
-            genericlol3.Draw(spritebatch, Offset);
-            genericlol4.Draw(spritebatch, Offset);
-            genericlol5.Draw(spritebatch, Offset);
-            genericlol6.Draw(spritebatch, Offset);
-            genericlol7.Draw(spritebatch, Offset);
-            genericlol8.Draw(spritebatch, Offset);
+            dynamiclol1.Draw(spritebatch, Offset);
+            dynamiclol2.Draw(spritebatch, Offset);
+            dynamiclol3.Draw(spritebatch, Offset);
+            dynamiclol4.Draw(spritebatch, Offset);
+            dynamiclol5.Draw(spritebatch, Offset);
+            dynamiclol6.Draw(spritebatch, Offset);
+            dynamiclol7.Draw(spritebatch, Offset);
+            dynamiclol8.Draw(spritebatch, Offset);
         }
 
         public override void WindowsDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
@@ -59,19 +67,23 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 
         protected override void AndroidLogic()
         {
-            genericlol1.Click(Offset);
-            genericlol2.Click(Offset);
-            genericlol3.Click(Offset);
-            genericlol4.Click(Offset);
-            genericlol5.Click(Offset);
-            genericlol6.Click(Offset);
-            genericlol7.Click(Offset);
-            genericlol8.Click(Offset);
+            dynamiclol1.Click(Offset);
+            dynamiclol2.Click(Offset);
+            dynamiclol3.Click(Offset);
+            dynamiclol4.Click(Offset);
+            dynamiclol5.Click(Offset);
+            dynamiclol6.Click(Offset);
+            dynamiclol7.Click(Offset);
+            dynamiclol8.Click(Offset);
         }
 
         protected override void WindowsLogic()
         {
 
+        }
+        public void ExampleMoveButtons()
+        {
+            SceneManager.ChangeScene(ID);
         }
     }
 }
