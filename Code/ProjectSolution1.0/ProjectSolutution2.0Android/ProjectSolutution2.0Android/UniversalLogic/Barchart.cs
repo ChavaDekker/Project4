@@ -18,7 +18,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
             int GHeight = 500;
             int GWidth = 500;
             int GIndex = aDuodataList.Count; //amount of bars
-            int GBarSize = (GHeight / GIndex) - 10 * GIndex; //individual bar size (vertical)
+            int GBarSize = (GHeight / GIndex) - 10; //individual bar size (vertical) (previously '''' -10 * GIndex)
 
             Random rnd = new Random();
             ARGB[,] barchart = new ARGB[GHeight, GWidth];
@@ -40,22 +40,26 @@ namespace ProjectSolutution2._0Android.UniversalLogic
 
             foreach (Duodata<string, int> i in aDuodataList)
             {
-                iteration += 1; //because I'm too bad to figure out how to call the iterator count in a foreach-loop
                 double percentage = i.GetAttr2() / total * 100;
                 for (int x = 0; x < GWidth; x++)
                 {
                     for (int y = 0; y < GHeight; y++)
                     {
-                        if (x < percentage * GWidth / 100 && GHeight / GIndex * iteration < y && y <= GHeight / GIndex * iteration + GBarSize) //if pixel on [x,y] falls within drawable bounds of the bar in the current iteration
+                        if ((x < percentage * GWidth / 100) && GHeight / GIndex * iteration < y && y <= (GHeight / GIndex * iteration) + GBarSize) //if pixel on [x,y] falls within drawable bounds of the bar in the current iteration
                         {
                             barchart[x, y] = new ARGB(255, 0, 0, 0);
                         }
-                        else
+                        else if (x > 490)
                         {
                             barchart[x, y] = new ARGB(255, 50, 50, 50);
                         }
+                        else
+                        {
+                            ;
+                        }
                     }
                 }
+                iteration += 1; //because I'm too bad to figure out how to call the iterator count in a foreach-loop
             }
             return barchart;
 
