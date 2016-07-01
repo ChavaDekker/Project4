@@ -16,6 +16,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 {
     public class Button1Scene : Scene
     {
+
         public Button1Scene(GraphicsDevice graphDevice, string ID) : base(graphDevice, ID)
         {
         }
