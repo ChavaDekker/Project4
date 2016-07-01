@@ -57,6 +57,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
                     }
                 }
             }
+            return barchart;
 
             //ARGB[,] barchart = new ARGB[GHeight, GWidth];
             //int GCurrentIndex = 1;
@@ -69,7 +70,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
             //    total += i.GetAttr2();
             //    GCurrentIndex += 1;
             //}
-            throw new System.Exception("Not implemented");
+            //throw new System.Exception("Not implemented");
         }
 
     }
