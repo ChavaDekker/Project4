@@ -46,16 +46,33 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
-
+            genericlol1.Draw(spritebatch, Offset);
+            genericlol2.Draw(spritebatch, Offset);
+            genericlol3.Draw(spritebatch, Offset);
+            genericlol4.Draw(spritebatch, Offset);
+            genericlol5.Draw(spritebatch, Offset);
+            genericlol6.Draw(spritebatch, Offset);
+            genericlol7.Draw(spritebatch, Offset);
+            genericlol8.Draw(spritebatch, Offset);
         }
+
         public override void WindowsDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
 
         }
+
         protected override void AndroidLogic()
         {
-
+            genericlol1.Click(Offset);
+            genericlol2.Click(Offset);
+            genericlol3.Click(Offset);
+            genericlol4.Click(Offset);
+            genericlol5.Click(Offset);
+            genericlol6.Click(Offset);
+            genericlol7.Click(Offset);
+            genericlol8.Click(Offset);
         }
+
         protected override void WindowsLogic()
         {
 
