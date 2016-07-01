@@ -35,8 +35,8 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 
             memes = new Picture(temp, new Point(300, 500), new Point(300));
 
-            dynamiclol.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
-            dynamiclol2.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
+            dynamiclol.SetDelegate(new Action( () => SceneManager.ChangeScene("MainMenuScene")));
+            //dynamiclol2.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
         }
 
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)

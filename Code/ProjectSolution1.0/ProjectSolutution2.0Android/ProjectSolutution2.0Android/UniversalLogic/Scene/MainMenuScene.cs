@@ -38,14 +38,14 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             dynamiclol7 = new DynamicButtonHorizontal(1460, 200, 0, 0.50, Color.Crimson, graphDevice);
             dynamiclol8 = new DynamicButtonHorizontal(1680, 200, 0, 0.50, Color.Crimson, graphDevice);
 
-            dynamiclol1.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
-            dynamiclol2.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
-            dynamiclol3.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
-            dynamiclol4.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
-            dynamiclol5.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
-            dynamiclol6.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
-            dynamiclol7.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
-            dynamiclol8.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
+            //dynamiclol1.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
+            //dynamiclol2.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
+            //dynamiclol3.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
+            //dynamiclol4.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
+            //dynamiclol5.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
+            //dynamiclol6.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
+            //dynamiclol7.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
+            //dynamiclol8.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
         }
 
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)

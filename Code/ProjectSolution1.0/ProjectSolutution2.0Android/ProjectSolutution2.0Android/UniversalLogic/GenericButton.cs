@@ -20,7 +20,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
         Point WidthHeight;
         Texture2D Texture;
         string Text;
-        Delegates.SimpleDelegate clickFunction = Delegates.DoesNothing;
+        Action clickFunction = Delegates.DoesNothing;
         public void Click(Point Offset)
         {
             if (isClicked(Offset))
@@ -39,7 +39,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
             return InputAcces.input.DidClickInArea(Position + offset, WidthHeight);
         }
 
-        public void SetDelegate(Delegates.SimpleDelegate _delegate)
+        public void SetDelegate(Action _delegate)
         {
             clickFunction = _delegate;
         }

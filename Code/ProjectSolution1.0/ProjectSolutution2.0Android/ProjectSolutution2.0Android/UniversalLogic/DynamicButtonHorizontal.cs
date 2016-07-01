@@ -19,7 +19,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
         int YPositionTop, height;
         Texture2D Texture;
         string Text;
-        Delegates.SimpleDelegate clickFunction;
+        Action clickFunction = Delegates.DoesNothing;
         double LeftPercentage, RightPercentage;
         Point ScreenDimentions;
         public Rectangle calculateDimentions()
@@ -55,7 +55,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
             return InputAcces.input.DidClickInArea(Tleft, Tleft +  new Point(temp.Width, temp.Height));
         }
 
-        public void SetDelegate(Delegates.SimpleDelegate _delegate)
+        public void SetDelegate(Action _delegate)
         {
             clickFunction = _delegate;
         }

@@ -21,6 +21,6 @@ namespace ProjectSolutution2._0Android.UniversalLogic
         void Click(Point offset);
         void SetPosition(Point NewPosition);
         void SetText(string text);
-        void SetDelegate(Delegates.SimpleDelegate _delegate);
+        void SetDelegate(Action _delegate);
     }
 }
