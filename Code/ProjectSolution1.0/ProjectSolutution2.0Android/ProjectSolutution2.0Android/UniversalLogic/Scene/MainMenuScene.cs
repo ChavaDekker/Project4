@@ -27,25 +27,25 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 
         public MainMenuScene(GraphicsDevice graphDevice, string ID) : base(graphDevice, ID)
         {
-            Maxnegoffset = new Point(0, -1000);
+            Maxnegoffset = new Point(0, -1200);
             Maxposoffset = new Point(0, 0);
-            dynamiclol1 = new DynamicButtonHorizontal(200, 200, 0, 0.50, Color.Crimson, graphDevice);
-            dynamiclol2 = new DynamicButtonHorizontal(410, 200, 0, 0.50, Color.Crimson, graphDevice);
-            dynamiclol3 = new DynamicButtonHorizontal(620, 200, 0, 0.50, Color.Crimson, graphDevice);
-            dynamiclol4 = new DynamicButtonHorizontal(830, 200, 0, 0.50, Color.Crimson, graphDevice);
-            dynamiclol5 = new DynamicButtonHorizontal(1040, 200, 0, 0.50, Color.Crimson, graphDevice);
-            dynamiclol6 = new DynamicButtonHorizontal(1250, 200, 0, 0.50, Color.Crimson, graphDevice);
-            dynamiclol7 = new DynamicButtonHorizontal(1460, 200, 0, 0.50, Color.Crimson, graphDevice);
-            dynamiclol8 = new DynamicButtonHorizontal(1680, 200, 0, 0.50, Color.Crimson, graphDevice);
+            dynamiclol1 = new DynamicButtonHorizontal(200, 200, 0.25, 0.75, Color.Crimson, graphDevice);
+            dynamiclol2 = new DynamicButtonHorizontal(450, 200, 0.25, 0.75, Color.Crimson, graphDevice);
+            dynamiclol3 = new DynamicButtonHorizontal(700, 200, 0.25, 0.75, Color.Crimson, graphDevice);
+            dynamiclol4 = new DynamicButtonHorizontal(950, 200, 0.25, 0.75, Color.Crimson, graphDevice);
+            dynamiclol5 = new DynamicButtonHorizontal(1200, 200, 0.25, 0.75, Color.Crimson, graphDevice);
+            dynamiclol6 = new DynamicButtonHorizontal(1450, 200, 0.25, 0.75, Color.Crimson, graphDevice);
+            dynamiclol7 = new DynamicButtonHorizontal(1700, 200, 0.25, 0.75, Color.Crimson, graphDevice);
+            dynamiclol8 = new DynamicButtonHorizontal(1950, 200, 0.25, 0.75, Color.Crimson, graphDevice);
 
-            //dynamiclol1.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
-            //dynamiclol2.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
-            //dynamiclol3.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
-            //dynamiclol4.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
-            //dynamiclol5.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
-            //dynamiclol6.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
-            //dynamiclol7.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
-            //dynamiclol8.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
+            dynamiclol1.SetDelegate(new Action( () => SceneManager.ChangeScene("Button1Scene")));
+            dynamiclol2.SetDelegate(new Action( () => SceneManager.ChangeScene("Button2Scene")));
+            dynamiclol3.SetDelegate(new Action( () => SceneManager.ChangeScene("Button3Scene")));
+            dynamiclol4.SetDelegate(new Action( () => SceneManager.ChangeScene("Button4Scene")));
+            dynamiclol5.SetDelegate(new Action( () => SceneManager.ChangeScene("Button5Scene")));
+            dynamiclol6.SetDelegate(new Action( () => SceneManager.ChangeScene("Button6Scene")));
+            dynamiclol7.SetDelegate(new Action( () => SceneManager.ChangeScene("Button7Scene")));
+            dynamiclol8.SetDelegate(new Action( () => SceneManager.ChangeScene("Button8Scene")));
         }
 
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
