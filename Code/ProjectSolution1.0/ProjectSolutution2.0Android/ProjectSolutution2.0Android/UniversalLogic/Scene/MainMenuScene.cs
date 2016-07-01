@@ -30,13 +30,13 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             Maxnegoffset = new Point(0, -1000);
             Maxposoffset = new Point(0, 0);
             dynamiclol1 = new DynamicButtonHorizontal(200, 200, 0, 0.50, Color.Crimson, graphDevice);
-            dynamiclol2 = new DynamicButtonHorizontal(400, 200, 0.50, 1, Color.Crimson, graphDevice);
-            dynamiclol3 = new DynamicButtonHorizontal(600, 200, 1, 1.50, Color.Crimson, graphDevice);
-            dynamiclol4 = new DynamicButtonHorizontal(800, 200, 1.50, 2, Color.Crimson, graphDevice);
-            dynamiclol5 = new DynamicButtonHorizontal(1000, 200, 2, 2.50, Color.Crimson, graphDevice);
-            dynamiclol6 = new DynamicButtonHorizontal(1200, 200, 2.50, 3, Color.Crimson, graphDevice);
-            dynamiclol7 = new DynamicButtonHorizontal(1400, 200, 3, 3.50, Color.Crimson, graphDevice);
-            dynamiclol8 = new DynamicButtonHorizontal(1600, 200, 3.50, 4, Color.Crimson, graphDevice);
+            dynamiclol2 = new DynamicButtonHorizontal(410, 200, 0, 0.50, Color.Crimson, graphDevice);
+            dynamiclol3 = new DynamicButtonHorizontal(620, 200, 0, 0.50, Color.Crimson, graphDevice);
+            dynamiclol4 = new DynamicButtonHorizontal(830, 200, 0, 0.50, Color.Crimson, graphDevice);
+            dynamiclol5 = new DynamicButtonHorizontal(1040, 200, 0, 0.50, Color.Crimson, graphDevice);
+            dynamiclol6 = new DynamicButtonHorizontal(1250, 200, 0, 0.50, Color.Crimson, graphDevice);
+            dynamiclol7 = new DynamicButtonHorizontal(1460, 200, 0, 0.50, Color.Crimson, graphDevice);
+            dynamiclol8 = new DynamicButtonHorizontal(1680, 200, 0, 0.50, Color.Crimson, graphDevice);
 
             dynamiclol1.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
             dynamiclol2.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
