@@ -32,7 +32,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
 
             for (int x = 0; x < GWidth; x++)
             {
-                for (int y = 0; x < GWidth; x++)
+                for (int y = 0; y < GWidth; y++)
                 {
                     barchart[x, y] = new ARGB(0, 0, 0, 0); //draw transparent array
                 }
