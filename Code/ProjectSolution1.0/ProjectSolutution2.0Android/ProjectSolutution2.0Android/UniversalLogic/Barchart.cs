@@ -46,7 +46,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
                     for (int y = 0; y < GHeight; y++)
                     {
                         //old x logic ' percentage * GWidth / 100 '
-                        if ((x < 50) && y > iteration * (GBarSize + 10) && y < ((iteration + 1) * (GBarSize + 10) - 10)) //if pixel on [x,y] falls within drawable bounds of the bar in the current iteration
+                        if ((x < percentage * GWidth) && y > iteration * (GBarSize + 10) && y < ((iteration + 1) * (GBarSize + 10) - 10)) //if pixel on [x,y] falls within drawable bounds of the bar in the current iteration
                         {
                             barchart[x, y] = new ARGB(255, 0, 0, 0);
                         }
