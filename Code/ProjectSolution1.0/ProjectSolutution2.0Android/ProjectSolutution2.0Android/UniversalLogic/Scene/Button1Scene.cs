@@ -10,18 +10,20 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework;
 
 namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 {
     public class Button1Scene : Scene
     {
+
         public Button1Scene(GraphicsDevice graphDevice, string ID) : base(graphDevice, ID)
         {
         }
 
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
-
+            graphDevice.Clear(Color.Aquamarine);
         }
         public override void WindowsDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {

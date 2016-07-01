@@ -48,7 +48,7 @@ namespace ProjectSolutution2._0Android
 
             SceneManager.AddSceneToDict(new Testscene(this.GraphicsDevice, "TestScene"));
             SceneManager.AddSceneToDict(new Button1Scene(this.GraphicsDevice, "Button1Scene"));
-            SceneManager.AddSceneToDict(new Button4Scene(this.GraphicsDevice, "Button4Scene"));
+            SceneManager.AddSceneToDict(new Button2Scene(this.GraphicsDevice, "Button2Scene"));
             SceneManager.AddSceneOnStack("TestScene");
             // TODO: use this.Content to load your game content here
         }
