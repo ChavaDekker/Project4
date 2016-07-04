@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Android.Locations;
 
 namespace ProjectSolutution2._0Android.UniversalLogic
 {
@@ -22,6 +23,8 @@ namespace ProjectSolutution2._0Android.UniversalLogic
 
         public static Duodata<float, float> GetLocation()
         {
+            Android.Locations.Location.Creator.ToString();
+
 
             throw new NotImplementedException();
         }

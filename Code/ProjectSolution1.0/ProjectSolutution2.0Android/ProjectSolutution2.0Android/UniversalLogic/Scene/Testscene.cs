@@ -46,6 +46,10 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             dynamiclol.Draw(spritebatch, Offset);
             //dynamiclol2.Draw(spritebatch, Offset);
             //memes.draw(spritebatch, Offset);
+
+            string testoooo = Android.Locations.Location.Creator.ToString();
+            TextDrawing.Drawtext(new Point(500), testoooo, spritebatch);
+
         }
         public override void WindowsDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
