@@ -46,6 +46,15 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             dynamiclol6.SetDelegate(new Action( () => SceneManager.ChangeScene("Button6Scene")));
             dynamiclol7.SetDelegate(new Action( () => SceneManager.ChangeScene("Button7Scene")));
             dynamiclol8.SetDelegate(new Action( () => SceneManager.ChangeScene("Button8Scene")));
+
+            dynamiclol1.SetText("M1");
+            dynamiclol2.SetText("M2");
+            dynamiclol3.SetText("M3");
+            dynamiclol4.SetText("M4");
+            dynamiclol5.SetText("M5");
+            dynamiclol6.SetText("M6");
+            dynamiclol7.SetText("S1");
+            dynamiclol8.SetText("S2");
         }
 
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
