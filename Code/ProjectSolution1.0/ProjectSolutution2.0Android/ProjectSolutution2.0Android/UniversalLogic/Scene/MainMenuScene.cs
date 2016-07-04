@@ -16,6 +16,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 {
     public class MainMenuScene : Scene
     {
+        DynamicButtonHorizontal dynamicTest;
         DynamicButtonHorizontal dynamiclol1;
         DynamicButtonHorizontal dynamiclol2;
         DynamicButtonHorizontal dynamiclol3;
@@ -29,6 +30,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         {
             Maxnegoffset = new Point(0, -1200);
             Maxposoffset = new Point(0, 0);
+            dynamicTest = new DynamicButtonHorizontal(0, 150, 0.75, 0, Color.Crimson, graphDevice);
             dynamiclol1 = new DynamicButtonHorizontal(200, 200, 0.25, 0.75, Color.Crimson, graphDevice);
             dynamiclol2 = new DynamicButtonHorizontal(450, 200, 0.25, 0.75, Color.Crimson, graphDevice);
             dynamiclol3 = new DynamicButtonHorizontal(700, 200, 0.25, 0.75, Color.Crimson, graphDevice);
@@ -38,6 +40,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             dynamiclol7 = new DynamicButtonHorizontal(1700, 200, 0.25, 0.75, Color.Crimson, graphDevice);
             dynamiclol8 = new DynamicButtonHorizontal(1950, 200, 0.25, 0.75, Color.Crimson, graphDevice);
 
+            dynamicTest.SetDelegate(new Action(() => SceneManager.ChangeScene("TestScene")));
             dynamiclol1.SetDelegate(new Action( () => SceneManager.ChangeScene("Button1Scene")));
             dynamiclol2.SetDelegate(new Action( () => SceneManager.ChangeScene("Button2Scene")));
             dynamiclol3.SetDelegate(new Action( () => SceneManager.ChangeScene("Button3Scene")));
@@ -47,6 +50,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             dynamiclol7.SetDelegate(new Action( () => SceneManager.ChangeScene("Button7Scene")));
             dynamiclol8.SetDelegate(new Action( () => SceneManager.ChangeScene("Button8Scene")));
 
+            dynamicTest.SetText("Test");
             dynamiclol1.SetText("M1");
             dynamiclol2.SetText("M2");
             dynamiclol3.SetText("M3");
@@ -76,6 +80,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 
         protected override void AndroidLogic()
         {
+            dynamicTest.Click(Offset);
             dynamiclol1.Click(Offset);
             dynamiclol2.Click(Offset);
             dynamiclol3.Click(Offset);
