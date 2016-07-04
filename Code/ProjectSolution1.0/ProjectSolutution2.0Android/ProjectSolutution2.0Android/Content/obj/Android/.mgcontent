@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Android</Platform>
+  <Config />
+  <SourceFiles>
+    <File>D:/projects/Project4/Code/ProjectSolution1.0/ProjectSolutution2.0Android/ProjectSolutution2.0Android/Content/Textfile.spritefont</File>
+  </SourceFiles>
+</SourceFileCollection>

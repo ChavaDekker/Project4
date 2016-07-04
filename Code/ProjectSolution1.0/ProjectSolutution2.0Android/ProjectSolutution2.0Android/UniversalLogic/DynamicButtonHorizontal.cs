@@ -19,7 +19,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
         //Define structure of dynamicbutton
         int YPositionTop, height;
         Texture2D Texture;
-        string Text;
+        string Text = "";
         Action clickFunction = Delegates.DoesNothing;
         double LeftPercentage, RightPercentage;
         Point ScreenDimentions;
@@ -47,6 +47,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
         {
             Rectangle dimentions = calculateDimentions();
             spriteBatch.Draw(Texture, new Rectangle(dimentions.X+offset.X, dimentions.Y + offset.Y, dimentions.Width, dimentions.Height), Color.White);
+            TextDrawing.Drawtext(new Point((int)(ScreenDimentions.X * LeftPercentage + ScreenDimentions.X * (RightPercentage - LeftPercentage) / 10), YPositionTop+height/10) + offset, Text, spriteBatch);
         }
 
         public bool isClicked(Point offset)

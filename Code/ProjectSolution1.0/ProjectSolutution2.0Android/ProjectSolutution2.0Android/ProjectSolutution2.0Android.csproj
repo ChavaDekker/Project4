@@ -101,8 +101,12 @@
     <Compile Include="UniversalLogic\Scene\MainMenuScene.cs" />
     <Compile Include="UniversalLogic\Scene\Scene.cs" />
     <Compile Include="UniversalLogic\Scene\SceneManager.cs" />
+    <Compile Include="UniversalLogic\TextDrawing.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Textfile.spritefont">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>

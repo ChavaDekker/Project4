@@ -90,6 +90,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             
             dynamichome = new DynamicButtonHorizontal(0, 150, 0, 0.25, Color.Crimson, graphDevice);
             dynamichome.SetDelegate(new Action(() => SceneManager.ChangeScene("MainMenuScene")));
+            dynamichome.SetText("Main Menu");
         }
 
         public Point Maxnegoffset { get { return MaxNegOffset; } set { MaxNegOffset = value; } }

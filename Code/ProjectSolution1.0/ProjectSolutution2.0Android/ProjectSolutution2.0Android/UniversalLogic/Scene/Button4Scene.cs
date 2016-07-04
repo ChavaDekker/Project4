@@ -28,13 +28,13 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             testdata.Add(new Duodata<string, int>("lol", 50));
             Texture2D testo = ARGBtoTexture2D.ARGBtoTexture2d(PieChart.Make(testdata), graphDevice);
             memes = new Picture(testo, new Point(0), new Point(500));
-            
 
         }
 
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
             memes.draw(spritebatch, Offset);
+            TextDrawing.Drawtext(new Point(400), "Test text", spritebatch);
         }
         public override void WindowsDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
