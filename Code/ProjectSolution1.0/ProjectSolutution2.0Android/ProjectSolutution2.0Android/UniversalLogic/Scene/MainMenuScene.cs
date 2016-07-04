@@ -30,7 +30,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         {
             Maxnegoffset = new Point(0, -1200);
             Maxposoffset = new Point(0, 0);
-            dynamicTest = new DynamicButtonHorizontal(0, 150, 0.75, 0, Color.Crimson, graphDevice);
+            dynamicTest = new DynamicButtonHorizontal(0, 150, 0.75, 1, Color.Crimson, graphDevice);
             dynamiclol1 = new DynamicButtonHorizontal(200, 200, 0.25, 0.75, Color.Crimson, graphDevice);
             dynamiclol2 = new DynamicButtonHorizontal(450, 200, 0.25, 0.75, Color.Crimson, graphDevice);
             dynamiclol3 = new DynamicButtonHorizontal(700, 200, 0.25, 0.75, Color.Crimson, graphDevice);
@@ -63,6 +63,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
+            dynamicTest.Draw(spritebatch, Offset);
             dynamiclol1.Draw(spritebatch, Offset);
             dynamiclol2.Draw(spritebatch, Offset);
             dynamiclol3.Draw(spritebatch, Offset);
