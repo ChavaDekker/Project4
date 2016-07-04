@@ -18,25 +18,28 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
     {
         Picture memes;
         DynamicButtonHorizontal backtoMainmenu;
+        Picture directiontest;
         public Button4Scene(GraphicsDevice graphDevice, string ID) : base(graphDevice, ID)
         {
             List<Duodata<string, int>> testdata = new List<Duodata<string, int>>();
-            testdata.Add(new Duodata<string, int>("lol", 10));
-            testdata.Add(new Duodata<string, int>("lol", 10));
-            testdata.Add(new Duodata<string, int>("lol", 10));
-            testdata.Add(new Duodata<string, int>("lol", 10));
-            testdata.Add(new Duodata<string, int>("lol", 10));
-            testdata.Add(new Duodata<string, int>("lol", 10));
+            testdata.Add(new Duodata<string, int>("lol", 25));
+            testdata.Add(new Duodata<string, int>("lol", 6));
+            testdata.Add(new Duodata<string, int>("lol", 15));
+            testdata.Add(new Duodata<string, int>("lol", 20));
+            testdata.Add(new Duodata<string, int>("lol", 50));
             Texture2D testo = ARGBtoTexture2D.ARGBtoTexture2d(PieChart.Make(testdata), graphDevice);
             memes = new Picture(testo, new Point(0), new Point(500));
 
-            backtoMainmenu = new DynamicButtonHorizontal(400, 200, 0.10, 0.10, Color.YellowGreen, graphDevice);
+            backtoMainmenu = new DynamicButtonHorizontal(1000, 200, 0.10, 0.90, Color.YellowGreen, graphDevice);
             backtoMainmenu.SetDelegate(new Action(() => SceneManager.ChangeScene("MainMenuScene")));
+            
+
         }
 
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
             memes.draw(spritebatch, Offset);
+            backtoMainmenu.Draw(spritebatch, Offset);
         }
         public override void WindowsDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
