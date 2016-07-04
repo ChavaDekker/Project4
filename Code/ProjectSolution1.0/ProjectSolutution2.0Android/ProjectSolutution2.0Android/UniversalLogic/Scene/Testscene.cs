@@ -16,7 +16,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 {
     public class Testscene : Scene
     {
-        GenericButton genericlol;
+        //GenericButton genericlol;
         DynamicButtonHorizontal dynamiclol;
         DynamicButtonHorizontal dynamiclol2;
         Picture memes;
@@ -24,7 +24,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         {
             Maxnegoffset = new Point(0, -400);
             Maxposoffset = new Point(0, 0);
-            genericlol = new GenericButton(new Point(10), new Point(100, 50), Color.Aquamarine, graphDevice);
+            //genericlol = new GenericButton(new Point(10), new Point(100, 50), Color.Aquamarine, graphDevice);
             dynamiclol = new DynamicButtonHorizontal(200, 200, 0, 0.50, Color.Crimson, graphDevice);
             dynamiclol2 = new DynamicButtonHorizontal(400, 200, 0.5, 1, Color.DarkOliveGreen, graphDevice);
 
@@ -42,7 +42,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
             graphDevice.Clear(Color.CornflowerBlue);
-            genericlol.Draw(spritebatch, Offset);
+            //genericlol.Draw(spritebatch, Offset);
             dynamiclol.Draw(spritebatch, Offset);
             //dynamiclol2.Draw(spritebatch, Offset);
             //memes.draw(spritebatch, Offset);

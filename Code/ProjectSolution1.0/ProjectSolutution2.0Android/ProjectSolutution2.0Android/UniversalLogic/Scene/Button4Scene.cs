@@ -17,7 +17,6 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
     public class Button4Scene : Scene
     {
         Picture memes;
-        DynamicButtonHorizontal backtoMainmenu;
         Picture directiontest;
         public Button4Scene(GraphicsDevice graphDevice, string ID) : base(graphDevice, ID)
         {
@@ -29,9 +28,6 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             testdata.Add(new Duodata<string, int>("lol", 50));
             Texture2D testo = ARGBtoTexture2D.ARGBtoTexture2d(PieChart.Make(testdata), graphDevice);
             memes = new Picture(testo, new Point(0), new Point(500));
-
-            backtoMainmenu = new DynamicButtonHorizontal(1000, 200, 0.10, 0.90, Color.YellowGreen, graphDevice);
-            backtoMainmenu.SetDelegate(new Action(() => SceneManager.ChangeScene("MainMenuScene")));
             
 
         }
@@ -39,7 +35,6 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
             memes.draw(spritebatch, Offset);
-            backtoMainmenu.Draw(spritebatch, Offset);
         }
         public override void WindowsDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
@@ -47,7 +42,6 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         }
         protected override void AndroidLogic()
         {
-            backtoMainmenu.Click(Offset);
         }
         protected override void WindowsLogic()
         {
