@@ -88,7 +88,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         {
             this.Id = ID;
             
-            dynamichome = new DynamicButtonHorizontal(0, 0, 0, 0.75, Color.Crimson, graphDevice);
+            dynamichome = new DynamicButtonHorizontal(0, 50, 0, 0.75, Color.Crimson, graphDevice);
             dynamichome.SetDelegate(new Action(() => SceneManager.ChangeScene("MainMenuScene")));
         }
 
