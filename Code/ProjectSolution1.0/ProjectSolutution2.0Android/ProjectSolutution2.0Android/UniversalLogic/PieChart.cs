@@ -47,33 +47,6 @@ namespace ProjectSolutution2._0Android.UniversalLogic
                 spritebatch.Draw(Pixel, new Rectangle(position + new Point(0, i * 2 * sizeSqaures), new Point(sizeSqaures)), todrawin);
                 TextDrawing.Drawtext(position + new Point(spacing, i * 2 * sizeSqaures), aDuodataList[i].GetAttr1(), spritebatch);
             }
-
-            //RenderTarget2D rendertarget = new RenderTarget2D(graphDevice, 1000, sizeSqaures*2*aDuodataList.Count);
-
-            //List<Texture2D> textures = new List<Texture2D>();
-
-            //for(int i = 0; i<aDuodataList.Count; i++)
-            //{
-            //    temp = new Texture2D(graphDevice, 1, 1);
-            //    temp2[0] = new Color(ListOfColorsToUse[i].r, ListOfColorsToUse[i].g, ListOfColorsToUse[i].b, ListOfColorsToUse[i].a);
-            //    temp.SetData<Color>(temp2);
-            //    textures.Add(temp);
-            //}
-
-
-            //graphDevice.SetRenderTarget(rendertarget);
-            //graphDevice.Clear(new Color(0, 0, 0, 0));
-            //spritebatch.Begin();
-            //for(int i = 0; i<textures.Count; i++)
-            //{
-            //    spritebatch.Draw(textures[i], new Rectangle(new Point(0, 2 * i * sizeSqaures), new Point(sizeSqaures)), Color.White);
-            //}
-
-            //spritebatch.End();
-            //graphDevice.SetRenderTarget(null);
-
-            //return rendertarget;
-
         }
 
 
@@ -181,6 +154,9 @@ namespace ProjectSolutution2._0Android.UniversalLogic
 
     public class SimpleVector
     {
+        /// <summary>
+        /// Used in calculations. Chose to make my own to enable cross platform calculations.
+        /// </summary>
         public double x, y;
         public SimpleVector(double x, double y)
         {

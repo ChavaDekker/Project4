@@ -38,7 +38,8 @@ D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\Project
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\android\assets\System.Xml.dll.mdb
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\ProjectSolutution2.0Android.csprojResolveAssemblyReference.cache
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\bin\Android\AnyCPU\Release\Content\Textfile.spritefont
-D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\ProjectSolutution2.0Android.dll.mdb
 C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\ProjectSolutution2.0Android.csprojResolveAssemblyReference.cache
 C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\ProjectSolutution2.0Android.dll
 C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\ProjectSolutution2.0Android.pdb
+D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\ProjectSolutution2.0Android.dll.mdb
+D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\bin\Android\AnyCPU\Release\ProjectSolutution2.0Android.dll.mdb
