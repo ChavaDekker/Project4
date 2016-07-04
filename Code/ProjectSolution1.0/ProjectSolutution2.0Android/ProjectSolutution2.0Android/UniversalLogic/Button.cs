@@ -13,7 +13,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace ProjectSolutution2._0Android.UniversalLogic
-{
+{//Basic button logic / Button Setup
     interface Button
     {
         bool isClicked(Point offset);
@@ -21,6 +21,6 @@ namespace ProjectSolutution2._0Android.UniversalLogic
         void Click(Point offset);
         void SetPosition(Point NewPosition);
         void SetText(string text);
-        void SetDelegate(Delegates.SimpleDelegate _delegate);
+        void SetDelegate(Action _delegate);
     }
 }

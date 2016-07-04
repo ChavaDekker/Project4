@@ -16,10 +16,11 @@ namespace ProjectSolutution2._0Android.UniversalLogic
 {
     public class DynamicButtonHorizontal : Button
     {
+        //Define structure of dynamicbutton
         int YPositionTop, height;
         Texture2D Texture;
         string Text;
-        Delegates.SimpleDelegate clickFunction;
+        Action clickFunction = Delegates.DoesNothing;
         double LeftPercentage, RightPercentage;
         Point ScreenDimentions;
         public Rectangle calculateDimentions()
@@ -54,8 +55,8 @@ namespace ProjectSolutution2._0Android.UniversalLogic
             Point Tleft = new Point(temp.X, temp.Y) + offset;
             return InputAcces.input.DidClickInArea(Tleft, Tleft +  new Point(temp.Width, temp.Height));
         }
-
-        public void SetDelegate(Delegates.SimpleDelegate _delegate)
+        //Determines where the buttons will be placed and what they should look like.
+        public void SetDelegate(Action _delegate)
         {
             clickFunction = _delegate;
         }

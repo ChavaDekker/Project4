@@ -48,7 +48,15 @@ namespace ProjectSolutution2._0Android
 
             SceneManager.AddSceneToDict(new Testscene(this.GraphicsDevice, "TestScene"));
             SceneManager.AddSceneToDict(new Button1Scene(this.GraphicsDevice, "Button1Scene"));
-            SceneManager.AddSceneOnStack("TestScene");
+            SceneManager.AddSceneToDict(new Button2Scene(this.GraphicsDevice, "Button2Scene"));
+            SceneManager.AddSceneToDict(new Button3Scene(this.GraphicsDevice, "Button3Scene"));
+            SceneManager.AddSceneToDict(new Button4Scene(this.GraphicsDevice, "Button4Scene"));
+            SceneManager.AddSceneToDict(new Button5Scene(this.GraphicsDevice, "Button5Scene"));
+            SceneManager.AddSceneToDict(new Button6Scene(this.GraphicsDevice, "Button6Scene"));
+            SceneManager.AddSceneToDict(new Button7Scene(this.GraphicsDevice, "Button7Scene"));
+            SceneManager.AddSceneToDict(new Button8Scene(this.GraphicsDevice, "Button8Scene"));
+            SceneManager.AddSceneToDict(new MainMenuScene(this.GraphicsDevice, "MainMenuScene"));
+            SceneManager.AddSceneOnStack("MainMenuScene");
             // TODO: use this.Content to load your game content here
         }
 
@@ -86,11 +94,11 @@ namespace ProjectSolutution2._0Android
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            //GraphicsDevice.Clear(Color.CornflowerBlue);
 
             spriteBatch.Begin();
 
-            SceneManager.GetCurrentScene().AndroidDraw(spriteBatch);
+            SceneManager.GetCurrentScene().AndroidDrawBase(spriteBatch, GraphicsDevice);
 
             spriteBatch.End();
 

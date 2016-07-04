@@ -16,7 +16,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 {
     public class Testscene : Scene
     {
-        GenericButton genericlol;
+        //GenericButton genericlol;
         DynamicButtonHorizontal dynamiclol;
         DynamicButtonHorizontal dynamiclol2;
         Picture memes;
@@ -24,7 +24,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         {
             Maxnegoffset = new Point(0, -400);
             Maxposoffset = new Point(0, 0);
-            genericlol = new GenericButton(new Point(10), new Point(100, 50), Color.Aquamarine, graphDevice);
+            //genericlol = new GenericButton(new Point(10), new Point(100, 50), Color.Aquamarine, graphDevice);
             dynamiclol = new DynamicButtonHorizontal(200, 200, 0, 0.50, Color.Crimson, graphDevice);
             dynamiclol2 = new DynamicButtonHorizontal(400, 200, 0.5, 1, Color.DarkOliveGreen, graphDevice);
 
@@ -35,16 +35,17 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 
             memes = new Picture(temp, new Point(300, 500), new Point(300));
 
-            dynamiclol.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
-            dynamiclol2.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
+            dynamiclol.SetDelegate(new Action( () => SceneManager.ChangeScene("MainMenuScene")));
+            //dynamiclol2.SetDelegate(new Delegates.SimpleDelegate(ExampleMoveButtons));
         }
 
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
-            genericlol.Draw(spritebatch, Offset);
+            graphDevice.Clear(Color.CornflowerBlue);
+            //genericlol.Draw(spritebatch, Offset);
             dynamiclol.Draw(spritebatch, Offset);
-            dynamiclol2.Draw(spritebatch, Offset);
-            memes.draw(spritebatch, Offset);
+            //dynamiclol2.Draw(spritebatch, Offset);
+            //memes.draw(spritebatch, Offset);
         }
         public override void WindowsDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
@@ -53,7 +54,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         protected override void AndroidLogic()
         {
             dynamiclol.Click(Offset);
-            dynamiclol2.Click(Offset);
+            //dynamiclol2.Click(Offset);
         }
         protected override void WindowsLogic()
         {
@@ -62,7 +63,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 
         public void ExampleMoveButtons()
         {
-            SceneManager.ChangeScene("Button1Scene");
+            SceneManager.ChangeScene("Button4Scene");
         }
     }
 }

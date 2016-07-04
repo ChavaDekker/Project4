@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using ProjectSolutution2._0Android.UniversalLogic.Scene;
 
 namespace ProjectSolutution2._0Android.UniversalLogic
 {
@@ -19,5 +20,6 @@ namespace ProjectSolutution2._0Android.UniversalLogic
         {
 
         }
+        
     }
 }

@@ -14,6 +14,7 @@ using Microsoft.Xna.Framework.Input.Touch;
 
 namespace ProjectSolutution2._0Android.UniversalLogic
 {
+    //Defines input for Mobile devices
     class AndroidInput : Input
     {
         TouchCollection Lastinput = TouchPanel.GetState();
