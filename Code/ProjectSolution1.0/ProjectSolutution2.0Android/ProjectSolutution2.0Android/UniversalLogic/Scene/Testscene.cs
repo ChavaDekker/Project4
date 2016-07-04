@@ -11,6 +11,7 @@ using Android.Views;
 using Android.Widget;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
+using Android.Locations;
 
 namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 {
@@ -46,9 +47,13 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             dynamiclol.Draw(spritebatch, Offset);
             //dynamiclol2.Draw(spritebatch, Offset);
             //memes.draw(spritebatch, Offset);
-
-            string testoooo = Android.Locations.Location.Creator.ToString();
-            TextDrawing.Drawtext(new Point(500), testoooo, spritebatch);
+            //string testoooo = "";
+            //IList<Address> lol = GPS.getNearbyPlaces();
+            //if (lol.Count > 0)
+            //{
+            //    testoooo = lol[0].ToString();
+            //}
+            //TextDrawing.Drawtext(new Point(500), testoooo, spritebatch);
 
         }
         public override void WindowsDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
