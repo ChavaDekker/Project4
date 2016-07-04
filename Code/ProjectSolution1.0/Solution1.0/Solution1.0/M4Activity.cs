@@ -9,6 +9,8 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Android.Graphics;
+using Android.Media;
 
 namespace Solution1._0
 {
@@ -19,6 +21,11 @@ namespace Solution1._0
         {
             base.OnCreate(savedInstanceState);
 
+            //ImageView imageviewtest = FindViewById<ImageView>(Resource.Id.imageView1);
+
+            //ImageSource.FromResource("WorkingWithImages.beach.jpg");
+
+            //BitmapFactory.
             // Create your application here
             SetContentView(Resource.Layout.M4Activity);
         }

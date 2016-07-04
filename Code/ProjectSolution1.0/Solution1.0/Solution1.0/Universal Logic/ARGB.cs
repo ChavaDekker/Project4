@@ -1,19 +1,22 @@
 //Marco den Hollander
 
 using System;
-public class ARGB
+namespace Solution1._0.Universal_Logic
 {
-    public byte a;
-    public byte r;
-    public byte g;
-    public byte b;
-
-    public ARGB(byte a, byte r, byte g, byte b)
+    public class ARGB
     {
-        this.a = a;
-        this.r = r;
-        this.g = g;
-        this.b = b;
-        //throw new System.Exception("Not implemented");
+        public byte a;
+        public byte r;
+        public byte g;
+        public byte b;
+
+        public ARGB(byte a, byte r, byte g, byte b)
+        {
+            this.a = a;
+            this.r = r;
+            this.g = g;
+            this.b = b;
+            //throw new System.Exception("Not implemented");
+        }
     }
 }

@@ -2,7 +2,35 @@ Solution1._0.M1Activity, Solution1.0;md55436c99ee8988f7eba7a69b3ef9ea891.M1Activ
 Solution1._0.M1Activity, Solution1.0, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55436c99ee8988f7eba7a69b3ef9ea891.M1Activity
 Solution1._0.M1Activity;md55436c99ee8988f7eba7a69b3ef9ea891.M1Activity
 solution1._0.M1Activity;md55436c99ee8988f7eba7a69b3ef9ea891.M1Activity
+Solution1._0.M2Activity, Solution1.0;md55436c99ee8988f7eba7a69b3ef9ea891.M2Activity
+Solution1._0.M2Activity, Solution1.0, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55436c99ee8988f7eba7a69b3ef9ea891.M2Activity
+Solution1._0.M2Activity;md55436c99ee8988f7eba7a69b3ef9ea891.M2Activity
+solution1._0.M2Activity;md55436c99ee8988f7eba7a69b3ef9ea891.M2Activity
+Solution1._0.M3Activity, Solution1.0;md55436c99ee8988f7eba7a69b3ef9ea891.M3Activity
+Solution1._0.M3Activity, Solution1.0, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55436c99ee8988f7eba7a69b3ef9ea891.M3Activity
+Solution1._0.M3Activity;md55436c99ee8988f7eba7a69b3ef9ea891.M3Activity
+solution1._0.M3Activity;md55436c99ee8988f7eba7a69b3ef9ea891.M3Activity
+Solution1._0.M4Activity, Solution1.0;md55436c99ee8988f7eba7a69b3ef9ea891.M4Activity
+Solution1._0.M4Activity, Solution1.0, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55436c99ee8988f7eba7a69b3ef9ea891.M4Activity
+Solution1._0.M4Activity;md55436c99ee8988f7eba7a69b3ef9ea891.M4Activity
+solution1._0.M4Activity;md55436c99ee8988f7eba7a69b3ef9ea891.M4Activity
+Solution1._0.M5Activity, Solution1.0;md55436c99ee8988f7eba7a69b3ef9ea891.M5Activity
+Solution1._0.M5Activity, Solution1.0, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55436c99ee8988f7eba7a69b3ef9ea891.M5Activity
+Solution1._0.M5Activity;md55436c99ee8988f7eba7a69b3ef9ea891.M5Activity
+solution1._0.M5Activity;md55436c99ee8988f7eba7a69b3ef9ea891.M5Activity
+Solution1._0.M6Activity, Solution1.0;md55436c99ee8988f7eba7a69b3ef9ea891.M6Activity
+Solution1._0.M6Activity, Solution1.0, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55436c99ee8988f7eba7a69b3ef9ea891.M6Activity
+Solution1._0.M6Activity;md55436c99ee8988f7eba7a69b3ef9ea891.M6Activity
+solution1._0.M6Activity;md55436c99ee8988f7eba7a69b3ef9ea891.M6Activity
 Solution1._0.MainActivity, Solution1.0;md55436c99ee8988f7eba7a69b3ef9ea891.MainActivity
 Solution1._0.MainActivity, Solution1.0, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55436c99ee8988f7eba7a69b3ef9ea891.MainActivity
 Solution1._0.MainActivity;md55436c99ee8988f7eba7a69b3ef9ea891.MainActivity
 solution1._0.MainActivity;md55436c99ee8988f7eba7a69b3ef9ea891.MainActivity
+Solution1._0.S1Activity, Solution1.0;md55436c99ee8988f7eba7a69b3ef9ea891.S1Activity
+Solution1._0.S1Activity, Solution1.0, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55436c99ee8988f7eba7a69b3ef9ea891.S1Activity
+Solution1._0.S1Activity;md55436c99ee8988f7eba7a69b3ef9ea891.S1Activity
+solution1._0.S1Activity;md55436c99ee8988f7eba7a69b3ef9ea891.S1Activity
+Solution1._0.S2Activity, Solution1.0;md55436c99ee8988f7eba7a69b3ef9ea891.S2Activity
+Solution1._0.S2Activity, Solution1.0, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md55436c99ee8988f7eba7a69b3ef9ea891.S2Activity
+Solution1._0.S2Activity;md55436c99ee8988f7eba7a69b3ef9ea891.S2Activity
+solution1._0.S2Activity;md55436c99ee8988f7eba7a69b3ef9ea891.S2Activity

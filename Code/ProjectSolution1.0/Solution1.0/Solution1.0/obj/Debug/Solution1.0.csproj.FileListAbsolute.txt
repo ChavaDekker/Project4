@@ -36,5 +36,12 @@ C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\Solution1.0\Solu
 C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\Solution1.0\Solution1.0\obj\Debug\android\assets\System.Xml.dll.mdb
 C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\Solution1.0\Solution1.0\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\Solution1.0\Solution1.0\obj\Debug\res\layout\m1activity.xml
+C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\Solution1.0\Solution1.0\obj\Debug\res\layout\m2activity.xml
+C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\Solution1.0\Solution1.0\obj\Debug\res\layout\m3activity.xml
+C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\Solution1.0\Solution1.0\obj\Debug\res\layout\m4activity.xml
+C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\Solution1.0\Solution1.0\obj\Debug\res\layout\m5activity.xml
+C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\Solution1.0\Solution1.0\obj\Debug\res\layout\m6activity.xml
+C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\Solution1.0\Solution1.0\obj\Debug\res\layout\s1activity.xml
+C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\Solution1.0\Solution1.0\obj\Debug\res\layout\s2activity.xml
 C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\Solution1.0\Solution1.0\obj\Debug\Solution1.0.dll.mdb
 C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\Solution1.0\Solution1.0\bin\Debug\Solution1.0.dll.mdb

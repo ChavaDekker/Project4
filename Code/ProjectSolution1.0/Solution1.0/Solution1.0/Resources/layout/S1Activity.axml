@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
-    android:minHeight="25px">
+    android:minHeight="25px"
+    android:background="#E2E2E2">
     <TextView
         android:text="S1 Activity"
         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -12,5 +13,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView1"
         android:layout_centerInParent="true"
-        android:gravity="center" />
+        android:gravity="center"
+        android:textColor="#000000" />
 </RelativeLayout>

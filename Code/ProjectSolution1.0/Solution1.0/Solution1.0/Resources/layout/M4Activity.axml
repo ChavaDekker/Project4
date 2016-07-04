@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
-    android:minHeight="25px">
+    android:minHeight="25px"
+    android:background="#E2E2E2">
     <TextView
         android:text="M4 Activity"
         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -12,5 +13,12 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView1"
         android:gravity="center"
-        android:layout_centerInParent="true" />
+        android:layout_centerInParent="true"
+        android:textColor="#000000" />
+    <ImageView
+        android:src="@android:drawable/TestImage.png"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textView1"
+        android:id="@+id/imageView1" />
 </RelativeLayout>

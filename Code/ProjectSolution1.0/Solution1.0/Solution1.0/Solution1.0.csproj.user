@@ -3,5 +3,6 @@
   <PropertyGroup>
     <ProjectView>ShowAllFiles</ProjectView>
     <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
+    <SelectedDevice>AVD_GalaxyNexus_ToolsForApacheCordova</SelectedDevice>
   </PropertyGroup>
 </Project>
