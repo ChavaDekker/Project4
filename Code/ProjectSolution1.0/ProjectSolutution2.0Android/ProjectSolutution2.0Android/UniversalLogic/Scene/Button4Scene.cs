@@ -18,23 +18,23 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
     {
         Picture memes;
         Picture directiontest;
+        List<Duodata<string, int>> Data = new List<Duodata<string, int>>();
         public Button4Scene(GraphicsDevice graphDevice, string ID) : base(graphDevice, ID)
         {
-            List<Duodata<string, int>> testdata = new List<Duodata<string, int>>();
-            testdata.Add(new Duodata<string, int>("lol", 25));
-            testdata.Add(new Duodata<string, int>("lol", 6));
-            testdata.Add(new Duodata<string, int>("lol", 15));
-            testdata.Add(new Duodata<string, int>("lol", 20));
-            testdata.Add(new Duodata<string, int>("lol", 50));
-            Texture2D testo = ARGBtoTexture2D.ARGBtoTexture2d(PieChart.Make(testdata), graphDevice);
+            
+            Data.Add(new Duodata<string, int>("Vijfentwintig", 25));
+            Data.Add(new Duodata<string, int>("Zes", 6));
+            Data.Add(new Duodata<string, int>("Vijftien", 15));
+            Data.Add(new Duodata<string, int>("Twintig", 20));
+            Data.Add(new Duodata<string, int>("Vijftig", 50));
+            Texture2D testo = ARGBtoTexture2D.ARGBtoTexture2d(PieChart.Make(Data), graphDevice);
             memes = new Picture(testo, new Point(0), new Point(500));
-
         }
 
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
             memes.draw(spritebatch, Offset);
-            TextDrawing.Drawtext(new Point(400), "Test text", spritebatch);
+            PieChart.DrawLegenda(Data, new Point(500) + Offset, graphDevice, spritebatch);
         }
         public override void WindowsDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {

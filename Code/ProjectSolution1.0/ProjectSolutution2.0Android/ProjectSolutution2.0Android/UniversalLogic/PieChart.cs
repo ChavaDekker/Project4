@@ -1,3 +1,5 @@
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
 
@@ -27,10 +29,53 @@ namespace ProjectSolutution2._0Android.UniversalLogic
             return listofcolorstouse;
         }
 
-        public static ARGB[,] Legenda(List<Duodata<string, int>> aDuodataList)
+        public static void DrawLegenda(List<Duodata<string, int>> aDuodataList, Point position, GraphicsDevice graphDevice, SpriteBatch spritebatch)
         {
-            throw new System.Exception("Not implemented");
+            int sizeSqaures = 30;
+            int spacing = 50;
+
+            Texture2D Pixel = new Texture2D(graphDevice, 1, 1);
+            Color[] temp2 = new Color[1];
+            temp2[0] = Color.White;
+            Pixel.SetData<Color>(temp2);
+            Color todrawin;
+            ARGB coloroo;
+            for(int i = 0; i<aDuodataList.Count; i++)
+            {
+                coloroo = ListOfColorsToUse[i];
+                todrawin = new Color((float)coloroo.r, (float)coloroo.g, (float)coloroo.b);
+                spritebatch.Draw(Pixel, new Rectangle(position + new Point(0, i * 2 * sizeSqaures), new Point(sizeSqaures)), todrawin);
+                TextDrawing.Drawtext(position + new Point(spacing, i * 2 * sizeSqaures), aDuodataList[i].GetAttr1(), spritebatch);
+            }
+
+            //RenderTarget2D rendertarget = new RenderTarget2D(graphDevice, 1000, sizeSqaures*2*aDuodataList.Count);
+
+            //List<Texture2D> textures = new List<Texture2D>();
+
+            //for(int i = 0; i<aDuodataList.Count; i++)
+            //{
+            //    temp = new Texture2D(graphDevice, 1, 1);
+            //    temp2[0] = new Color(ListOfColorsToUse[i].r, ListOfColorsToUse[i].g, ListOfColorsToUse[i].b, ListOfColorsToUse[i].a);
+            //    temp.SetData<Color>(temp2);
+            //    textures.Add(temp);
+            //}
+
+
+            //graphDevice.SetRenderTarget(rendertarget);
+            //graphDevice.Clear(new Color(0, 0, 0, 0));
+            //spritebatch.Begin();
+            //for(int i = 0; i<textures.Count; i++)
+            //{
+            //    spritebatch.Draw(textures[i], new Rectangle(new Point(0, 2 * i * sizeSqaures), new Point(sizeSqaures)), Color.White);
+            //}
+
+            //spritebatch.End();
+            //graphDevice.SetRenderTarget(null);
+
+            //return rendertarget;
+
         }
+
 
         public static ARGB[,] DrawSlice(ARGB[,] Target, double startangle, double angletodraw, ARGB color)
         {
@@ -116,71 +161,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
 
             return piechart;
         }
-
-        private static double CalculateAngle(int x, int y, int sizepiechart)
-        {
-            //double sinangle, cosangle, othersinangle, othercosangle, 
-            double atan2angle;
-            double scalefactor, normalizedx, normalizedy;
-
-            x -= sizepiechart / 2;
-            y -= sizepiechart / 2;
-
-            scalefactor = 1 / Math.Sqrt(x * x + y * y);
-            normalizedx = (double)x * scalefactor;
-            normalizedy = (double)y * scalefactor;
-
-            atan2angle = Math.Atan2(normalizedy, normalizedx);
-
-            while (atan2angle < 0)
-            {
-                atan2angle += 2 * Math.PI;
-            }
-
-            return atan2angle;
-
-            //cosangle = Math.Acos(normalizedx);
-            //sinangle = Math.Asin(normalizedy);
-
-            //while (sinangle < 0)
-            //{
-            //    sinangle += 2 * Math.PI;
-            //}
-            //while (cosangle < 0)
-            //{
-            //    cosangle += 2 * Math.PI;
-            //}
-
-            //othercosangle = Math.PI - cosangle;
-            //othersinangle = -sinangle;
-
-            //while (othercosangle < 0)
-            //{
-            //    othercosangle += 2 * Math.PI;
-            //}
-            //while (othersinangle < 0)
-            //{
-            //    othersinangle += 2 * Math.PI;
-            //}
-
-            //if (sinangle == cosangle)
-            //{
-            //    return sinangle;
-            //}
-            //if (othersinangle == cosangle)
-            //{
-            //    return othersinangle;
-            //}
-            //if (sinangle == othercosangle)
-            //{
-            //    return sinangle;
-            //}
-            //else
-            //{
-            //    return othercosangle;
-            //}
-
-        }
+        
 
         public static bool isCounterClockwise(SimpleVector line, SimpleVector point)
         {
