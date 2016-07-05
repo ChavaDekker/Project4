@@ -101,6 +101,8 @@ class MonoPackageManager_Resources {
 		"ProjectSolutution2.0Android.dll",
 		"Java.Interop.dll",
 		"MonoGame.Framework.dll",
+		"OxyPlot.dll",
+		"OxyPlot.Xamarin.Android.dll",
 		"System.ServiceModel.Internals.dll",
 	};
 	public static final String[] Dependencies = new String[]{

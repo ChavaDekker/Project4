@@ -1,8 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
   <Jars></Jars>
-  <ResolvedResourceDirectories />
-  <ResolvedAssetDirectories />
+  <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\__library_projects__\OxyPlot.Xamarin.Android\library_project_imports\res</ResolvedResourceDirectory>
+  </ResolvedResourceDirectories>
+  <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\__library_projects__\OxyPlot.Xamarin.Android\library_project_imports\assets</ResolvedAssetDirectory>
+  </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
-  <ResolvedResourceDirectoryStamps />
+  <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\__library_projects__\OxyPlot.Xamarin.Android.stamp</ResolvedResourceDirectoryStamp>
+  </ResolvedResourceDirectoryStamps>
 </Paths>
