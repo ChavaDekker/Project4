@@ -13,7 +13,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 
 namespace ProjectSolutution2._0Android.UniversalLogic
-{
+{ //Converts ARGB array to Color Array
     public static class ARGBtoTexture2D
     {
         public static Texture2D ARGBtoTexture2d(ARGB[,] Image, GraphicsDevice graphDevice)

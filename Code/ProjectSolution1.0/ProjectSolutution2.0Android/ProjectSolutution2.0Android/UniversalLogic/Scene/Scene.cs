@@ -21,6 +21,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         private Point MaxPosOffset = new Point(0);
         private Point MaxNegOffset = new Point(0);
         Color backgroundColor = Color.CornflowerBlue;
+        DynamicButtonHorizontal dynamichome;
 
         private void ScreenOffset()
         {
@@ -47,6 +48,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         {
             ScreenOffset();
             AndroidLogic();
+            dynamichome.Click(Offset);
         }
         public void WindowsUpdate()
         {
@@ -65,6 +67,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         {
             graphDevice.Clear(backgroundColor);
             AndroidDraw(spritebatch, graphDevice);
+            dynamichome.Draw(spritebatch, Offset);
         }
         public void WindowsDrawBase(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
@@ -84,6 +87,10 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         public Scene(GraphicsDevice graphDevice, string ID)
         {
             this.Id = ID;
+            
+            dynamichome = new DynamicButtonHorizontal(0, 150, 0, 0.25, Color.Crimson, graphDevice);
+            dynamichome.SetDelegate(new Action(() => SceneManager.ChangeScene("MainMenuScene")));
+            dynamichome.SetText("Main Menu");
         }
 
         public Point Maxnegoffset { get { return MaxNegOffset; } set { MaxNegOffset = value; } }

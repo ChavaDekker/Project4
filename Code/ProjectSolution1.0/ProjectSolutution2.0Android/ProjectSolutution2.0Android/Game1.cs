@@ -57,6 +57,8 @@ namespace ProjectSolutution2._0Android
             SceneManager.AddSceneToDict(new Button8Scene(this.GraphicsDevice, "Button8Scene"));
             SceneManager.AddSceneToDict(new MainMenuScene(this.GraphicsDevice, "MainMenuScene"));
             SceneManager.AddSceneOnStack("MainMenuScene");
+
+            TextDrawing.LoadSpriteFonts(Content);
             // TODO: use this.Content to load your game content here
         }
 

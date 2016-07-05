@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 
 namespace ProjectSolutution2._0Android.UniversalLogic
-{
+{//Storing data in a list
     public interface Data
     {
         List<Duodata<string, int>> BoxPNeighbourhood();
