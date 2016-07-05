@@ -1,8 +1,18 @@
+C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\ProjectSolutution2.0Android.csprojResolveAssemblyReference.cache
+C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\ProjectSolutution2.0Android.dll
+C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\ProjectSolutution2.0Android.pdb
+D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\bin\Android\AnyCPU\Release\Content\Textfile.spritefont
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\bin\Android\AnyCPU\Release\ProjectSolutution2.0Android.dll
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\bin\Android\AnyCPU\Release\ProjectSolutution2.0Android.pdb
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\bin\Android\AnyCPU\Release\ProjectSolutution2.x0Android.apk
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\bin\Android\AnyCPU\Release\ProjectSolutution2.x0Android-Signed.apk
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\bin\Android\AnyCPU\Release\MonoGame.Framework.dll
+D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\bin\Android\AnyCPU\Release\OxyPlot.dll
+D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\bin\Android\AnyCPU\Release\OxyPlot.Xamarin.Android.dll
+D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\bin\Android\AnyCPU\Release\OxyPlot.pdb
+D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\bin\Android\AnyCPU\Release\OxyPlot.xml
+D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\bin\Android\AnyCPU\Release\OxyPlot.dll.mdb
+D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\bin\Android\AnyCPU\Release\OxyPlot.Xamarin.Android.xml
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\bin\Android\AnyCPU\Release\MonoGame.Framework.xml
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\ProjectSolutution2.0Android.dll
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\ProjectSolutution2.0Android.pdb
@@ -30,6 +40,7 @@ D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\Project
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\android\assets\Mono.Android.dll.mdb
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\android\assets\mscorlib.dll.mdb
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\android\assets\OpenTK-1.0.dll.mdb
+D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\android\assets\OxyPlot.dll.mdb
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\android\assets\ProjectSolutution2.0Android.dll.mdb
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\android\assets\System.Core.dll.mdb
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\android\assets\System.dll.mdb
@@ -37,9 +48,5 @@ D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\Project
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\android\assets\System.ServiceModel.Internals.dll.mdb
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\android\assets\System.Xml.dll.mdb
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\ProjectSolutution2.0Android.csprojResolveAssemblyReference.cache
-D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\bin\Android\AnyCPU\Release\Content\Textfile.spritefont
-C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\ProjectSolutution2.0Android.csprojResolveAssemblyReference.cache
-C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\ProjectSolutution2.0Android.dll
-C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\ProjectSolutution2.0Android.pdb
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\ProjectSolutution2.0Android.dll.mdb
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\bin\Android\AnyCPU\Release\ProjectSolutution2.0Android.dll.mdb

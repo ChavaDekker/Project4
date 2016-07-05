@@ -20,6 +20,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
         {
 
         }
-        
+
+
     }
 }

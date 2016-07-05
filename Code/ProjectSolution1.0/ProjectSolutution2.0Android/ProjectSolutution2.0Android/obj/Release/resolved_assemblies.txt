@@ -7,5 +7,7 @@ D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\Project
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\android\assets\System.dll
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\android\assets\System.Xml.dll
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\android\assets\MonoGame.Framework.dll
+D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\android\assets\OxyPlot.dll
+D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\android\assets\OxyPlot.Xamarin.Android.dll
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\android\assets\System.Runtime.Serialization.dll
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\android\assets\System.ServiceModel.Internals.dll
