@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/projects/Project4/Code/ProjectSolution1.0/ProjectSolutution2.0Android/ProjectSolutution2.0Android/Content/Textfile.spritefont</SourceFile>
-  <SourceTime>2016-07-04T13:11:22.3262237+02:00</SourceTime>
-  <DestFile>D:/projects/Project4/Code/ProjectSolution1.0/ProjectSolutution2.0Android/ProjectSolutution2.0Android/Content/bin/Android/Textfile.xnb</DestFile>
-  <DestTime>2016-07-04T14:58:34.4146845+02:00</DestTime>
+  <SourceFile>C:/Users/marc/Documents/GitHub/Project4/Code/ProjectSolution1.0/ProjectSolutution2.0Android/ProjectSolutution2.0Android/Content/Textfile.spritefont</SourceFile>
+  <SourceTime>2016-07-05T11:40:32.7257886+02:00</SourceTime>
+  <DestFile>C:/Users/marc/Documents/GitHub/Project4/Code/ProjectSolution1.0/ProjectSolutution2.0Android/ProjectSolutution2.0Android/Content/bin/Android/Textfile.xnb</DestFile>
+  <DestTime>2016-07-05T11:53:55.6858307+02:00</DestTime>
   <Importer>FontDescriptionImporter</Importer>
   <ImporterTime>2016-03-30T08:36:08+02:00</ImporterTime>
   <Processor>FontDescriptionProcessor</Processor>
