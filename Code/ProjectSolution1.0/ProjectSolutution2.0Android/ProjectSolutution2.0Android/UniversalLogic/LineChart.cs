@@ -8,19 +8,66 @@ namespace ProjectSolutution2._0Android.UniversalLogic
     {
         private static Texture2D Pixel;
 
-        private static ARGB[,] Axis(List<Duodata<string, int>> aDuodataList)
+        private static RenderTarget2D Axis(List<Duodata<string, int>> aDuodataList, Texture2D target, GraphicsDevice graphdevice, SpriteBatch spriteBatch, int heighestvalue)
         {
-            throw new System.Exception("Not implemented");
+            int axisthickness = 3;
+            int paddingx = 100;
+            int paddingy = 200;
+            int marklenght = 5;
+            int textoffset = -50;
+            int textoffsetxaxis = 10;
+            Color backgroundColor = new Color(0, 0, 0, 0);
+            drawline(new Point(0), new Point(0, target.Height), spriteBatch, axisthickness);
+            drawline(new Point(0, target.Height-axisthickness), new Point(target.Width, target.Height - axisthickness), spriteBatch, axisthickness);
+            spriteBatch.End();
+            spriteBatch.Begin();
+            RenderTarget2D newRenderTarget = new RenderTarget2D(graphdevice, target.Width + paddingx*2, target.Height + paddingy);
+            graphdevice.SetRenderTarget(newRenderTarget);
+            graphdevice.Clear(backgroundColor);
+            spriteBatch.Draw(target, new Rectangle(new Point(paddingx, 0), new Point(target.Width, target.Height)), Color.White);
+
+            for (int i = 0; i < 10; i++)
+            {
+                drawline(new Point(paddingx - marklenght, i*target.Height/10), new Point(paddingx, i * target.Height / 10), spriteBatch, axisthickness);
+                TextDrawing.Drawtext(new Point(paddingx + textoffset, i * target.Height / 10), (heighestvalue - heighestvalue/10*i).ToString(), spriteBatch);
+            }
+
+            for(int i = 0; i<aDuodataList.Count; i++)
+            {
+                drawline(new Point(paddingx + i * (target.Width / (aDuodataList.Count-1)), target.Height), new Point(paddingx + i * (target.Width / (aDuodataList.Count-1)), target.Height + marklenght), spriteBatch, axisthickness);
+                TextDrawing.Drawtext(new Point(paddingx + i * (target.Width / (aDuodataList.Count - 1)) - textoffsetxaxis, target.Height + textoffsetxaxis), ((char)(65 + i)).ToString(), spriteBatch);
+            }
+
+            return newRenderTarget;
         }
-        public static ARGB[,] Legenda(List<Duodata<string, int>> aDuodataList)
+        public static Texture2D Legenda(List<Duodata<string, int>> aDuodataList, GraphicsDevice graphdevice, SpriteBatch spriteBatch)
         {
-            throw new System.Exception("Not implemented");
+            int Lineheight = 40;
+            int width = 500;
+            int height = Lineheight * aDuodataList.Count;
+            Color backgroundColor = new Color(0, 0, 0, 0);
+            RenderTarget2D Target = new RenderTarget2D(graphdevice, width, height);
+            graphdevice.SetRenderTarget(Target);
+            graphdevice.Clear(backgroundColor);
+            spriteBatch.Begin();
+            for(int i = 0; i< aDuodataList.Count; i++)
+            {
+                TextDrawing.Drawtext(new Point(0, Lineheight * i), ((char)(65 + i)).ToString() + "  :  " + aDuodataList[i].GetAttr1(), spriteBatch);
+            }
+            spriteBatch.End();
+            graphdevice.SetRenderTarget(null);
+            return Target;
         }
         public static Texture2D Make(List<Duodata<string, int>> aDuodataList, GraphicsDevice graphdevice, SpriteBatch spriteBatch)
         {
             int width, height;
             width = 500;
             height = 500;
+            Color backgroundColor = new Color(0, 0, 0, 0);
+            bool drawdots = false;
+            int dotsize = 20;
+            int linethickness = 5;
+
 
 
             Pixel = new Texture2D(graphdevice, 1, 1);
@@ -30,7 +77,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
 
             RenderTarget2D Rendertarget = new RenderTarget2D(graphdevice, width,height);
             graphdevice.SetRenderTarget(Rendertarget);
-            graphdevice.Clear(Color.Red);//new Color(0, 0, 0, 0));
+            graphdevice.Clear(backgroundColor);
 
             int maxValue = 0;
             int Elements = aDuodataList.Count;
@@ -51,21 +98,25 @@ namespace ProjectSolutution2._0Android.UniversalLogic
             }
 
             spriteBatch.Begin();
-            TextDrawing.Drawtext(new Point(0), "testtext", spriteBatch);
-            foreach(Point i in listofdatapoints)
+
+            if (drawdots)
             {
-                spriteBatch.Draw(Pixel, new Rectangle(i, new Point(20)), Color.Blue);
+                foreach (Point i in listofdatapoints)
+                {
+                    spriteBatch.Draw(Pixel, new Rectangle(i, new Point(dotsize)), Color.Blue);
+                }
             }
             for(int i = 0; i< Elements-1; i++)
             {
-                drawline(new Point(listofdatapoints[i].X, listofdatapoints[i].Y), new Point(listofdatapoints[i + 1].X, listofdatapoints[i + 1].Y), spriteBatch);
+                drawline(new Point(listofdatapoints[i].X, listofdatapoints[i].Y), new Point(listofdatapoints[i + 1].X, listofdatapoints[i + 1].Y), spriteBatch, linethickness);
             }
+            Rendertarget = Axis(aDuodataList, Rendertarget, graphdevice, spriteBatch, maxValue);
             spriteBatch.End();
             graphdevice.SetRenderTarget(null);
             return Rendertarget;
         }
 
-        static private void drawline(Point start, Point end, SpriteBatch spriteBatch)
+        static private void drawline(Point start, Point end, SpriteBatch spriteBatch, int linethickness)
         {
             double dx, dy;
             double a, b;
@@ -87,7 +138,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
 
             b = -(a * start.X) + start.Y;
 
-            for(int x = start.X; x <= end.X; x++)
+            for(int x = (start.X > end.X ? end.X: start.X); x <= (start.X < end.X ? end.X : start.X); x++)
             {
                 Point newpoint = new Point(x, (int)(a * x + b/* + 0.5*/));
                 pixelsOfLine.Add(newpoint);
@@ -103,7 +154,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
 
             foreach(Point i in pixelsOfLine)
             {
-                spriteBatch.Draw(Pixel, new Rectangle(i, new Point(5)), Color.Black);
+                spriteBatch.Draw(Pixel, new Rectangle(i, new Point(linethickness)), Color.Black);
             }
         }
     }
