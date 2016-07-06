@@ -97,6 +97,7 @@
     <Compile Include="UniversalLogic\Input.cs" />
     <Compile Include="UniversalLogic\InputAcces.cs" />
     <Compile Include="UniversalLogic\LineChart.cs" />
+    <Compile Include="UniversalLogic\LocationActivity.cs" />
     <Compile Include="UniversalLogic\Picture.cs" />
     <Compile Include="UniversalLogic\PieChart.cs" />
     <Compile Include="UniversalLogic\Scene\Testscene.cs" />
