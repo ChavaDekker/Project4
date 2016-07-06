@@ -25,7 +25,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 
         public virtual void SetParaMeters(params string[] args)
         {
-
+            //Could make this a visitor pattern instead? Is it already a visitor pattern?
         }
 
         private void ScreenOffset()
