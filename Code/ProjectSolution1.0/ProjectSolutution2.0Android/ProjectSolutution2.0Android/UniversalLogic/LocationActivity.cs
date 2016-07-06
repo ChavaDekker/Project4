@@ -11,7 +11,7 @@ using Android.Views;
 using Android.Widget;
 using Android.Locations;
 using Java.IO;
-
+/*
 namespace ProjectSolutution2._0Android.UniversalLogic
 {
     [Activity(Label = "Location Demo")]
@@ -90,4 +90,4 @@ namespace ProjectSolutution2._0Android.UniversalLogic
         {
         }
     }
-}
+}*/
