@@ -11,6 +11,7 @@ using Android.Views;
 using Android.Widget;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
+using ProjectSolutution2._0Android.AndroidLogic;
 
 namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 {
@@ -18,6 +19,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
     {
         public Button6Scene(GraphicsDevice graphDevice, string ID) : base(graphDevice, ID)
         {
+            
         }
 
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)

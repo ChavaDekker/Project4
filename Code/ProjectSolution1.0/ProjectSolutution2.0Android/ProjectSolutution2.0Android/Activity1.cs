@@ -2,6 +2,7 @@ using Android.App;
 using Android.Content.PM;
 using Android.OS;
 using Android.Views;
+using ProjectSolutution2._0Android.AndroidLogic;
 
 namespace ProjectSolutution2._0Android
 {
@@ -20,6 +21,7 @@ namespace ProjectSolutution2._0Android
             base.OnCreate(bundle);
             var g = new Game1();
             SetContentView((View)g.Services.GetService(typeof(View)));
+            GlobalAndroid.PopulateGlobalAndroid(new GlobalAndroid.startActivity(StartActivity));
             g.Run();
         }
     }

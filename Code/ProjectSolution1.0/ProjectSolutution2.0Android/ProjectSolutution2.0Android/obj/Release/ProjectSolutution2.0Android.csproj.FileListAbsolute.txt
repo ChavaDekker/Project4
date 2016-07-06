@@ -48,7 +48,6 @@ D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\Project
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\android\assets\System.ServiceModel.Internals.dll.mdb
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\android\assets\System.Xml.dll.mdb
 D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\ProjectSolutution2.0Android.csprojResolveAssemblyReference.cache
-D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\ProjectSolutution2.0Android.dll.mdb
 C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\bin\Android\AnyCPU\Release\Content\Textfile.spritefont
 C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\bin\Android\AnyCPU\Release\ProjectSolutution2.0Android.dll
 C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\bin\Android\AnyCPU\Release\ProjectSolutution2.0Android.pdb
@@ -94,4 +93,5 @@ C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\ProjectSolututio
 C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\bin\Android\AnyCPU\Release\OxyPlot.dll.mdb
 C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\android\assets\OxyPlot.dll.mdb
 C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\ProjectSolutution2.0Android.dll.mdb
-C:\Users\marc\Documents\GitHub\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\bin\Android\AnyCPU\Release\ProjectSolutution2.0Android.dll.mdb
+D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\obj\Release\ProjectSolutution2.0Android.dll.mdb
+D:\projects\Project4\Code\ProjectSolution1.0\ProjectSolutution2.0Android\ProjectSolutution2.0Android\bin\Android\AnyCPU\Release\ProjectSolutution2.0Android.dll.mdb
