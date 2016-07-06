@@ -17,7 +17,7 @@ namespace ProjectSolutution2._0Android.AndroidLogic
 {
     class Appointment
     {
-        public static void CreateNewAppointment()
+        public static void CreateNewAppointment(string locationBike)
         {
             Calendar beginTime = Calendar.GetInstance(Java.Util.TimeZone.Default);
             beginTime.Set(2017, 0, 19, 7, 30);
@@ -27,9 +27,9 @@ namespace ProjectSolutution2._0Android.AndroidLogic
                     .SetData(Events.ContentUri)
                     .PutExtra(CalendarContract.ExtraEventBeginTime, beginTime.TimeInMillis)
                     .PutExtra(CalendarContract.ExtraEventEndTime, endTime.TimeInMillis)
-                    .PutExtra(Events.InterfaceConsts.Title, "Yoga")
-                    .PutExtra(Events.InterfaceConsts.Description, "Group class")
-                    .PutExtra(Events.InterfaceConsts.EventLocation, "The gym")
+                    .PutExtra(Events.InterfaceConsts.Title, "Pick up bike")
+                    .PutExtra(Events.InterfaceConsts.Description, "Pick up your bike!")
+                    .PutExtra(Events.InterfaceConsts.EventLocation, locationBike)
                     //.PutExtra(Events.InterfaceConsts.Availability, Events.InterfaceConsts.AvailabilityBusy)
                     .PutExtra(Intent.ExtraEmail, "rowan@example.com,trevor@example.com");
             GlobalAndroid.globalStartIntent(intent);

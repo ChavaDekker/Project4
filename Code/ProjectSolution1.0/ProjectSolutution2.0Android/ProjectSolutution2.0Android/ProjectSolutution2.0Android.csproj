@@ -68,6 +68,7 @@
   <ItemGroup>
     <Compile Include="Activity1.cs" />
     <Compile Include="AndroidLogic\Appointment.cs" />
+    <Compile Include="AndroidLogic\Location.cs" />
     <Compile Include="AndroidLogic\GlobalAndroid.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
