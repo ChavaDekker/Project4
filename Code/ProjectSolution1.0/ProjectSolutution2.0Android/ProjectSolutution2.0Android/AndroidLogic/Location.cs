@@ -20,7 +20,7 @@ namespace ProjectSolutution2._0Android.AndroidLogic
         private static string locationFile = GlobalAndroid.GlobalContext.FilesDir.AbsolutePath;
         private static string filename = "/location.txt";
         private static string currentlyon;
-        private static Location getLocation()
+        public static Location getLocation()
         {
             IList<string> providerson = GlobalAndroid.LocationService.GetProviders(true);
             if (providerson.Count < 1)
@@ -42,13 +42,34 @@ namespace ProjectSolutution2._0Android.AndroidLogic
                 return "Can't get location";
             }
 
-            Geocoder geocoder = new Geocoder(GlobalAndroid.GlobalContext);
-            IList<Address> addresses = geocoder.GetFromLocation(current.Latitude, current.Longitude, 1);
+            Geocoder geocoder = new Geocoder(GlobalAndroid.GlobalContext, Java.Util.Locale.English);
+            IList<Address> addresses = geocoder.GetFromLocation(current.Latitude, current.Longitude, 5);
             string currentlocation = "";
-            for (int i = 0; i < addresses[0].MaxAddressLineIndex; i++)
+            string temp;
+            List<string> adresses = new List<string>();
+            foreach (Address x in addresses)
             {
-                currentlocation += addresses[0].GetAddressLine(i);
+                string localaddresave = "";
+                for (int i = 0; i < x.MaxAddressLineIndex; i++)
+                {
+                    temp = x.GetAddressLine(i);
+                    if (temp != null)
+                    {
+                        localaddresave += temp + ", ";
+                    }
+                }
+                localaddresave += x.Thoroughfare;
+                adresses.Add(localaddresave);
             }
+            int largeststring = 0;
+            for(int i = 0; i<adresses.Count; i++)
+            {
+                if(adresses[i].Length > adresses[largeststring].Length)
+                {
+                    largeststring = i;
+                }
+            }
+            currentlocation = adresses[largeststring];
             return currentlocation;
         }
 
@@ -61,9 +82,17 @@ namespace ProjectSolutution2._0Android.AndroidLogic
                 //FileOutputStream openputStream;
                 //openputStream = new FileOutputStream(locationFile + filename);
                 //openputStream.Write(location.)
-                OutputStreamWriter outputStreamWriter = new OutputStreamWriter(GlobalAndroid.GlobalContext.OpenFileOutput(locationFile + filename, FileCreationMode.Private));
-                outputStreamWriter.Write(location);
-                outputStreamWriter.Close();
+                File newfile = new File(locationFile, filename);
+                newfile.CreateNewFile();
+                FileOutputStream fileoutput = new FileOutputStream(newfile);
+                foreach(char i in location)
+                {
+                    fileoutput.Write((Byte)i);
+                }
+                fileoutput.Close();                
+                //OutputStreamWriter outputStreamWriter = new OutputStreamWriter(GlobalAndroid.GlobalContext.OpenFileOutput((locationFile + filename, FileCreationMode.Private));
+                //outputStreamWriter.Write(location);
+                //outputStreamWriter.Close();
             }
             catch (FileNotFoundException e)
             {
@@ -71,9 +100,12 @@ namespace ProjectSolutution2._0Android.AndroidLogic
                 newfile.CreateNewFile();
                 SaveCurrentLocationToFile();
             }
-            catch
+            catch (Exception e)
             {
-                SceneManager.ChangeScene("TestScene");
+                string[] seterror = new string[1];
+                seterror[0] = e.GetType().ToString();
+                SceneManager.GetCurrentScene().SetParaMeters(seterror);
+                //SceneManager.ChangeScene("TestScene");
             }
         }
 
@@ -105,7 +137,7 @@ namespace ProjectSolutution2._0Android.AndroidLogic
             {
                 toreturn = "Error";
             }
-            return toreturn + "\nSaved at: " + locationFile;
+            return toreturn;
         }
 
         public static void DeleteLocationFile()

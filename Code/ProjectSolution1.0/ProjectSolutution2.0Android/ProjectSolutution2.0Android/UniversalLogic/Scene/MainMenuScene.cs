@@ -48,7 +48,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             dynamiclol4.SetDelegate(new Action( () => SceneManager.ChangeScene("Button4Scene")));
             dynamiclol5.SetDelegate(new Action( () => SceneManager.ChangeScene("Button5Scene")));
             //dynamiclol6.SetDelegate(new Action(() => SceneManager.ChangeScene("Button6Scene")));
-            dynamiclol6.SetDelegate(new Action(() => Appointment.CreateNewAppointment(LocationApplication.GetHumanReadableLocation())));
+            dynamiclol6.SetDelegate(new Action(() => Appointment.button6action()));
             dynamiclol7.SetDelegate(new Action( () => SceneManager.ChangeScene("Button7Scene")));
             dynamiclol8.SetDelegate(new Action( () => SceneManager.ChangeScene("Button8Scene")));
 

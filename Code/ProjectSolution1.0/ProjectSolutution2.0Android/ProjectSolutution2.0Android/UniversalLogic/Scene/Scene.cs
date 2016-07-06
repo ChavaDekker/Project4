@@ -23,6 +23,11 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         Color backgroundColor = Color.CornflowerBlue;
         DynamicButtonHorizontal dynamichome;
 
+        public virtual void SetParaMeters(params string[] args)
+        {
+
+        }
+
         private void ScreenOffset()
         {
             Offset += InputAcces.input.GetDeltaSwipe();
