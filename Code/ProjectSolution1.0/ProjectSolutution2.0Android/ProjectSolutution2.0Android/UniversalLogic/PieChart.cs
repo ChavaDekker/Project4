@@ -10,6 +10,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
     {
         public static List<ARGB> ListOfColorsToUse = createColorList();
 
+        //define list of colors
         public static List<ARGB> createColorList()
         {
             Random RNG = new Random();
@@ -29,6 +30,8 @@ namespace ProjectSolutution2._0Android.UniversalLogic
             return listofcolorstouse;
         }
 
+
+        //draw legend
         public static void DrawLegenda(List<Duodata<string, int>> aDuodataList, Point position, GraphicsDevice graphDevice, SpriteBatch spritebatch)
         {
             int sizeSqaures = 30;
@@ -49,7 +52,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
             }
         }
 
-
+        //draw pie slice
         public static ARGB[,] DrawSlice(ARGB[,] Target, double startangle, double angletodraw, ARGB color)
         {
             int sizepiechart = Target.GetLength(0);
@@ -78,6 +81,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
             return Target;
         }
 
+        //draw pie chart
         public static ARGB[,] Make(List<Duodata<string, int>> aDuodataList)
         {
             int sizepiechart = 500;

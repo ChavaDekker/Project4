@@ -15,6 +15,7 @@ using Microsoft.Xna.Framework.Content;
 
 namespace ProjectSolutution2._0Android.UniversalLogic
 {
+    //text parsing
     public static class TextDrawing
     {
         public static SpriteFont Arial25;
