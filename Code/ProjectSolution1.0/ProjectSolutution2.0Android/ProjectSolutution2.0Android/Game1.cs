@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using ProjectSolutution2._0Android.UniversalLogic.Scene;
 using ProjectSolutution2._0Android.UniversalLogic;
+using ProjectSolutution2._0Android.UniversalLogic.Data_Table_Processing;
 
 namespace ProjectSolutution2._0Android
 {
@@ -60,6 +61,7 @@ namespace ProjectSolutution2._0Android
             SceneManager.AddSceneToDict(new MainMenuScene(this.GraphicsDevice, "MainMenuScene"));
             SceneManager.AddSceneOnStack("MainMenuScene");
 
+            DataprocessingInitialisation.initialize(Content);
             TextDrawing.LoadSpriteFonts(Content);
             // TODO: use this.Content to load your game content here
         }

@@ -22,7 +22,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Data_Table_Processing
 
             throw new NotImplementedException();
         }
-        public override string[,] GetTable()
+        public override StringTable GetTable()
         {
             throw new NotImplementedException();
         }

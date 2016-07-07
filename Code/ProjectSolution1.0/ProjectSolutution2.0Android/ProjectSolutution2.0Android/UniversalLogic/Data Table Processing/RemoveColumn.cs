@@ -17,11 +17,14 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Data_Table_Processing
         private string NameColumn;
         public RemoveColumn(string NameOfColumn, Table table)
         {
-            throw new NotImplementedException();
+            SavedTable = table;
+            NameColumn = NameOfColumn;
         }
-        public override string[,] GetTable()
+        public override StringTable GetTable()
         {
-            throw new NotImplementedException();
+            StringTable toreturn = SavedTable.GetTable();
+            toreturn.RemoveColumn(NameColumn);
+            return toreturn;
         }
     }
 }

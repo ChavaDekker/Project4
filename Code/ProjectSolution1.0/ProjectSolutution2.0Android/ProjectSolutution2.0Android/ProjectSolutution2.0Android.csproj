@@ -78,6 +78,8 @@
     <Compile Include="UniversalLogic\ARGBtoTexture2D.cs" />
     <Compile Include="UniversalLogic\Barchart.cs" />
     <Compile Include="UniversalLogic\Button.cs" />
+    <Compile Include="UniversalLogic\Data Table Processing\BikeBoxWholeTable.cs" />
+    <Compile Include="UniversalLogic\Data Table Processing\BikeTheftWhole.cs" />
     <Compile Include="UniversalLogic\Data Table Processing\CountOnColumnElement.cs" />
     <Compile Include="UniversalLogic\Data Table Processing\DataprocessingInitialisation.cs" />
     <Compile Include="UniversalLogic\Data Table Processing\FilterOnly.cs" />
@@ -102,7 +104,9 @@
     <Compile Include="UniversalLogic\LocationActivity.cs" />
     <Compile Include="UniversalLogic\Picture.cs" />
     <Compile Include="UniversalLogic\PieChart.cs" />
-    <Compile Include="UniversalLogic\Scene\ChooseNeighbourhoodScene.cs" />
+    <Compile Include="UniversalLogic\Scene\ChooseNeighbourhoodScene.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="UniversalLogic\Scene\Testscene.cs" />
     <Compile Include="UniversalLogic\Scene\Button1Scene.cs" />
     <Compile Include="UniversalLogic\Scene\Button2Scene.cs" />
@@ -121,6 +125,12 @@
     <Content Include="Content\Textfile.spritefont">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <AndroidAsset Include="Content\fietsdiefstal-rotterdam-2011-2013.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidAsset>
+    <AndroidAsset Include="Content\Fietstrommels-maart-2013.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidAsset>
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />

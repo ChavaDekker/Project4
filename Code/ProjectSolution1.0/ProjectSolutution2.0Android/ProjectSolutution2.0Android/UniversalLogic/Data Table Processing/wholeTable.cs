@@ -11,6 +11,7 @@ using Android.Views;
 using Android.Widget;
 using Microsoft.Xna.Framework;
 using System.IO;
+using Microsoft.Xna.Framework.Content;
 
 namespace ProjectSolutution2._0Android.UniversalLogic.Data_Table_Processing
 {
@@ -18,22 +19,24 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Data_Table_Processing
     {
         protected StringTable savedtable;
         protected string stringpath;
+        private string filePath;
 
-        public WholeTableGeneric(string FilePath)
+        public WholeTableGeneric(string FilePath, ContentManager content)
         {
             stringpath = FilePath;
-            ParseFile();
+            ParseFile(content);
         }
+        
 
-        private void ParseFile()
+        private void ParseFile(ContentManager content)
         {
-            Stream file = TitleContainer.OpenStream(stringpath);
+            var filepath = Path.Combine(content.RootDirectory, stringpath);
+            Stream file = TitleContainer.OpenStream(filepath);
             
             string thewholething = file.ToString();
             savedtable = new StringTable();
             int line = 0;
             int column = 0;
-            //int indexstartthisfield = 0;
             string fieldToEnter = "";
             List<string> Columnsbyindex = new List<string>();
 
