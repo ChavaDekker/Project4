@@ -4,6 +4,8 @@ using Microsoft.Xna.Framework.Input;
 using ProjectSolutution2._0Android.UniversalLogic.Scene;
 using ProjectSolutution2._0Android.UniversalLogic;
 using ProjectSolutution2._0Android.UniversalLogic.Data_Table_Processing;
+using System;
+//using System;
 
 namespace ProjectSolutution2._0Android
 {
@@ -47,22 +49,32 @@ namespace ProjectSolutution2._0Android
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            //try
+            //{
 
-            DataprocessingInitialisation.initialize(Content);
-            SceneManager.AddSceneToDict(new ChooseNeighbourhoodScene(this.GraphicsDevice, "ChooseNeighbourhoodScene"));
-            SceneManager.AddSceneToDict(new Testscene(this.GraphicsDevice, "TestScene"));
-            SceneManager.AddSceneToDict(new Button1Scene(this.GraphicsDevice, "Button1Scene"));
-            SceneManager.AddSceneToDict(new Button2Scene(this.GraphicsDevice, "Button2Scene"));
-            SceneManager.AddSceneToDict(new Button3Scene(this.GraphicsDevice, "Button3Scene"));
-            SceneManager.AddSceneToDict(new Button4Scene(this.GraphicsDevice, "Button4Scene"));
-            SceneManager.AddSceneToDict(new Button5Scene(this.GraphicsDevice, "Button5Scene"));
-            SceneManager.AddSceneToDict(new Button6Scene(this.GraphicsDevice, "Button6Scene"));
-            SceneManager.AddSceneToDict(new Button7Scene(this.GraphicsDevice, "Button7Scene"));
-            SceneManager.AddSceneToDict(new Button8Scene(this.GraphicsDevice, "Button8Scene"));
-            SceneManager.AddSceneToDict(new MainMenuScene(this.GraphicsDevice, "MainMenuScene"));
-            SceneManager.AddSceneOnStack("MainMenuScene");
+                DataprocessingInitialisation.initialize(Content);
+                SceneManager.AddSceneToDict(new ChooseNeighbourhoodScene(this.GraphicsDevice, "ChooseNeighbourhoodScene"));
+                SceneManager.AddSceneToDict(new Testscene(this.GraphicsDevice, "TestScene"));
+                SceneManager.AddSceneToDict(new Button1Scene(this.GraphicsDevice, "Button1Scene"));
+                SceneManager.AddSceneToDict(new Button2Scene(this.GraphicsDevice, "Button2Scene"));
+                SceneManager.AddSceneToDict(new Button3Scene(this.GraphicsDevice, "Button3Scene"));
+                SceneManager.AddSceneToDict(new Button4Scene(this.GraphicsDevice, "Button4Scene"));
+                SceneManager.AddSceneToDict(new Button5Scene(this.GraphicsDevice, "Button5Scene"));
+                SceneManager.AddSceneToDict(new Button6Scene(this.GraphicsDevice, "Button6Scene"));
+                SceneManager.AddSceneToDict(new Button7Scene(this.GraphicsDevice, "Button7Scene"));
+                SceneManager.AddSceneToDict(new Button8Scene(this.GraphicsDevice, "Button8Scene"));
+                SceneManager.AddSceneToDict(new MainMenuScene(this.GraphicsDevice, "MainMenuScene"));
+                SceneManager.AddSceneOnStack("MainMenuScene");
 
-            TextDrawing.LoadSpriteFonts(Content);
+                TextDrawing.LoadSpriteFonts(Content);
+            //}
+            //catch (Exception e)
+            //{
+            //    SceneManager.getAScene("TestScene").SetParaMeters(e.GetType().ToString() + "\n");
+            //    SceneManager.getAScene("TestScene").SetParaMeters(e.Message + "\n");
+            //    SceneManager.getAScene("TestScene").SetParaMeters(e.StackTrace + "\n");
+            //}
+
             // TODO: use this.Content to load your game content here
         }
 

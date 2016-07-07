@@ -32,7 +32,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             four = new Duodata<string, int>("", -1);
             five = new Duodata<string, int>("", -1);
 
-            foreach(Duodata<string, int> i in data)
+            foreach (Duodata<string, int> i in data)
             {
                 if (i.GetAttr2() > one.GetAttr2())
                 {
@@ -40,7 +40,54 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
                 }
             }
 
-            
+            foreach (Duodata<string, int> i in data)
+            {
+                if (i.GetAttr2() > two.GetAttr2())
+                {
+                    if (i != one)
+                    {
+                        two = i;
+                    }
+                }
+            }
+            foreach (Duodata<string, int> i in data)
+            {
+                if (i.GetAttr2() > three.GetAttr2())
+                {
+                    if (i != one && i != two)
+                    {
+                        three = i;
+                    }
+                }
+            }
+            foreach (Duodata<string, int> i in data)
+            {
+                if (i.GetAttr2() > four.GetAttr2())
+                {
+                    if (i != one && i != two && i != three)
+                    {
+                        four = i;
+                    }
+                }
+            }
+            foreach (Duodata<string, int> i in data)
+            {
+                if (i.GetAttr2() > five.GetAttr2())
+                {
+                    if (i != one && i != two && i != three && i != four)
+                    {
+                        five = i;
+                    }
+                }
+            }
+            data = new List<Duodata<string, int>>();
+            data.Add(one);
+            data.Add(two);
+            data.Add(three);
+            data.Add(four);
+            data.Add(five);
+
+
 
 
 

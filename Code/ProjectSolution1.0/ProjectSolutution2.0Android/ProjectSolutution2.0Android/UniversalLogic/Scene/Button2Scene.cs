@@ -21,15 +21,25 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         List<Duodata<string, int>> Dataa;
         public Button2Scene(GraphicsDevice graphDevice, string ID) : base(graphDevice, ID)
         {
-            Dataa = new List<Duodata<string, int>>();
-            Dataa.Add(new Duodata<string, int>("een", 10));
-            Dataa.Add(new Duodata<string, int>("twee", 21));
-            Dataa.Add(new Duodata<string, int>("drie", 60));
-            Dataa.Add(new Duodata<string, int>("vier", 41));
-            Dataa.Add(new Duodata<string, int>("vijf", 50));
-            Dataa.Add(new Duodata<string, int>("zes", 10));
-            Dataa.Add(new Duodata<string, int>("zeven", 20));
-            Dataa.Add(new Duodata<string, int>("acht", 30));
+            try
+            {
+                //Dataa = DataAccess.dataAccess.TheftPMonth();
+            }
+            catch(Exception e)
+            {
+                SceneManager.getAScene("TestScene").SetParaMeters(e.GetType().ToString() + "\n");
+                SceneManager.getAScene("TestScene").SetParaMeters(e.Message + "\n");
+                SceneManager.getAScene("TestScene").SetParaMeters(e.StackTrace + "\n");
+            }
+            //SceneManager.getAScene("TestScene").SetParaMeters(Dataa.Count.ToString());
+            //Dataa.Add(new Duodata<string, int>("een", 10));
+            //Dataa.Add(new Duodata<string, int>("twee", 21));
+            //Dataa.Add(new Duodata<string, int>("drie", 60));
+            //Dataa.Add(new Duodata<string, int>("vier", 41));
+            //Dataa.Add(new Duodata<string, int>("vijf", 50));
+            //Dataa.Add(new Duodata<string, int>("zes", 10));
+            //Dataa.Add(new Duodata<string, int>("zeven", 20));
+            //Dataa.Add(new Duodata<string, int>("acht", 30));
         }
 
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)

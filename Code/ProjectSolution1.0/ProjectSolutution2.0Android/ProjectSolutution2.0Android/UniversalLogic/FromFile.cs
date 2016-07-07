@@ -102,8 +102,11 @@ namespace ProjectSolutution2._0Android.UniversalLogic
         public List<Duodata<string, int>> TheftPMonth()
         {
             Table tablechain = DataprocessingInitialisation.BikeTheft;
+            Scene.SceneManager.getAScene("TestScene").SetParaMeters(tablechain.GetTable().Columns["Kennisname"].Count.ToString() + " default \n");
             tablechain = new MakePerMonth("Kennisname", tablechain);
+            Scene.SceneManager.getAScene("TestScene").SetParaMeters(tablechain.GetTable().Columns["Kennisname"].Count.ToString() + " mademonth \n");
             tablechain = new CountOnColumnElement("Kennisname", tablechain);
+            Scene.SceneManager.getAScene("TestScene").SetParaMeters(tablechain.GetTable().Columns["Kennisname"].Count.ToString() + " countedonelement \n");
 
             StringTable table = tablechain.GetTable();
             List<string> uniqueIDs, amounts;
