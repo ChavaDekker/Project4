@@ -16,13 +16,56 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 {
     public class Button3Scene : Scene
     {
+        Picture GroupedBarchart;
+        Picture Legend;
+        List<Duodata<string, int>> data1;
+        List<Duodata<string, int>> data2;
+        string namedata1 = "group1";
+        string namedata2 = "group2";
+        Color data1color = Color.Red;
+        Color data2color = Color.Blue;
         public Button3Scene(GraphicsDevice graphDevice, string ID) : base(graphDevice, ID)
         {
+            data1 = new List<Duodata<string, int>>();
+            data2 = new List<Duodata<string, int>>();
+
+            data1.Add(new Duodata<string, int>("een", 10));
+            data1.Add(new Duodata<string, int>("twee", 21));
+            data1.Add(new Duodata<string, int>("drie", 60));
+            data1.Add(new Duodata<string, int>("vier", 41));
+            data1.Add(new Duodata<string, int>("vijf", 50));
+            data1.Add(new Duodata<string, int>("zes", 10));
+            data1.Add(new Duodata<string, int>("zeven", 20));
+            data1.Add(new Duodata<string, int>("acht", 30));
+
+            data2.Add(new Duodata<string, int>("een", 50));
+            data2.Add(new Duodata<string, int>("twee", 21));
+            data2.Add(new Duodata<string, int>("drie", 60));
+            data2.Add(new Duodata<string, int>("vier", 41));
+            data2.Add(new Duodata<string, int>("vijf", 50));
+            data2.Add(new Duodata<string, int>("zes", 50));
+            data2.Add(new Duodata<string, int>("zeven", 20));
+            data2.Add(new Duodata<string, int>("acht", 16));
         }
 
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
-            graphDevice.Clear(Color.Aquamarine);
+            if (GroupedBarchart == null)
+            {
+                spritebatch.End();
+                Texture2D temp = GroupedBarChart.Make(data1, data2, graphDevice, spritebatch, namedata1, namedata2, data1color, data2color);
+                GroupedBarchart = new Picture(temp, new Point(200), new Point(temp.Width, temp.Height));
+                spritebatch.Begin();
+            }
+            if (Legend == null)
+            {
+                spritebatch.End();
+                Texture2D temp = GroupedBarChart.Legend(data1, data2, graphDevice, spritebatch, namedata1, namedata2, data1color, data2color);
+                Legend = new Picture(temp, new Point(200,800), new Point(temp.Width, temp.Height));
+                spritebatch.Begin();
+            }
+            GroupedBarchart.draw(spritebatch, Offset);
+            Legend.draw(spritebatch, Offset);
         }
         public override void WindowsDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {

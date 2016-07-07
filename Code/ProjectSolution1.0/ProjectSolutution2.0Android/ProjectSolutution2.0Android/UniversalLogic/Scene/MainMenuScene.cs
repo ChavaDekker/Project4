@@ -11,6 +11,7 @@ using Android.Views;
 using Android.Widget;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
+using ProjectSolutution2._0Android.AndroidLogic;
 
 namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 {
@@ -46,7 +47,8 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             dynamiclol3.SetDelegate(new Action( () => SceneManager.ChangeScene("Button3Scene")));
             dynamiclol4.SetDelegate(new Action( () => SceneManager.ChangeScene("Button4Scene")));
             dynamiclol5.SetDelegate(new Action( () => SceneManager.ChangeScene("Button5Scene")));
-            dynamiclol6.SetDelegate(new Action( () => SceneManager.ChangeScene("Button6Scene")));
+            //dynamiclol6.SetDelegate(new Action(() => SceneManager.ChangeScene("Button6Scene")));
+            dynamiclol6.SetDelegate(new Action(() => Appointment.button6action()));
             dynamiclol7.SetDelegate(new Action( () => SceneManager.ChangeScene("Button7Scene")));
             dynamiclol8.SetDelegate(new Action( () => SceneManager.ChangeScene("Button8Scene")));
 

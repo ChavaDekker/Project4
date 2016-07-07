@@ -49,6 +49,14 @@
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
     <Reference Include="OpenTK-1.0" />
+    <Reference Include="OxyPlot, Version=1.0.0.0, Culture=neutral, PublicKeyToken=638079a8f0bd61e9, processorArchitecture=MSIL">
+      <HintPath>..\packages\OxyPlot.Core.1.0.0-unstable1983\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10\OxyPlot.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="OxyPlot.Xamarin.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OxyPlot.Xamarin.Android.1.0.0-unstable1983\lib\MonoAndroid10\OxyPlot.Xamarin.Android.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -59,6 +67,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activity1.cs" />
+    <Compile Include="AndroidLogic\Appointment.cs" />
+    <Compile Include="AndroidLogic\Location.cs" />
+    <Compile Include="AndroidLogic\GlobalAndroid.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -87,6 +98,7 @@
     <Compile Include="UniversalLogic\Input.cs" />
     <Compile Include="UniversalLogic\InputAcces.cs" />
     <Compile Include="UniversalLogic\LineChart.cs" />
+    <Compile Include="UniversalLogic\LocationActivity.cs" />
     <Compile Include="UniversalLogic\Picture.cs" />
     <Compile Include="UniversalLogic\PieChart.cs" />
     <Compile Include="UniversalLogic\Scene\Testscene.cs" />
@@ -107,6 +119,7 @@
     <Content Include="Content\Textfile.spritefont">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>
