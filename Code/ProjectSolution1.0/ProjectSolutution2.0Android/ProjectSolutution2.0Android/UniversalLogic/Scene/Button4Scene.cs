@@ -16,28 +16,30 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 {
     public class Button4Scene : Scene
     {
-        Picture memes;
+        Picture graph1;
+        Picture graph2;
         Picture directiontest;
-        List<Duodata<string, int>> Data = new List<Duodata<string, int>>();
+        List<Duodata<string, int>> Data1 = new List<Duodata<string, int>>();
+        List<Duodata<string, int>> Data2 = new List<Duodata<string, int>>();
 
         //button 4 scene
         public Button4Scene(GraphicsDevice graphDevice, string ID) : base(graphDevice, ID)
         {
-            
-            Data.Add(new Duodata<string, int>("Vijfentwintig", 25));
-            Data.Add(new Duodata<string, int>("Zes", 6));
-            Data.Add(new Duodata<string, int>("Vijftien", 15));
-            Data.Add(new Duodata<string, int>("Twintig", 20));
-            Data.Add(new Duodata<string, int>("Vijftig", 50));
-            Texture2D testo = ARGBtoTexture2D.ARGBtoTexture2d(PieChart.Make(Data), graphDevice);
-            memes = new Picture(testo, new Point(0), new Point(500));
+            Data1 = DataAccess.dataAccess.TheftPBrand();
+            Data2 = DataAccess.dataAccess.TheftPColour();
+            Texture2D testo = ARGBtoTexture2D.ARGBtoTexture2d(PieChart.Make(Data1), graphDevice);
+            graph1 = new Picture(testo, new Point(0), new Point(500));
+            testo = ARGBtoTexture2D.ARGBtoTexture2d(PieChart.Make(Data2), graphDevice);
+            graph2 = new Picture(testo, new Point(500,0), new Point(500));
         }
 
         //Pie chart
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
-            memes.draw(spritebatch, Offset);
-            PieChart.DrawLegenda(Data, new Point(500) + Offset, graphDevice, spritebatch);
+            graph1.draw(spritebatch, Offset);
+            PieChart.DrawLegenda(Data1, new Point(0,500) + Offset, graphDevice, spritebatch);
+            graph2.draw(spritebatch, Offset);
+            PieChart.DrawLegenda(Data2, new Point(500) + Offset, graphDevice, spritebatch);
         }
         public override void WindowsDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {

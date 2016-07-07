@@ -67,6 +67,10 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             {
                 return null;
             }
+            if(SceneStack.Count == 0)
+            {
+                return null;
+            }
             return SceneStack[SceneStack.IndexOf(SceneDict[OwnID]) - 1];
         }
     }

@@ -22,7 +22,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
             listofcolorstouse.Add(new ARGB(255, 255, 0, 255));//purple
             listofcolorstouse.Add(new ARGB(255, 0, 255, 255));//cyan
 
-            for (int i = 0; i < 50; i++)
+            for (int i = 0; i < 1000; i++)
             {
                 listofcolorstouse.Add(new ARGB(255, (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255), (Byte)RNG.Next(0, 255))); //random colours to be generated upon starting of program. Consisten for use in legend and piechart.
             }
