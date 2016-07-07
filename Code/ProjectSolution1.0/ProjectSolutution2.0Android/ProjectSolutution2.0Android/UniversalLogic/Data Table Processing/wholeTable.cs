@@ -9,14 +9,90 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Microsoft.Xna.Framework;
+using System.IO;
 
 namespace ProjectSolutution2._0Android.UniversalLogic.Data_Table_Processing
 {
-    class WholeTable : Table
+    public class WholeTableGeneric : Table
     {
-        public string[,] GetTable()
+        protected StringTable savedtable;
+        protected string stringpath;
+
+        public WholeTableGeneric(string FilePath)
         {
-            throw new NotImplementedException();
+            stringpath = FilePath;
+            ParseFile();
         }
+
+        private void ParseFile()
+        {
+            Stream file = TitleContainer.OpenStream(stringpath);
+            
+            string thewholething = file.ToString();
+            savedtable = new StringTable();
+            int line = 0;
+            int column = 0;
+            //int indexstartthisfield = 0;
+            string fieldToEnter = "";
+            List<string> Columnsbyindex = new List<string>();
+
+            for(int i=0; i<thewholething.Length; i++)
+            {
+                if(thewholething[i] != ",".ToCharArray()[0] && thewholething[i] != "\n".ToCharArray()[0])
+                {
+                    fieldToEnter += thewholething[i];
+                }
+                else
+                {
+                    if (thewholething[i] == ",".ToCharArray()[0] && thewholething[i+1] != "\n".ToCharArray()[0])
+                    {
+                        if(line == 0)
+                        {
+                            if(fieldToEnter == "")
+                            {
+                                savedtable.NewColumn("Empty");
+                                Columnsbyindex.Add("Empty");
+                            }
+                            else
+                            {
+                                savedtable.NewColumn(fieldToEnter);
+                                Columnsbyindex.Add(fieldToEnter);
+                            }
+                        }
+                        else
+                        {
+                            savedtable.AddValueToColumn(Columnsbyindex[column], fieldToEnter);
+                        }
+                        fieldToEnter = "";
+                        column++;
+
+                    }
+                    if (thewholething[i] == "\n".ToCharArray()[0])
+                    {
+
+                        if (line == 0)
+                        {
+                            savedtable.NewColumn(fieldToEnter);
+                            Columnsbyindex.Add(fieldToEnter);
+                        }
+                        else
+                        {
+                            savedtable.AddValueToColumn(Columnsbyindex[column], fieldToEnter);
+                        }
+                        fieldToEnter = "";
+                        column = 0;
+                        line++;
+                    }
+                }
+            }
+            savedtable.RemoveColumn("Empty");
+        }
+
+        public StringTable GetTable()
+        {
+            return savedtable;
+        }
+        public String StringPath { set { stringpath = value; }get { return stringpath; } }
     }
 }

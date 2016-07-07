@@ -79,9 +79,11 @@
     <Compile Include="UniversalLogic\Barchart.cs" />
     <Compile Include="UniversalLogic\Button.cs" />
     <Compile Include="UniversalLogic\Data Table Processing\CountOnColumnElement.cs" />
+    <Compile Include="UniversalLogic\Data Table Processing\DataprocessingInitialisation.cs" />
     <Compile Include="UniversalLogic\Data Table Processing\FilterOnly.cs" />
     <Compile Include="UniversalLogic\Data Table Processing\FilterOut.cs" />
     <Compile Include="UniversalLogic\Data Table Processing\RemoveColumn.cs" />
+    <Compile Include="UniversalLogic\Data Table Processing\StringTable.cs" />
     <Compile Include="UniversalLogic\Data Table Processing\Table.cs" />
     <Compile Include="UniversalLogic\Data Table Processing\TableDecorator.cs" />
     <Compile Include="UniversalLogic\Data Table Processing\wholeTable.cs" />

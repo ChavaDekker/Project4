@@ -14,6 +14,6 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Data_Table_Processing
 {
     interface Table
     {
-        string[,] GetTable();
+        StringTable GetTable();
     }
 }
