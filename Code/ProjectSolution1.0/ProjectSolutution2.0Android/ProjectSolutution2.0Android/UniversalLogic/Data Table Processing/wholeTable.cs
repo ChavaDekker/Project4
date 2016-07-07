@@ -35,22 +35,23 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Data_Table_Processing
             StreamReader tempo = new StreamReader(file);
 
 
-            //string thewholething = tempo.ReadToEnd();
+            string thewholething = tempo.ReadToEnd();
             savedtable = new StringTable();
             int line = 0;
             int column = 0;
             string fieldToEnter = "";
             List<string> Columnsbyindex = new List<string>();
-            string currentline = tempo.ReadLine();
-            while (currentline != "")
+            //string currentline = tempo.ReadLine();
+
+            for (int i = 0; i < thewholething.Length; i++)
             {
-                for(int i = 0; i<currentline.Length; i++)
+                if (thewholething[i] != ",".ToCharArray()[0] && thewholething[i] != "\n".ToCharArray()[0])
                 {
-                    if (currentline[i] != ",".ToCharArray()[0])
-                    {
-                        fieldToEnter += currentline[i];
-                    }
-                    else
+                    fieldToEnter += thewholething[i];
+                }
+                else
+                {
+                    if (thewholething[i] == ",".ToCharArray()[0] && thewholething[i + 1] != "\n".ToCharArray()[0])
                     {
                         if (line == 0)
                         {
@@ -71,62 +72,30 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Data_Table_Processing
                         }
                         fieldToEnter = "";
                         column++;
+
+                    }
+                    if (thewholething[i] == "\n".ToCharArray()[0]/* || thewholething[i] == "\r".ToCharArray()[0]*/)
+                    {
+
+                        if (line == 0)
+                        {
+                            savedtable.NewColumn(fieldToEnter);
+                            Columnsbyindex.Add(fieldToEnter);
+                        }
+                        else
+                        {
+                            savedtable.AddValueToColumn(Columnsbyindex[column], fieldToEnter);
+                        }
+                        fieldToEnter = "";
+                        column = 0;
+                        line++;
                     }
                 }
-                currentline = tempo.ReadLine();
-                /*
-                for (int i = 0; i < thewholething.Length; i++)
-                {
-                    if (thewholething[i] != ",".ToCharArray()[0] && thewholething[i] != "\n".ToCharArray()[0])
-                    {
-                        fieldToEnter += thewholething[i];
-                    }
-                    else
-                    {
-                        if (thewholething[i] == ",".ToCharArray()[0] && thewholething[i + 1] != "\n".ToCharArray()[0])
-                        {
-                            if (line == 0)
-                            {
-                                if (fieldToEnter == "")
-                                {
-                                    savedtable.NewColumn("Empty");
-                                    Columnsbyindex.Add("Empty");
-                                }
-                                else
-                                {
-                                    savedtable.NewColumn(fieldToEnter);
-                                    Columnsbyindex.Add(fieldToEnter);
-                                }
-                            }
-                            else
-                            {
-                                savedtable.AddValueToColumn(Columnsbyindex[column], fieldToEnter);
-                            }
-                            fieldToEnter = "";
-                            column++;
-
-                        }
-                        if (thewholething[i] == "\n".ToCharArray()[0])
-                        {
-
-                            if (line == 0)
-                            {
-                                savedtable.NewColumn(fieldToEnter);
-                                Columnsbyindex.Add(fieldToEnter);
-                            }
-                            else
-                            {
-                                savedtable.AddValueToColumn(Columnsbyindex[column], fieldToEnter);
-                            }
-                            fieldToEnter = "";
-                            column = 0;
-                            line++;
-                        }
-                    }
-                }
-                */
             }
+                
+            
             savedtable.RemoveColumn("Empty");
+            tempo.Close();
         }
 
         public StringTable GetTable()

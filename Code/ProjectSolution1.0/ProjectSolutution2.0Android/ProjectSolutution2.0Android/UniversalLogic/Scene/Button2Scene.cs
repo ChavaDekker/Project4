@@ -23,7 +23,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         {
             try
             {
-                //Dataa = DataAccess.dataAccess.TheftPMonth();
+                Dataa = DataAccess.dataAccess.TheftPMonth();
             }
             catch(Exception e)
             {
