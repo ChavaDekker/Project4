@@ -52,21 +52,22 @@ namespace ProjectSolutution2._0Android
             //try
             //{
 
-                DataprocessingInitialisation.initialize(Content);
-                SceneManager.AddSceneToDict(new ChooseNeighbourhoodScene(this.GraphicsDevice, "ChooseNeighbourhoodScene"));
-                SceneManager.AddSceneToDict(new Testscene(this.GraphicsDevice, "TestScene"));
-                SceneManager.AddSceneToDict(new Button1Scene(this.GraphicsDevice, "Button1Scene"));
-                SceneManager.AddSceneToDict(new Button2Scene(this.GraphicsDevice, "Button2Scene"));
-                SceneManager.AddSceneToDict(new Button3Scene(this.GraphicsDevice, "Button3Scene"));
-                SceneManager.AddSceneToDict(new Button4Scene(this.GraphicsDevice, "Button4Scene"));
-                SceneManager.AddSceneToDict(new Button5Scene(this.GraphicsDevice, "Button5Scene"));
-                SceneManager.AddSceneToDict(new Button6Scene(this.GraphicsDevice, "Button6Scene"));
-                SceneManager.AddSceneToDict(new Button7Scene(this.GraphicsDevice, "Button7Scene"));
-                SceneManager.AddSceneToDict(new Button8Scene(this.GraphicsDevice, "Button8Scene"));
-                SceneManager.AddSceneToDict(new MainMenuScene(this.GraphicsDevice, "MainMenuScene"));
-                SceneManager.AddSceneOnStack("MainMenuScene");
+            SceneManager.AddSceneToDict(new ChooseNeighbourhoodScene(this.GraphicsDevice, "ChooseNeighbourhoodScene"));
+            SceneManager.AddSceneToDict(new Testscene(this.GraphicsDevice, "TestScene"));
 
-                TextDrawing.LoadSpriteFonts(Content);
+            DataprocessingInitialisation.initialize(Content);
+            SceneManager.AddSceneToDict(new Button1Scene(this.GraphicsDevice, "Button1Scene"));
+            SceneManager.AddSceneToDict(new Button2Scene(this.GraphicsDevice, "Button2Scene"));
+            SceneManager.AddSceneToDict(new Button3Scene(this.GraphicsDevice, "Button3Scene"));
+            SceneManager.AddSceneToDict(new Button4Scene(this.GraphicsDevice, "Button4Scene"));
+            SceneManager.AddSceneToDict(new Button5Scene(this.GraphicsDevice, "Button5Scene"));
+            SceneManager.AddSceneToDict(new Button6Scene(this.GraphicsDevice, "Button6Scene"));
+            SceneManager.AddSceneToDict(new Button7Scene(this.GraphicsDevice, "Button7Scene"));
+            SceneManager.AddSceneToDict(new Button8Scene(this.GraphicsDevice, "Button8Scene"));
+            SceneManager.AddSceneToDict(new MainMenuScene(this.GraphicsDevice, "MainMenuScene"));
+            SceneManager.AddSceneOnStack("MainMenuScene");
+
+            TextDrawing.LoadSpriteFonts(Content);
             //}
             //catch (Exception e)
             //{

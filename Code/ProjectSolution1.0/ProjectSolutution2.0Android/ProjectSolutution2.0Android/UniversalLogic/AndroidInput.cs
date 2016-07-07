@@ -36,10 +36,13 @@ namespace ProjectSolutution2._0Android.UniversalLogic
             if (DidClick())
             {
                 TouchCollection current = TouchPanel.GetState();
-                Vector2 locationTouch = current[0].Position;
-                if (locationTouch.X>LTop.X && locationTouch.X<RBottom.X && locationTouch.Y>LTop.Y && locationTouch.Y < RBottom.Y)
+                if (current.Count > 0)
                 {
-                    return true;
+                    Vector2 locationTouch = current[0].Position;
+                    if (locationTouch.X > LTop.X && locationTouch.X < RBottom.X && locationTouch.Y > LTop.Y && locationTouch.Y < RBottom.Y)
+                    {
+                        return true;
+                    }
                 }
             }
             return false;
