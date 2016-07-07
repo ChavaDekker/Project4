@@ -104,7 +104,6 @@
     <Compile Include="UniversalLogic\LocationActivity.cs" />
     <Compile Include="UniversalLogic\Picture.cs" />
     <Compile Include="UniversalLogic\PieChart.cs" />
-    <Compile Include="UniversalLogic\Scene\ChooseNeighbourhoodScene.cs" />
     <Compile Include="UniversalLogic\Scene\Testscene.cs" />
     <Compile Include="UniversalLogic\Scene\Button1Scene.cs" />
     <Compile Include="UniversalLogic\Scene\Button2Scene.cs" />

@@ -30,9 +30,17 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Data_Table_Processing
             List<int> Toremove = new List<int>();
             for(int i = 0; i<Column.Count; i++)
             {
-
+                if(Column[i] == FieldContent)
+                {
+                    Toremove.Add(i);
+                }
             }
-            throw new NotImplementedException();
+            int amountofitems = Column.Count - 1;
+            for(int i = amountofitems; i>=0; i--)
+            {
+                Column.RemoveAt(Toremove[i]);
+            }
+            return temp;
         }
     }
 }
