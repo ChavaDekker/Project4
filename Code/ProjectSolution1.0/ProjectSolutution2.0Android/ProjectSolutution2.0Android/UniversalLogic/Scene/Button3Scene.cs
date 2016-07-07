@@ -20,8 +20,8 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         Picture Legend;
         List<Duodata<string, int>> data1;
         List<Duodata<string, int>> data2;
-        string namedata1 = "group1";
-        string namedata2 = "group2";
+        string namedata1 = "Theft Per Month";
+        string namedata2 = "Installed Boxes";
         Color data1color = Color.Red;
         Color data2color = Color.Blue;
         DynamicButtonHorizontal ChooseNeighbourhood;
@@ -30,9 +30,17 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         //Button 3 scene
         public Button3Scene(GraphicsDevice graphDevice, string ID) : base(graphDevice, ID)
         {
-            ChooseNeighbourhood = new DynamicButtonHorizontal(400, 200, 0.25, 0.75, Color.Crimson, graphDevice);
+            ChooseNeighbourhood = new DynamicButtonHorizontal(800, 200, 0.75, 1, Color.Crimson, graphDevice);
             ChooseNeighbourhood.SetText("Choose neighbourhood");
             ChooseNeighbourhood.SetDelegate(new Action(() => SceneManager.AddSceneOnStack("ChooseNeighbourhoodScene")));
+
+            List<Duodata<string, int>> temp = DataAccess.dataAccess.BoxPNeighbourhood();
+            string[] neighbourhoods = new string[temp.Count];
+            for(int i = 0; i<temp.Count; i++)
+            {
+                neighbourhoods[i] = temp[i].GetAttr1();
+            }
+            SceneManager.getAScene("ChooseNeighbourhoodScene").SetParaMeters(neighbourhoods);
             data1 = new List<Duodata<string, int>>();
             data2 = new List<Duodata<string, int>>();
 
@@ -96,7 +104,27 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             {
                 chosenneighbourhood = args[index]; //index 0
                 index++;
-                SceneManager.PopSceneFromStack();
+                //SceneManager.PopSceneFromStack();
+                SceneManager.ChangeScene("Button3Scene");
+                data1 = DataAccess.dataAccess.TheftPMonthInNeighbourhood(chosenneighbourhood);
+                data2 = DataAccess.dataAccess.BoxPNeighbourhood();
+                Duodata<string, int> temp = new Duodata<string, int>("", 0);
+                foreach(Duodata<string, int> i in data2)
+                {
+                    if(i.GetAttr1() == chosenneighbourhood)
+                    {
+                        temp = i;
+                    }
+                }
+                data2 = new List<Duodata<string, int>>();
+                for(int i = 0; i<data1.Count; i++)
+                {
+                    data2.Add(new Duodata<string, int>(data1[i].GetAttr1(), temp.GetAttr2()));
+                }
+
+                GroupedBarchart = null;
+                Legend = null;
+
             }
         }
     }
