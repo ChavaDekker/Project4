@@ -33,15 +33,15 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 
             //Save.SetDelegate(new Action(() => SceneManager.ChangeScene("MainMenuScene")));
             //Delete.SetDelegate(new Action(() => SceneManager.ChangeScene("MainMenuScene")));
-            Maxnegoffset = new Point(-1000, 0);
+            //Maxnegoffset = new Point(-1000, 0);
         }
 
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
             Save.Draw(spritebatch, Offset);
             Delete.Draw(spritebatch, Offset);
-            TextDrawing.Drawtext(new Point(400, 650) + Offset, LocationApplication.ReadCurrentLocationFromFile(), spritebatch);
-            TextDrawing.Drawtext(new Point(400, 800) + Offset, ErrorShow, spritebatch);
+            TextDrawing.Drawtext(new Point(0, 650) + Offset, LocationApplication.ReadCurrentLocationFromFile(), spritebatch);
+            //TextDrawing.Drawtext(new Point(400, 800) + Offset, ErrorShow, spritebatch);
         }
         public override void WindowsDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {

@@ -93,7 +93,6 @@
     <Compile Include="UniversalLogic\FromFile.cs" />
     <Compile Include="UniversalLogic\generic duodata.cs" />
     <Compile Include="UniversalLogic\GenericButton.cs" />
-    <Compile Include="UniversalLogic\GPS.cs" />
     <Compile Include="UniversalLogic\GroupedBarChart.cs" />
     <Compile Include="UniversalLogic\Input.cs" />
     <Compile Include="UniversalLogic\InputAcces.cs" />

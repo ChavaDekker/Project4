@@ -58,7 +58,7 @@ namespace ProjectSolutution2._0Android.AndroidLogic
                         localaddresave += temp + ", ";
                     }
                 }
-                localaddresave += x.Thoroughfare;
+                //localaddresave += x.Thoroughfare;
                 adresses.Add(localaddresave);
             }
             int largeststring = 0;
