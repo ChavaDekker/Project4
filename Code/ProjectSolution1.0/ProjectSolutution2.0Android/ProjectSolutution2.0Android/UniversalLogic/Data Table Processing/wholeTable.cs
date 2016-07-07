@@ -45,7 +45,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Data_Table_Processing
 
             for (int i = 0; i < thewholething.Length; i++)
             {
-                if (thewholething[i] != ",".ToCharArray()[0] && thewholething[i] != "\n".ToCharArray()[0])
+                if (thewholething[i] != ",".ToCharArray()[0] && thewholething[i] != "\n".ToCharArray()[0] && thewholething[i] != "\r".ToCharArray()[0])
                 {
                     fieldToEnter += thewholething[i];
                 }
@@ -68,13 +68,16 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Data_Table_Processing
                         }
                         else
                         {
-                            savedtable.AddValueToColumn(Columnsbyindex[column], fieldToEnter);
+                            if (column < Columnsbyindex.Count)
+                            {
+                                savedtable.AddValueToColumn(Columnsbyindex[column], fieldToEnter);
+                            }
                         }
                         fieldToEnter = "";
                         column++;
 
                     }
-                    if (thewholething[i] == "\n".ToCharArray()[0]/* || thewholething[i] == "\r".ToCharArray()[0]*/)
+                    if (thewholething[i] == "\n".ToCharArray()[0] || thewholething[i] == "\r".ToCharArray()[0])
                     {
 
                         if (line == 0)
@@ -84,7 +87,10 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Data_Table_Processing
                         }
                         else
                         {
-                            savedtable.AddValueToColumn(Columnsbyindex[column], fieldToEnter);
+                            if (column < Columnsbyindex.Count)
+                            {
+                                savedtable.AddValueToColumn(Columnsbyindex[column], fieldToEnter);
+                            }
                         }
                         fieldToEnter = "";
                         column = 0;
