@@ -24,6 +24,18 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             try
             {
                 Dataa = DataAccess.dataAccess.TheftPMonth();
+                int index = -1;
+                for(int i = 0; i<Dataa.Count; i++)
+                {
+                    if(Dataa[i].GetAttr1() == "")
+                    {
+                        index = i;
+                    }
+                }
+                if (index >= 0)
+                {
+                    Dataa.RemoveAt(index);
+                }
             }
             catch(Exception e)
             {
