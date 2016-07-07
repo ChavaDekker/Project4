@@ -97,14 +97,14 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             {
                 spritebatch.End();
                 Texture2D temp = BarChart.Legend(data, graphDevice, spritebatch);
-                Legend = new Picture(temp, new Point(800, 0), new Point(temp.Width, temp.Height));
+                Legend = new Picture(temp, new Point(20, 800), new Point(temp.Width, temp.Height));
                 spritebatch.Begin();
             }
             if(Graph == null)
             {
                 spritebatch.End();
                 Texture2D temp = BarChart.Make2(data, graphDevice, spritebatch);
-                Graph = new Picture(temp, new Point(300, 0), new Point(temp.Width, temp.Height));
+                Graph = new Picture(temp, new Point(20, 200), new Point(temp.Width, temp.Height));
                 spritebatch.Begin();
             }
             Graph.draw(spritebatch, Offset);

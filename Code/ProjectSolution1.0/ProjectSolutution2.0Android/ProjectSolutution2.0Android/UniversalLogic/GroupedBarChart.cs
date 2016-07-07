@@ -19,7 +19,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
         private static Texture2D Pixel;
         public static Texture2D Make(List<Duodata<string, int>> DuodataList, List<Duodata<string, int>> DuodataList2, GraphicsDevice graphdevice, SpriteBatch spriteBatch, string namegroup1, string namegroup2, Color barcolor1, Color barcolor2)
         {
-            int width = 500;
+            int width = 800;
             int height = 500;
             Color backroundColor = new Color(0, 0, 0, 0);
             Color barlist1 = barcolor1;
@@ -132,7 +132,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
             int paddingy = 200;
             int linethickness = 5;
             int marklenght = 5;
-            int textoffsetyaxis = 50;
+            int textoffsetyaxis = 80;
             int textoffsetxaxis = 10;
             int widthofColumn = target.Width / (groupedvalues.Count * 3);
             Color backgroundColor =  new Color(0, 0, 0, 0);

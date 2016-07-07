@@ -60,14 +60,14 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             {
                 spritebatch.End();
                 Texture2D chart = LineChart.Make(Dataa, graphDevice, spritebatch);
-                LineGraph = new Picture(chart, new Point(200), new Point(chart.Width, chart.Height));
+                LineGraph = new Picture(chart, new Point(250, 200), new Point(chart.Width, chart.Height));
                 spritebatch.Begin();
             }
             if(Legend == null)
             {
                 spritebatch.End();
                 Texture2D legenda = LineChart.Legenda(Dataa, graphDevice, spritebatch);
-                Legend = new Picture(legenda, new Point(0,200), new Point(legenda.Width, legenda.Height));
+                Legend = new Picture(legenda, new Point(10,200), new Point(legenda.Width, legenda.Height));
                 spritebatch.Begin();
             }
             LineGraph.draw(spritebatch, Offset);

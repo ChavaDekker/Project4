@@ -28,19 +28,19 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             Data1 = DataAccess.dataAccess.TheftPBrand();
             Data2 = DataAccess.dataAccess.TheftPColour();
             Texture2D testo = ARGBtoTexture2D.ARGBtoTexture2d(PieChart.Make(Data1), graphDevice);
-            graph1 = new Picture(testo, new Point(200), new Point(500));
+            graph1 = new Picture(testo, new Point(0,200), new Point(500));
             testo = ARGBtoTexture2D.ARGBtoTexture2d(PieChart.Make(Data2), graphDevice);
-            graph2 = new Picture(testo, new Point(720,0), new Point(500));
-            Maxnegoffset = new Point(-10000, 0);
+            graph2 = new Picture(testo, new Point(520,200), new Point(500));
+            Maxnegoffset = new Point(0, -100000);
         }
 
         //Pie chart
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
             graph1.draw(spritebatch, Offset);
-            PieChart.DrawLegenda(Data1, new Point(200,500) + Offset, graphDevice, spritebatch);
+            PieChart.DrawLegenda(Data1, new Point(0,700) + Offset, graphDevice, spritebatch);
             graph2.draw(spritebatch, Offset);
-            PieChart.DrawLegenda(Data2, new Point(720,500) + Offset, graphDevice, spritebatch);
+            PieChart.DrawLegenda(Data2, new Point(520,700) + Offset, graphDevice, spritebatch);
         }
         public override void WindowsDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {

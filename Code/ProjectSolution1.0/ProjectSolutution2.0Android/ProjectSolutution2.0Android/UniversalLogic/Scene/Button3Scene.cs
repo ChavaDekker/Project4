@@ -30,7 +30,9 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         //Button 3 scene
         public Button3Scene(GraphicsDevice graphDevice, string ID) : base(graphDevice, ID)
         {
-            ChooseNeighbourhood = new DynamicButtonHorizontal(800, 200, 0.75, 1, Color.Crimson, graphDevice);
+            Maxnegoffset = new Point(0, -1000);
+
+            ChooseNeighbourhood = new DynamicButtonHorizontal(800, 200, 0.5, 1, Color.Crimson, graphDevice);
             ChooseNeighbourhood.SetText("Choose neighbourhood");
             ChooseNeighbourhood.SetDelegate(new Action(() => SceneManager.AddSceneOnStack("ChooseNeighbourhoodScene")));
 
@@ -70,14 +72,14 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             {
                 spritebatch.End();
                 Texture2D temp = GroupedBarChart.Make(data1, data2, graphDevice, spritebatch, namedata1, namedata2, data1color, data2color);
-                GroupedBarchart = new Picture(temp, new Point(200), new Point(temp.Width, temp.Height));
+                GroupedBarchart = new Picture(temp, new Point(10,200), new Point(temp.Width, temp.Height));
                 spritebatch.Begin();
             }
             if (Legend == null)
             {
                 spritebatch.End();
                 Texture2D temp = GroupedBarChart.Legend(data1, data2, graphDevice, spritebatch, namedata1, namedata2, data1color, data2color);
-                Legend = new Picture(temp, new Point(200,800), new Point(temp.Width, temp.Height));
+                Legend = new Picture(temp, new Point(10,800), new Point(temp.Width, temp.Height));
                 spritebatch.Begin();
             }
             GroupedBarchart.draw(spritebatch, Offset);

@@ -15,7 +15,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
             int paddingx = 100;
             int paddingy = 200;
             int marklenght = 5;
-            int textoffset = -50;
+            int textoffset = -80;
             int textoffsetxaxis = 10;
             Color backgroundColor = new Color(0, 0, 0, 0);
             drawline(new Point(0), new Point(0, target.Height), spriteBatch, axisthickness, Pixel);
@@ -66,7 +66,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
         public static Texture2D Make(List<Duodata<string, int>> aDuodataList, GraphicsDevice graphdevice, SpriteBatch spriteBatch)
         {
             int width, height;
-            width = 500;
+            width = 700;
             height = 500;
             Color backgroundColor = new Color(0, 0, 0, 0);
             bool drawdots = false;
