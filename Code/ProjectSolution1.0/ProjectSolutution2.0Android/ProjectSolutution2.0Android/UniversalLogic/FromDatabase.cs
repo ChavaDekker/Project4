@@ -29,7 +29,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
             throw new NotImplementedException();
         }
 
-        public List<Duodata<string, int>> TheftPMonthInNeighbourhood()
+        public List<Duodata<string, int>> TheftPMonthInNeighbourhood(string Neighbourhood)
         {
             throw new NotImplementedException();
         }

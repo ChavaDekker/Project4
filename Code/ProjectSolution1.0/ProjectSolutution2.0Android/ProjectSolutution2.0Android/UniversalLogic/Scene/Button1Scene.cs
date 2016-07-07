@@ -23,13 +23,31 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         List<Duodata<string, int>> data;
         public Button1Scene(GraphicsDevice graphDevice, string ID) : base(graphDevice, ID)
         {
-            data = new List<Duodata<string, int>>();
-            data.Add(new Duodata<string, int>("lol", 10));
-            data.Add(new Duodata<string, int>("lol", 10));
-            data.Add(new Duodata<string, int>("lol", 10));
-            data.Add(new Duodata<string, int>("lol", 33));
-            data.Add(new Duodata<string, int>("lol", 10));
-            data.Add(new Duodata<string, int>("lol", 10));
+            data = DataAccess.dataAccess.BoxPNeighbourhood();
+
+            Duodata<string, int> one, two, three, four, five;
+            one = new Duodata<string, int>("", -1);
+            two = new Duodata<string, int>("", -1);
+            three = new Duodata<string, int>("", -1);
+            four = new Duodata<string, int>("", -1);
+            five = new Duodata<string, int>("", -1);
+
+            foreach(Duodata<string, int> i in data)
+            {
+                if (i.GetAttr2() > one.GetAttr2())
+                {
+                    one = i;
+                }
+            }
+
+            
+
+
+
+            //data.Add(new Duodata<string, int>("lol", 10));
+            //data.Add(new Duodata<string, int>("lol", 33));
+            //data.Add(new Duodata<string, int>("lol", 10));
+            //data.Add(new Duodata<string, int>("lol", 10));
             //Texture2D temp = ARGBtoTexture2D.ARGBtoTexture2d(BarChart.Make(testdata), graphDevice);
             //meme = new Picture(temp, new Point(0), new Point(temp.Width, temp.Height));
 

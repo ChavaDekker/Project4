@@ -48,6 +48,7 @@ namespace ProjectSolutution2._0Android
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
 
+            DataprocessingInitialisation.initialize(Content);
             SceneManager.AddSceneToDict(new ChooseNeighbourhoodScene(this.GraphicsDevice, "ChooseNeighbourhoodScene"));
             SceneManager.AddSceneToDict(new Testscene(this.GraphicsDevice, "TestScene"));
             SceneManager.AddSceneToDict(new Button1Scene(this.GraphicsDevice, "Button1Scene"));
@@ -61,7 +62,6 @@ namespace ProjectSolutution2._0Android
             SceneManager.AddSceneToDict(new MainMenuScene(this.GraphicsDevice, "MainMenuScene"));
             SceneManager.AddSceneOnStack("MainMenuScene");
 
-            DataprocessingInitialisation.initialize(Content);
             TextDrawing.LoadSpriteFonts(Content);
             // TODO: use this.Content to load your game content here
         }

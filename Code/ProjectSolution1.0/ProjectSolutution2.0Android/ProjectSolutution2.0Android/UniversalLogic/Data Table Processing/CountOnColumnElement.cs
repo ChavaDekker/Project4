@@ -24,6 +24,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Data_Table_Processing
 
         public override StringTable GetTable()
         {
+            
             StringTable temp = SavedTable.GetTable();
             List<string> columntocount = temp.GetColumn(NameColumn);
             StringTable newtable = new StringTable();
@@ -40,11 +41,19 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Data_Table_Processing
                 else
                 {
                     uniquellabels.Add(columntocount[i]);
-                    //am
+                    amounts.Add(1);
                 }
             }
-
-            throw new NotImplementedException();
+            foreach(string i in uniquellabels)
+            {
+                newtable.AddValueToColumn(NameColumn, i);
+            }
+            foreach(int i in amounts)
+            {
+                newtable.AddValueToColumn("Amount", i.ToString());
+            }
+            
+            return newtable;
         }
     }
 }

@@ -32,8 +32,9 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Data_Table_Processing
         {
             var filepath = Path.Combine(content.RootDirectory, stringpath);
             Stream file = TitleContainer.OpenStream(filepath);
-            
-            string thewholething = file.ToString();
+            StreamReader tempo = new StreamReader(file);
+
+            string thewholething = tempo.ReadToEnd();
             savedtable = new StringTable();
             int line = 0;
             int column = 0;

@@ -24,7 +24,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         string haha = "";
         public Testscene(GraphicsDevice graphDevice, string ID) : base(graphDevice, ID)
         {
-            //Maxnegoffset = new Point(0, -400);
+            Maxnegoffset = new Point(-10000, -400);
             //Maxposoffset = new Point(0, 0);
             ////genericlol = new GenericButton(new Point(10), new Point(100, 50), Color.Aquamarine, graphDevice);
             //dynamiclol = new DynamicButtonHorizontal(200, 200, 0, 0.50, Color.Crimson, graphDevice);
@@ -46,7 +46,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             //graphDevice.Clear(Color.CornflowerBlue);
             ////genericlol.Draw(spritebatch, Offset);
             //dynamiclol.Draw(spritebatch, Offset);
-            TextDrawing.Drawtext(new Point(300,300), haha, spritebatch);
+            TextDrawing.Drawtext(new Point(300,300) + Offset, haha, spritebatch);
             //dynamiclol2.Draw(spritebatch, Offset);
             //memes.draw(spritebatch, Offset);
             //string testoooo = "";

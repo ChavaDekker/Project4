@@ -7,7 +7,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
     {
         List<Duodata<string, int>> BoxPNeighbourhood();
         List<Duodata<string, int>> TheftPMonth();
-        List<Duodata<string, int>> TheftPMonthInNeighbourhood();
+        List<Duodata<string, int>> TheftPMonthInNeighbourhood(string Neighbourhood);
         List<Duodata<string, int>> TheftPBrand();
         List<Duodata<string, int>> TheftPColour();
         List<Duodata<float, float>> BoxLocations();

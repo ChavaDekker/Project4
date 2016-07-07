@@ -80,6 +80,7 @@
     <Compile Include="UniversalLogic\Button.cs" />
     <Compile Include="UniversalLogic\Data Table Processing\BikeBoxWholeTable.cs" />
     <Compile Include="UniversalLogic\Data Table Processing\BikeTheftWhole.cs" />
+    <Compile Include="UniversalLogic\Data Table Processing\MakePerMonth.cs" />
     <Compile Include="UniversalLogic\Data Table Processing\CountOnColumnElement.cs" />
     <Compile Include="UniversalLogic\Data Table Processing\DataprocessingInitialisation.cs" />
     <Compile Include="UniversalLogic\Data Table Processing\FilterOnly.cs" />
