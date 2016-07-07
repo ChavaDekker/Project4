@@ -1,0 +1,188 @@
+astah FilterOnly {
+delete SavedTable : Table
+}
+
+astah FilterOut {
+delete SavedTable : Table
+}
+
+astah RemoveColumn {
+delete SavedTable : Table
+}
+
+astah CountOnColumnElement {
+delete SavedTable : Table
+}
+
+VS StringTable {
+add entire class
+}
+
+astah Button1Scene {
++ Graph : Picture
++ Legend : Picture
++ AndroidDraw(spriteBatch : SpriteBatch, graphDevice : GraphDevice) : void
++ WindowsDraw(spriteBatch : SpriteBatch, graphDevice : GraphDevice) : void
+}
+
+astah Button2Scene {
++ LineGraph : Picture
++ Legend : Picture
++ AndroidDraw(spriteBatch : SpriteBatch, graphDevice : GraphDevice) : void
++ WindowsDraw(spriteBatch : SpriteBatch, graphDevice : GraphDevice) : void
+}
+
+astah Button3Scene {
++ GroupedBarchart : Picture
++ Legend : Picture
++ namedata1 : String
++ namedata2 : String
++ data1color : Color
++ data2color : Color
++ ChooseNeighbourhood : DynamicButtonHorizontal
++ chosenneighbourhood : String
++ AndroidDraw(spriteBatch : SpriteBatch, graphDevice : GraphDevice) : void
++ WindowsDraw(spriteBatch : SpriteBatch, graphDevice : GraphDevice) : void
++ SetParaMeters(args : Stringtable)
+}
+
+astah Button4Scene {
++ memes : Picture
++ directiontest : Picture
++ AndroidDraw(spriteBatch : SpriteBatch, graphDevice : GraphDevice) : void
++ WindowsDraw(spriteBatch : SpriteBatch, graphDevice : GraphDevice) : void
+}
+
+astah Button5Scene {
++ Save : DynamicButtonHorizontal
++ Delete : DynamicButtonHorizontal
++ ErrorShow : String
++ AndroidDraw(spriteBatch : SpriteBatch, graphDevice : GraphDevice) : void
++ WindowsDraw(spriteBatch : SpriteBatch, graphDevice : GraphDevice) : void
++ SetParaMeters(args : Stringtable)
+}
+
+astah Button6Scene {
++ AndroidDraw(spriteBatch : SpriteBatch, graphDevice : GraphDevice) : void
++ WindowsDraw(spriteBatch : SpriteBatch, graphDevice : GraphDevice) : void
+}
+
+astah Button7Scene {
++ AndroidDraw(spriteBatch : SpriteBatch, graphDevice : GraphDevice) : void
++ WindowsDraw(spriteBatch : SpriteBatch, graphDevice : GraphDevice) : void
+}
+
+astah Button8Scene {
++ AndroidDraw(spriteBatch : SpriteBatch, graphDevice : GraphDevice) : void
++ WindowsDraw(spriteBatch : SpriteBatch, graphDevice : GraphDevice) : void
+}
+
+astah MainMenuScene {
++ dynamicTest : DynamicButtonHorizontal
++ dynamiclol1 : DynamicButtonHorizontal
++ dynamiclol2 : DynamicButtonHorizontal
++ dynamiclol3 : DynamicButtonHorizontal
++ dynamiclol4 : DynamicButtonHorizontal
++ dynamiclol5 : DynamicButtonHorizontal
++ dynamiclol6 : DynamicButtonHorizontal
++ dynamiclol7 : DynamicButtonHorizontal
++ dynamiclol8 : DynamicButtonHorizontal
++ AndroidDraw(spriteBatch : SpriteBatch, graphDevice : GraphDevice) : void
++ WindowsDraw(spriteBatch : SpriteBatch, graphDevice : GraphDevice) : void
++ ExampleMoveButtons : void
+}
+
+astah Scene {
++ backgroundColor : Color
++ dynamichome : DynamicButtonHorizontal
++ SetParaMeters(args : Stringtable)
++ GetterSetterBackground() : Color
+}
+
+astah SceneManager {
++ getAScene (ID : String) : Scene
+}
+
+//ARGBToTexture2D replaces ARGB and instead references it when called?
+astah add ARGBtoTexture2D {
++ ARGBtoTexture2d(Image : ARGBArray, graphDevice : GraphicsDevice) : Texture2D
+}
+
+astah Barchart {
+- Pixel : Texture2D
+- Axis(aDuodataList : List<Duodata<string,int>>, target : RenderTarget2D, spriteBatch : SpriteBatch, graphDevice : GraphicsDevice, maxvalue : Integer) : RenderTarget2D
++ Legend(aDuodataList : List<Duodata<string,int>>, graphDevice : GraphicsDevice, spriteBatch : SpriteBatch) : Texture2D
++ Make2(aDuodataList : List<Duodata<string,int>>, graphDevice : GraphicsDevice, spriteBatch : SpriteBatch) : Texture2D
+}
+
+astah Button {
++ IsClicked(offset : Point) : bool
++ Click(offset : Point) : void
+}
+
+astah Data {
++ TheftPMonthInNeighbourhood() : List<Duodata<string, int>>
+}
+
+astah DynamicButtonHorizontal {
++ Click(offset : Point) : void
++ isClicked(offset : Point) : bool
+}
+
+rename Duodata > generic duodata
+
+remove GenericButton
+
+astah GroupedBarChart {
++ Make( DuodataList : List<Duodata<string,int>>, DuodataList2 : List<Duodata<string,int>>, graphdevice : GraphicsDevice, spriteBatch : SpriteBatch, namegroup1 : String, namegroup2 : String, barcolor1 : Color, barcolor2 : Color) : Texture2D
+- linkGroup( list1 : List<Duodata<string, int>>, list2 : List<Duodata<string,int>>) : List<Duodata<string, int, Duodata<string, int>>>
++ Legend( DuodataList1 : List<Duodata<string, int>>, DuodataList2 : List<Duodata<string, int>>, graphDevice : GraphicsDevice, spriteBatch : SpriteBatch, name1 : String, name2 : String, color1 : Color, color2 : Color) : Texture2D
+- Axis( groupedvalues : List<Duodata<string, int>, Duodata<string, int>>>, target : RenderTarget2D, spriteBatch : SpriteBatch, graphDevice : GraphicsDevice, maxvalue : Integer, namegroup1 : String, group2 : String) : RenderTarget2D
+}
+
+astah LineChart {
+- Axis( aDuodataList : List<Duodata<string, int>>, target : Texture2D, graphdevice : GraphicsDevice, spriteBatch : SpriteBatch, heighestvalue : Integer) : RenderTarget2D
++ Legenda( aDuodataList : List<Duodata<string, int>>, graphdevice : GraphicsDevice, spriteBatch : SpriteBatch) : Texture2D
++ Make( aDuodataList : List<Duodata<string, int>>, graphdevice : GraphicsDevice, spriteBatch : SpriteBatch) : Texture2D
++ drawline( start : Point, end : Point, spriteBatch : SpriteBatch, linethickness : Int, Pixel : Texture2D) : void
+}
+
+astah remove LocationActivity
+
+astah PieChart {
++ ListOfColorsToUse : List<ARGB>
++ createColorList() : List<ARGB>
++ DrawLegenda( aDuodataList : List<Duodata<string, int>>, position : Point, graphDevice : GraphicsDevice, spritebatch : SpriteBatch) : void
++ DrawSlice( Target : ARGB[,], startangle : Double, angletodraw : Double, color : ARGB) : ARGB[,]
++ isCounterClockwise( line : SImpleVector, point : SimpleVector) : bool
+}
+
+astah add TextDrawing {
++ Arial25 : SpriteFont
++ LoadSpriteFonts( content : ContentManager) : void
++ DRawtext( position : Point, text : String, spriteBatch : SpriteBatch) : void
+}
+
+//AndroidLogic//
+
+astah Appointment {
++ button6action() : void
+- CreateNewAppointment( locationBike : String)
+//remove Make
+}
+
+astah GlobalAndroid {
++ startActivity( intent : Android.Content.Intent) : void
++ PopulateGlobalAndroid( delegatedstartactivity : startActivity, Locationservice : LocationManager, globalcontext : Context) : void
+}
+
+astah Location {
+- locationFile : String
+- filename : String
+- currentlyon : String
++ getLocation() : Location
++ GetHumanReadableLocation() : String
++ SaveCurrentLocationToFile() : void
++ ReadCurrentLocationFromFile() : String
++ DeleteLocationFile() : void
+}
