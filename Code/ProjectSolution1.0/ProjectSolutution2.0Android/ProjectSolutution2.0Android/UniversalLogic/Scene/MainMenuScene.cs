@@ -55,12 +55,12 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             dynamiclol8.SetDelegate(new Action( () => SceneManager.ChangeScene("Button8Scene")));
 
             //dynamicTest.SetText("Test");
-            dynamiclol1.SetText("5 Neighbourhoods with the most bike containers");
+            dynamiclol1.SetText("5 Neighbourhoods with\nthe most bike containers");
             dynamiclol2.SetText("Stolen bikes per month");
-            dynamiclol3.SetText("Grouper bar chart stolen bikes and bike containers installed per neighbourhood");
-            dynamiclol4.SetText("Pie chart stolen bikes by brand and color");
+            dynamiclol3.SetText("Grouper bar chart stolen\nbikes and bike containers\ninstalled per neighbourhood");
+            dynamiclol4.SetText("Pie chart stolen bikes\nby brand and color");
             dynamiclol5.SetText("Save current location of bike");
-            dynamiclol6.SetText("Make an appointment to pick up your bike");
+            dynamiclol6.SetText("Make an appointment\nto pick up your bike");
             dynamiclol7.SetText("S1");
             dynamiclol8.SetText("S2");
         }
