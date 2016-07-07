@@ -8,6 +8,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
     {
         private static Texture2D Pixel;
 
+        //Axes logic
         private static RenderTarget2D Axis(List<Duodata<string, int>> aDuodataList, Texture2D target, GraphicsDevice graphdevice, SpriteBatch spriteBatch, int heighestvalue)
         {
             int axisthickness = 3;
@@ -40,6 +41,8 @@ namespace ProjectSolutution2._0Android.UniversalLogic
 
             return newRenderTarget;
         }
+
+        //Legend logic
         public static Texture2D Legenda(List<Duodata<string, int>> aDuodataList, GraphicsDevice graphdevice, SpriteBatch spriteBatch)
         {
             int Lineheight = 40;
@@ -58,6 +61,8 @@ namespace ProjectSolutution2._0Android.UniversalLogic
             graphdevice.SetRenderTarget(null);
             return Target;
         }
+
+        //
         public static Texture2D Make(List<Duodata<string, int>> aDuodataList, GraphicsDevice graphdevice, SpriteBatch spriteBatch)
         {
             int width, height;

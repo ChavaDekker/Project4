@@ -7,6 +7,8 @@ namespace ProjectSolutution2._0Android.UniversalLogic
     public static class BarChart
     {
         private static Texture2D Pixel;
+
+        //Logic for Axes
         private static RenderTarget2D Axis(List<Duodata<string, int>> aDuodataList, RenderTarget2D target, SpriteBatch spriteBatch, GraphicsDevice graphDevice, int maxvalue)
         {
             int paddingx = 100;
@@ -46,6 +48,8 @@ namespace ProjectSolutution2._0Android.UniversalLogic
 
             return NewTarget;
         }
+
+        //Logic for the legend
         public static Texture2D Legend(List<Duodata<string, int>> aDuodataList, GraphicsDevice graphDevice, SpriteBatch spriteBatch)
         {
             int width = 500;
@@ -68,6 +72,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
             return target;
         }
 
+        //Bar chart logic
         public static Texture2D Make2(List<Duodata<string, int>> DuodataList, GraphicsDevice graphdevice, SpriteBatch spriteBatch)
         {
             int width = 500;
