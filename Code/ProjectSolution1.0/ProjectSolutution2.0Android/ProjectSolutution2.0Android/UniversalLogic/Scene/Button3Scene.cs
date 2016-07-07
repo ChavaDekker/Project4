@@ -26,6 +26,8 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         Color data2color = Color.Blue;
         DynamicButtonHorizontal ChooseNeighbourhood;
         string chosenneighbourhood = "";
+
+        //Button 3 scene
         public Button3Scene(GraphicsDevice graphDevice, string ID) : base(graphDevice, ID)
         {
             ChooseNeighbourhood = new DynamicButtonHorizontal(400, 200, 0.25, 0.75, Color.Crimson, graphDevice);
@@ -53,6 +55,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             data2.Add(new Duodata<string, int>("acht", 16));
         }
 
+        //Draw Bar Chart
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
             if (GroupedBarchart == null)
