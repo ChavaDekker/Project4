@@ -62,6 +62,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
         public List<Duodata<string, int>> TheftPBrand()
         {
             Table tablechain = DataprocessingInitialisation.BikeTheft;
+            tablechain = new FilterOnly("object", "FIETS", tablechain);
             tablechain = new CountOnColumnElement("merk", tablechain);
             StringTable table = tablechain.GetTable();
             List<string> uniqueIDs, amounts;
@@ -82,6 +83,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
         public List<Duodata<string, int>> TheftPColour()
         {
             Table tablechain = DataprocessingInitialisation.BikeTheft;
+            tablechain = new FilterOnly("object", "FIETS", tablechain);
             tablechain = new CountOnColumnElement("kleur", tablechain);
             StringTable table = tablechain.GetTable();
             List<string> uniqueIDs, amounts;

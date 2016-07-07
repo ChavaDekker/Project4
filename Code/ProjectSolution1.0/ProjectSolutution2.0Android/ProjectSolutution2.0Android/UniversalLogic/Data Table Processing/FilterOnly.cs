@@ -35,7 +35,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Data_Table_Processing
                     Toremove.Add(i);
                 }
             }
-            int amountofitems = Column.Count - 1;
+            int amountofitems = Toremove.Count - 1;
             for (int i = amountofitems; i >= 0; i--)
             {
                 Column.RemoveAt(Toremove[i]);

@@ -43,7 +43,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
             for(int i = 0; i<aDuodataList.Count; i++)
             {
                 coloroo = ListOfColorsToUse[i];
-                todrawin = new Color((float)coloroo.r, (float)coloroo.g, (float)coloroo.b);
+                todrawin = new Color(coloroo.r, coloroo.g, coloroo.b);
                 spritebatch.Draw(Pixel, new Rectangle(position + new Point(0, i * 2 * sizeSqaures), new Point(sizeSqaures)), todrawin);
                 TextDrawing.Drawtext(position + new Point(spacing, i * 2 * sizeSqaures), aDuodataList[i].GetAttr1(), spritebatch);
             }
@@ -80,6 +80,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
 
         public static ARGB[,] Make(List<Duodata<string, int>> aDuodataList)
         {
+            int numberofslices = aDuodataList.Count;
             int sizepiechart = 500;
             ARGB[,] piechart = new ARGB[sizepiechart, sizepiechart];
 
