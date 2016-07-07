@@ -9,14 +9,14 @@
         
       </autoplay>
       
-      <bounds x="-59189.08171204438" y="-40591.60155015882" width="118378.16342408877" height="81183.20310031764"/>
+      <bounds x="-49735.99687986184" y="-34108.71920380674" width="99471.99375972369" height="68217.43840761347"/>
       <aspectratio>16:9</aspectratio>
       <languages>
         <language>en</language>
       </languages>
       <mode type="normal"/>
     </settings>
-    <object id="2_30863873" type="button" x="1.8189894035458577e-12" y="-5.043008983311393e-13" r="0" s="57.96316085985838" class="invisible">
+    <object id="2_30863873" type="button" x="1.5284787106411378e-12" y="-4.237590308958139e-13" r="0" s="48.70586777639117" class="invisible">
       <type>invisible</type>
       <size>
         <w>2047.316994958799</w>
@@ -27,7 +27,7 @@
         <parentTemplate>buildingblocks2016</parentTemplate>
       </meta>
     </object>
-    <object id="46_30863873" type="button" x="-19764.66263746447" y="15171.486792030128" r="0" s="5.326412702816483" class="circle">
+    <object id="46_30863873" type="button" x="-16608.04950566451" y="12748.44951003402" r="0" s="4.475731636739174" class="circle">
       <type>circle</type>
       <size>
         <w>800</w>
@@ -38,7 +38,7 @@
         <parentTemplate>buildingblocks2016</parentTemplate>
       </meta>
     </object>
-    <object id="47_30863873" type="image" x="-20936.29356563413" y="14429.706057475856" r="0" s="12.552211137540993">
+    <object id="47_30863873" type="image" x="-17592.559325757527" y="12125.138533884416" r="0" s="10.547498219508071">
       <source w="110" h="113">4182230978<url>4182230978.swf</url></source>
       <sourceUrl>prezi_template_matrica.swf</sourceUrl>
       <extra>
@@ -49,7 +49,7 @@
         <parentTemplate>buildingblocks2016</parentTemplate>
       </meta>
     <resource><id>4182230978</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/4/2/3/7a283645adf3d9e4ff3dfae877a8519084c42.swf</url></resource></object>
-    <object id="48_30863873" type="image" x="-21030.4" y="14056.35" r="-7.9650312509364785" s="15.958092627945378">
+    <object id="48_30863873" type="image" x="-17671.636026909382" y="11811.411150850565" r="-7.9650312509364785" s="13.409426573187222">
       <source w="12" h="12">4183255592<url>4183255592.swf</url></source>
       <sourceUrl>prezi_template_csillag_feher.swf</sourceUrl>
       <extra>
@@ -60,7 +60,7 @@
         <parentTemplate>buildingblocks2016</parentTemplate>
       </meta>
     <resource><id>4183255592</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/a/3/7/42d15f5d96e05179626d789d9ceac9338ecd1.swf</url></resource></object>
-    <object id="51_30863873" type="text" x="-20930" y="14455.35" r="-7.965031250936485" s="9.31612394175238" class="head">
+    <object id="51_30863873" type="text" x="-17587.270905128447" y="12146.686883824585" r="-7.965031250936485" s="7.828246323428199" class="head">
       <height>56.352</height>
       <width>130.56749105981368</width>
       <p align="center">
@@ -70,25 +70,7 @@
         <text><![CDATA[Team]]></text>
       </p>
     </object>
-    <object id="54_30863873" type="button" x="-9070.205300514788" y="19311.879507444333" r="0" s="6.584336004138595" class="roundrect">
-      <type>roundrect</type>
-      <size>
-        <w>1074.6268656716418</w>
-        <h>600</h>
-      </size>
-      <meta>
-        <notModifiedByUser>from-template</notModifiedByUser>
-        <parentTemplate>buildingblocks2016</parentTemplate>
-      </meta>
-    </object>
-    <object id="55_30863873" type="text" x="-9032.456404048056" y="17990.18417089864" r="0" s="14.719076702626795" class="strong">
-      <height>28.176</height>
-      <width>402.19111326131735</width>
-      <p>
-        <text><![CDATA[The Goal]]></text>
-      </p>
-    </object>
-    <object id="59_30863873" type="button" x="3032.8649724124607" y="15171.431343559963" r="0" s="8.437222345901493" class="circle">
+    <object id="59_30863873" type="button" x="-6803.213717702205" y="14854.902917235831" r="0" s="7.089714050844382" class="circle">
       <type>circle</type>
       <size>
         <w>800</w>
@@ -99,36 +81,17 @@
         <parentTemplate>buildingblocks2016</parentTemplate>
       </meta>
     </object>
-    <object id="60_30863873" type="text" x="3036.5134280643597" y="14008.636022389777" r="0" s="24.880197709194448" class="strong">
+    <object id="60_30863873" type="text" x="-6793.9" y="13280.1" r="0" s="20.906582765635896" class="strong">
       <height>56.352</height>
       <width>197.13305297296756</width>
       <p align="center">
-        <text><![CDATA[The Choices we made]]></text>
+        <text><![CDATA[The choices we made]]></text>
       </p>
       <layout>
         <layout-element role="title"/>
       </layout>
     </object>
-    <object id="61_30863873" type="text" x="3068.8582588633344" y="15498.786525973657" r="3.1389721830874384e-16" s="12.243930204128496" class="body">
-      <height>112.704</height>
-      <width>390.9237784827681</width>
-      <p>
-        <text><![CDATA[~Using C#]]></text>
-      </p>
-      <p>
-        <text><![CDATA[~Using Monogame]]></text>
-      </p>
-      <p>
-        <text><![CDATA[~Not using a database]]></text>
-      </p>
-      <p>
-        <text><![CDATA[~]]></text>
-      </p>
-      <layout>
-        <layout-element role="body"/>
-      </layout>
-    </object>
-    <object id="65_30863873" type="button" x="-20113.45" y="-5162.9" r="0" s="9.02338827330002" class="circle">
+    <object id="65_30863873" type="button" x="-11440.532058612316" y="-13936.483538274611" r="0" s="7.582263451728938" class="circle">
       <type>circle</type>
       <size>
         <w>800</w>
@@ -139,7 +102,7 @@
         <parentTemplate>buildingblocks2016</parentTemplate>
       </meta>
     </object>
-    <object id="66_30863873" type="image" x="-22087.600000000002" y="-6527.049999999999" r="0" s="15.188924798242093">
+    <object id="66_30863873" type="image" x="-13099.390675781891" y="-15082.765220321004" r="0" s="12.763102493277932">
       <source w="110" h="113">4182230978<url>4182230978.swf</url></source>
       <sourceUrl>prezi_template_matrica.swf</sourceUrl>
       <extra>
@@ -150,7 +113,7 @@
         <parentTemplate>buildingblocks2016</parentTemplate>
       </meta>
     <resource><id>4182230978</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/4/2/3/7a283645adf3d9e4ff3dfae877a8519084c42.swf</url></resource></object>
-    <object id="67_30863873" type="image" x="-22192.66670288835" y="-6956.979458975889" r="-7.965031250936483" s="27.034342608693507">
+    <object id="67_30863873" type="image" x="-13187.677181601584" y="-15444.030670158763" r="-7.965031250936483" s="22.716689307269455">
       <source w="12" h="12">4183255592<url>4183255592.swf</url></source>
       <sourceUrl>prezi_template_csillag_feher.swf</sourceUrl>
       <extra>
@@ -161,14 +124,14 @@
         <parentTemplate>buildingblocks2016</parentTemplate>
       </meta>
     <resource><id>4183255592</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/a/3/7/42d15f5d96e05179626d789d9ceac9338ecd1.swf</url></resource></object>
-    <object id="70_30863873" type="text" x="-22066.432128512497" y="-6327.463609951612" r="-7.965031250936494" s="8.805094231963153" class="head">
+    <object id="70_30863873" type="text" x="-13081.603523830836" y="-14915.05476113526" r="-7.965031250936491" s="7.398833139164837" class="head">
       <height>56.352</height>
       <width>130.56749105981368</width>
       <p align="center">
         <text><![CDATA[The work we did]]></text>
       </p>
     </object>
-    <object id="71_30863873" type="text" x="-30993.72251977693" y="-29208.253403421717" r="0" s="211.18291657408855" class="head">
+    <object id="71_30863873" type="text" x="-26043.716880730874" y="-24543.40493414323" r="0" s="177.4549051277418" class="head">
       <height>28.176</height>
       <width>0</width>
       <p>
@@ -179,14 +142,14 @@
         <parentTemplate>buildingblocks2016</parentTemplate>
       </meta>
     </object>
-    <object id="0_30863873" type="text" x="27035.75" y="-30948.9" r="0" s="171.45119976908867" class="head">
+    <object id="0_30863873" type="text" x="22717.871924191422" y="-26006.052963006685" r="0" s="144.06873852595598" class="head">
       <height>28.176</height>
       <width>325.9605509177615</width>
       <p>
         <text><![CDATA[# Appname by Team Alpha]]></text>
       </p>
     </object>
-    <object id="72_30863873" type="shape" x="-14161.395400536248" y="15363.684623602603" r="19.795781905889157" s="25.86517558544468" class="line3">
+    <object id="72_30863873" type="shape" x="-11899.679756515576" y="12909.951436992613" r="19.79578190588916" s="21.734249881984223" class="line3">
       <geom type="arrow">
         <sp>-112.73578218224586 22.319531311855258</sp>
         <ep>112.73578218224586 22.319531311855258</ep>
@@ -198,7 +161,7 @@
         <parentTemplate>buildingblocks2016</parentTemplate>
       </meta>
     </object>
-    <object id="73_30863873" type="shape" x="-2594.2056267768785" y="18567.23914211655" r="-31.926888108244754" s="25.865175585444675" class="line3">
+    <object id="73_30863873" type="shape" x="-2179.8851954961065" y="15601.86644781216" r="-31.926888108244754" s="21.734249881984223" class="line3">
       <geom type="arrow">
         <sp>-100.8937050952398 -13.463520520642502</sp>
         <ep>100.8937050952398 -13.463520520642502</ep>
@@ -210,7 +173,7 @@
         <parentTemplate>buildingblocks2016</parentTemplate>
       </meta>
     </object>
-    <object id="74_30863873" type="shape" x="11504.007517421789" y="11593.135680359332" r="-1.0069860665987888e-14" s="25.865175585444664" class="line3">
+    <object id="74_30863873" type="shape" x="9666.703139203591" y="9741.59664837029" r="-1.0069860665987893e-14" s="21.734249881984216" class="line3">
       <geom type="arrow">
         <sp>-195.3760711580977 50.53361797642956</sp>
         <ep>195.37607115809772 50.53361797642956</ep>
@@ -222,7 +185,7 @@
         <parentTemplate>buildingblocks2016</parentTemplate>
       </meta>
     </object>
-    <object id="0" type="text" x="-19577.310840636706" y="15431.072722326902" r="0" s="9.31612394175238" class="body">
+    <object id="0" type="text" x="-16450.619653520575" y="12966.576986349794" r="0" s="7.828246323428199" class="body">
       <height>253.58399999999995</height>
       <width>-76.80000000000001</width>
       <p>
@@ -253,67 +216,41 @@
         <text><![CDATA[Chava]]></text>
       </p>
     </object>
-    <object id="1" type="text" x="-10107.749999999998" y="18899.154000000002" r="0" s="8" class="body">
-      <height>28.176</height>
-      <width>-317.736</width>
-      <p>
-        <text><![CDATA[# Short recap of assignment]]></text>
-      </p>
-    </object>
-    <object id="2" type="button" x="16979.15" y="734.4" r="0" s="6.655012244556945" class="roundrect">
+    <object id="2" type="button" x="18316.610931142463" y="10317.609018286015" r="0" s="5.592140622167698" class="roundrect">
       <type>roundrect</type>
       <size>
         <w>1074.6268656716418</w>
         <h>600</h>
       </size>
     </object>
-    <object id="4" type="shape" x="27198.030258094044" y="4965.951318293098" r="64.78563798231951" s="32.000000000000014" class="line3">
+    <object id="4" type="shape" x="22854.234411609203" y="4172.839519183013" r="64.78563798231951" s="26.889281842527986" class="line3">
       <geom type="arrow">
         <sp>185.41377137801072 99.97562288251105</sp>
-        <ep>-185.41377137801078 99.97562288251096</ep>
-        <b>199.95124576502198</b>
+        <ep>-185.4137713780108 99.97562288251096</ep>
+        <b>199.951245765022</b>
         <t>7</t>
       </geom>
     </object>
-    <object id="5" type="text" x="17847.36639999999" y="-24.63323999999693" r="0" s="11.712800000000003" class="strong">
-      <height>169.05599999999998</height>
-      <width>458.352</width>
-      <p>
-        <text><![CDATA[The App]]></text>
-      </p>
-      <p>
-        <text><![CDATA[]]></text>
-      </p>
-      <p>
-        <text><![CDATA[]]></text>
-      </p>
-      <p>
-        <text><![CDATA[]]></text>
-      </p>
-      <p>
-        <text><![CDATA[#Add screenshots here, maybe some info?]]></text>
-      </p>
-    </object>
-    <object id="9" type="button" x="21458.000000000004" y="13139.614438873836" r="0" s="7.562520148024652" class="invisible">
+    <object id="9" type="button" x="3364.3940555301633" y="13286.68737340714" r="0" s="6.354710490625975" class="invisible">
       <type>invisible</type>
       <size>
         <w>1074.6268656716418</w>
         <h>647.9904675483704</h>
       </size>
     </object>
-    <object id="10" type="image" x="21458.217205983696" y="13133.543831835494" r="0" s="1.6344953744662676">
+    <object id="10" type="image" x="3374.3" y="13281.15" r="0" s="1.3734502123228676">
       <source w="4724" h="3037">4588868885<url>4588868885.png</url></source>
       <sourceUrl>UML%20DIAGRAM%20as%20of%2030-06-16%20Corrected.png</sourceUrl>
     <resource><id>4588868885</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/a/8/f/fa31191013c8dee85b0cbe5f6197c95c4d6ff.png</url></resource></object>
-    <object id="8" type="text" x="23638.58517183221" y="11077.634894645485" r="0" s="10.512769610944938" class="strong">
+    <object id="8" type="text" x="5196.718095124959" y="11554.02646346078" r="0" s="8.833775781695673" class="strong">
       <height>28.176</height>
       <width>-203.20800000000003</width>
       <p>
         <text><![CDATA[The UML diagram]]></text>
       </p>
     </object>
-    <object id="11" type="text" x="-19083.500000000004" y="-4923.349999999999" r="0" s="12.32713192474842" class="strong">
-      <height>422.63999999999993</height>
+    <object id="11" type="text" x="-10575.075313808826" y="-14027.297987315791" r="0" s="10.358366394830767" class="strong">
+      <height>366.28799999999995</height>
       <width>278.06399999999996</width>
       <p>
         <text><![CDATA[Marcel - The graph and UML maker]]></text>
@@ -334,40 +271,40 @@
         <text><![CDATA[]]></text>
       </p>
       <p>
-        <text><![CDATA[Jasper- The scrum master and parser maker]]></text>
+        <text><![CDATA[Jasper- The scrum master ]]></text>
       </p>
       <p>
         <text><![CDATA[]]></text>
       </p>
       <p>
-        <text><![CDATA[Chava- The allround supporter  ]]></text>
+        <text><![CDATA[Chava- The supporter]]></text>
       </p>
     </object>
-    <object id="12" type="shape" x="9006.811918509356" y="-2428.516461137576" r="23.22089326826833" s="32.000000000000014" class="line3">
+    <object id="12" type="shape" x="7790.954749632765" y="1824.0692573387391" r="-3.7134084500044175" s="26.889281842527986" class="line3">
       <geom type="arrow">
-        <sp>130.99565330595848 35.992912283709444</sp>
-        <ep>-130.99565330595848 35.992912283709394</ep>
-        <b>71.98582456741885</b>
+        <sp>155.01546474364628 -51.84796686818475</sp>
+        <ep>-155.01546474364625 -51.847966868184784</ep>
+        <b>-103.69593373636953</b>
         <t>7</t>
       </geom>
     </object>
-    <object id="13" type="button" x="-902.3999999999992" y="-16441.699999999997" r="0" s="6.947594952337874" class="roundrect">
+    <object id="13" type="button" x="177.92225204071076" y="-15246.497039696624" r="0" s="5.8379949625355545" class="roundrect">
       <type>roundrect</type>
       <size>
         <w>1074.6268656716418</w>
         <h>600</h>
       </size>
     </object>
-    <object id="14" type="text" x="-1414.3499999999974" y="-18221.549999999996" r="0" s="8" class="strong">
+    <object id="14" type="text" x="-252.2642429368536" y="-16742.087298678605" r="0" s="6.722320460631992" class="strong">
       <height>28.176</height>
       <width>-323.424</width>
       <p>
         <text><![CDATA[          The experience we had]]></text>
       </p>
     </object>
-    <object id="16" type="text" x="-3148.049999999999" y="-17175.199999999997" r="0" s="8" class="strong">
-      <height>140.88</height>
-      <width>-166.94400000000002</width>
+    <object id="16" type="text" x="-880.9997347562935" y="-15300.365281505088" r="0" s="6.722320460631992" class="strong">
+      <height>309.9359999999999</height>
+      <width>-416.664</width>
       <p>
         <text><![CDATA[Positive points]]></text>
       </p>
@@ -375,18 +312,36 @@
         <text><![CDATA[]]></text>
       </p>
       <p>
-        <text><![CDATA[Point 1]]></text>
+        <text><![CDATA[We learned a lot, especially on UML.]]></text>
       </p>
       <p>
         <text><![CDATA[]]></text>
       </p>
       <p>
-        <text><![CDATA[Point2]]></text>
+        <text><![CDATA[We were very able and willing ]]></text>
+      </p>
+      <p>
+        <text><![CDATA[to help each other.]]></text>
+      </p>
+      <p>
+        <text><![CDATA[]]></text>
+      </p>
+      <p>
+        <text><![CDATA[Dividing of the tasks was easy and ]]></text>
+      </p>
+      <p>
+        <text><![CDATA[everyone knew what they had to do.]]></text>
+      </p>
+      <p>
+        <text><![CDATA[]]></text>
+      </p>
+      <p>
+        <text><![CDATA[We had fun!]]></text>
       </p>
     </object>
-    <object id="17" type="text" x="659.7999999999979" y="-17160.849999999995" r="0" s="8" class="strong">
-      <height>140.88</height>
-      <width>-181.03200000000004</width>
+    <object id="17" type="text" x="2078.4903042728824" y="-15193.184721163212" r="0" s="6.722320460631992" class="strong">
+      <height>338.11199999999997</height>
+      <width>355.9920000000001</width>
       <p>
         <text><![CDATA[Negative points]]></text>
       </p>
@@ -394,77 +349,256 @@
         <text><![CDATA[]]></text>
       </p>
       <p>
-        <text><![CDATA[Point 1]]></text>
+        <text><![CDATA[The communication wasn't]]></text>
+      </p>
+      <p>
+        <text><![CDATA[always that great.]]></text>
       </p>
       <p>
         <text><![CDATA[]]></text>
       </p>
       <p>
-        <text><![CDATA[Point 2]]></text>
+        <text><![CDATA[We were often so busy with building the app that scrum elements were forgotten.]]></text>
+      </p>
+      <p>
+        <text><![CDATA[]]></text>
+      </p>
+      <p>
+        <text><![CDATA[Fortune wasn't on our side. There was a lot of illness and problems.]]></text>
       </p>
     </object>
-    <object id="18" type="button" x="1149.4" y="-2225.55" r="0" s="6.280876905168592" class="circle">
+    <object id="18" type="button" x="-19698.87060781869" y="-899.5575376449412" r="0" s="5.277758416290721" class="circle">
       <type>circle</type>
       <size>
         <w>800</w>
         <h>800</h>
       </size>
     </object>
-    <object id="20" type="image" x="3275.9" y="-2361.85" r="0" s="3.402092943993683">
+    <object id="20" type="image" x="-17911.993800376953" y="-1014.08907249296" r="0" s="2.858744875797558">
       <source w="213" h="173" bt="-88.6" bl="-107.4">606672589<url>606672589.swf</url></source>
       <sourceUrl>eye.swf</sourceUrl>
       <extra>
         <fixed_avm1_pos>1</fixed_avm1_pos>
       </extra>
     <resource><id>606672589</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/1/1/b/52dca3d9ce8c0fa9b0dab6ef21659ab1cf69a.swf</url></resource></object>
-    <object id="21" type="image" x="-928.5" y="-2361.85" r="0" s="2.2209889785317247">
+    <object id="21" type="image" x="-21444.909318462094" y="-1014.08907249296" r="0" s="1.8662749566527448">
       <source w="306" h="265" bt="-136.85" bl="-152.85">606656173<url>606656173.swf</url></source>
       <sourceUrl>brain.swf</sourceUrl>
       <extra>
         <fixed_avm1_pos>1</fixed_avm1_pos>
       </extra>
     <resource><id>606656173</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/0/8/9/b5be5a693b5614cf6ea00a5cfac3456ba842f.swf</url></resource></object>
-    <object id="22" type="image" x="1045.4" y="-3748.4" r="0" s="9.92755314500325">
+    <object id="22" type="image" x="-19786.260773806905" y="-2179.193251829122" r="0" s="8.342024203833354">
       <source w="61" h="83" bt="-46.65" bl="-28.8">606661477<url>606661477.swf</url></source>
       <sourceUrl>bulb.swf</sourceUrl>
       <extra>
         <fixed_avm1_pos>1</fixed_avm1_pos>
       </extra>
     <resource><id>606661477</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/d/0/b/470c2bf96bd5115606a0ea4dfc2607ca9d437.swf</url></resource></object>
-    <object id="23" type="text" x="1279.6000000000001" y="-2356.25" r="0" s="17.976675108098465" class="strong">
+    <object id="23" type="text" x="-19577.9" y="-1542.45" r="0" s="15.105621361663015" class="strong">
       <height>28.176</height>
       <width>197.32800000000003</width>
       <p>
         <text><![CDATA[Demonstration ]]></text>
       </p>
     </object>
-    <object id="24" type="image" x="1045.4" y="-570.55" r="0" s="3.772833841736584">
+    <object id="24" type="image" x="-19786.260773806905" y="491.1225076483024" r="0" s="3.17027476610883">
       <source w="106" h="156" bt="-77.4" bl="-52.25">606685217<url>606685217.swf</url></source>
       <sourceUrl>ipad.swf</sourceUrl>
       <extra>
         <fixed_avm1_pos>1</fixed_avm1_pos>
       </extra>
     <resource><id>606685217</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/3/7/1/d0e621e3607ff18ea6ff7ca8eb7ecedd41041.swf</url></resource></object>
-    <object id="25" type="shape" x="-9567.638725859635" y="-599.0425728995704" r="3.5459085484057824" s="32.000000000000014" class="line3">
+    <object id="0_206135088" type="button" x="-7469.699999999999" y="-23033.75" r="0" s="5.297018952749693" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>1074.6268656716418</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="3_206135088" type="image" x="-7533.600000000003" y="-22708.25" r="0" s="8.482143001639459">
+      <source w="428" h="281">4588918134<url>4588918134.jpg</url></source>
+      <sourceUrl>4460309_orig.jpg</sourceUrl>
+    <resource><id>4588918134</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/e/f/4/1a489064df49af77d2f93101c82688cca2d08.jpg</url></resource></object>
+    <object id="2_206135088" type="text" x="-7556.449999999997" y="-24217.300000000003" r="0" s="20.74993968080002" class="head">
+      <height>28.176</height>
+      <width>-175.872</width>
+      <p>
+        <text color="0"><![CDATA[Any Questions?]]></text>
+      </p>
+    </object>
+    <object id="4_206135088" type="shape" x="-21972.028593068942" y="-9661.388766407686" r="-59.99999999999999" s="32.6530612244898" class="line3">
       <geom type="arrow">
-        <sp>219.57001819309332 -59.34684232079242</sp>
-        <ep>-219.57001819309332 -59.346842320792454</ep>
-        <b>-118.69368464158487</b>
+        <sp>-234.24833860137565 76.87680747905618</sp>
+        <ep>234.2483386013756 76.87680747905618</ep>
+        <b>-153.75361495811237</b>
         <t>7</t>
       </geom>
     </object>
-    <object id="26" type="shape" x="-14789.26702677141" y="-15392.38178367011" r="-26.442679149229576" s="44.80000000000002" class="line3">
-      <geom type="arrow">
-        <sp>-214.1463696677392 47.04380697752756</sp>
-        <ep>214.1463696677392 47.04380697752756</ep>
-        <b>-94.08761395505512</b>
-        <t>7</t>
-      </geom>
+    <object id="1_206135088" type="text" x="-7598.7" y="14346.35" r="0" s="16" class="body">
+      <height>28.176</height>
+      <width>-103.36800000000001</width>
+      <p>
+        <text><![CDATA[Using C#]]></text>
+      </p>
     </object>
+    <object id="5_206135088" type="text" x="-6836.299999999999" y="14951.55" r="0" s="16" class="body">
+      <height>28.176</height>
+      <width>-198.69600000000003</width>
+      <p>
+        <text><![CDATA[Using Monogame]]></text>
+      </p>
+    </object>
+    <object id="6_206135088" type="text" x="-6524.449999999999" y="15548.8" r="0" s="16" class="body">
+      <height>28.176</height>
+      <width>-237.672</width>
+      <p>
+        <text><![CDATA[Not using a database]]></text>
+      </p>
+    </object>
+    <object id="7_206135088" type="text" x="18332.5" y="8858.350000000002" r="0" s="8" class="body">
+      <height>28.176</height>
+      <width>-92.352</width>
+      <p>
+        <text><![CDATA[The app]]></text>
+      </p>
+    </object>
+    <object id="8_206135088" type="image" x="19938.549999999996" y="10386.95" r="0" s="1.6804382569613934">
+      <source w="900" h="1600">4589345628<url>4589345628.jpeg</url></source>
+      <sourceUrl>MainMenu.jpeg</sourceUrl>
+    <resource><id>4589345628</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/b/3/f/bf43570e21607749eeb28e6bc63919025c39c.jpeg</url></resource></object>
+    <object id="9_206135088" type="text" x="17368.850000000002" y="9247.254" r="0" s="8" class="body">
+      <height>28.176</height>
+      <width>-444.264</width>
+      <p>
+        <text><![CDATA[Our app had to meet certain standards. ]]></text>
+      </p>
+    </object>
+    <object id="10_206135088" type="text" x="16806.35" y="10222.553999999998" r="0" s="8" class="body">
+      <height>84.52799999999999</height>
+      <width>-294.216</width>
+      <p>
+        <text><![CDATA[A main menu, from where ]]></text>
+      </p>
+      <p>
+        <text><![CDATA[everything had to be]]></text>
+      </p>
+      <p>
+        <text><![CDATA[accessible]]></text>
+      </p>
+    </object>
+    <object id="11_206135088" type="button" x="14845.45" y="-188.05" r="0" s="5.970104043635254" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>1074.6268656716418</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="12_206135088" type="button" x="172.90000000000003" y="-895.95" r="0" s="5.200623966900043" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>1074.6268656716418</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="13_206135088" type="button" x="-11442.9" y="-2342.05" r="0" s="5.970104043635255" class="roundrect">
+      <type>roundrect</type>
+      <size>
+        <w>1074.6268656716418</w>
+        <h>600</h>
+      </size>
+    </object>
+    <object id="14_206135088" type="text" x="12926.05" y="-1747.65" r="0" s="8" class="body">
+      <height>28.176</height>
+      <width>-92.352</width>
+      <p>
+        <text><![CDATA[The app]]></text>
+      </p>
+    </object>
+    <object id="16_206135088" type="image" x="16590.1" y="-166.35" r="0" s="2.1623229490614757">
+      <source w="900" h="1600">4589349308<url>4589349308.jpeg</url></source>
+      <sourceUrl>AppointmentScheduler.jpeg</sourceUrl>
+    <resource><id>4589349308</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/d/8/c/9455cb77ac593f26112bbdc7f369560ef18c6.jpeg</url></resource></object>
+    <object id="15_206135088" type="text" x="13914.7" y="-1042" r="0" s="8" class="body">
+      <height>84.52799999999999</height>
+      <width>552</width>
+      <p>
+        <text><![CDATA[It had to be able to create a appointment]]></text>
+      </p>
+      <p>
+        <text><![CDATA[in the agenda about when to pick up ]]></text>
+      </p>
+      <p>
+        <text><![CDATA[the bike from a specific location]]></text>
+      </p>
+    </object>
+    <object id="17_206135088" type="text" x="-1404.1" y="-2241.546" r="0" s="8" class="body">
+      <height>28.176</height>
+      <width>-92.352</width>
+      <p>
+        <text><![CDATA[The app]]></text>
+      </p>
+    </object>
+    <object id="19_206135088" type="image" x="1852.45" y="-893.1" r="0" s="1.9224261918007983">
+      <source w="900" h="1600">4589349795<url>4589349795.jpeg</url></source>
+      <sourceUrl>Location.jpeg</sourceUrl>
+    <resource><id>4589349795</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/5/f/3/d2098e8ca656c125a834c1fefee14a6ee7051.jpeg</url></resource></object>
+    <object id="18_206135088" type="text" x="-292.10000000000014" y="-1655.796" r="0" s="8" class="body">
+      <height>56.352</height>
+      <width>552</width>
+      <p>
+        <text><![CDATA[It had to be able to save the current ]]></text>
+      </p>
+      <p>
+        <text><![CDATA[location of your bike in the note app.]]></text>
+      </p>
+    </object>
+    <object id="20_206135088" type="text" x="-19774.65" y="-793.4960000000001" r="0" s="8" class="body">
+      <height>28.176</height>
+      <width>-201.52800000000002</width>
+      <p>
+        <text><![CDATA[(We're not all talk)]]></text>
+      </p>
+    </object>
+    <object id="21_206135088" type="text" x="-13828.15" y="-3886.5960000000005" r="0" s="8" class="body">
+      <height>28.176</height>
+      <width>-92.352</width>
+      <p>
+        <text><![CDATA[The app]]></text>
+      </p>
+    </object>
+    <object id="22_206135088" type="text" x="-12670.400000000001" y="-3232.3959999999993" r="0" s="8" class="body">
+      <height>84.52799999999999</height>
+      <width>-396.192</width>
+      <p>
+        <text><![CDATA[It had to be able to show different ]]></text>
+      </p>
+      <p>
+        <text><![CDATA[kinds of graphs with each their own]]></text>
+      </p>
+      <p>
+        <text><![CDATA[data.]]></text>
+      </p>
+    </object>
+    <object id="23_206135088" type="image" x="-9485.1" y="-3179.25" r="0" s="2.452074224235714">
+      <source w="900" h="1600">4589350492<mask x="0" y="0" w="900" h="678"/>
+      <url>4589350492.jpeg</url></source>
+      <sourceUrl>LineGraph.jpeg</sourceUrl>
+    <resource><id>4589350492</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/3/1/6/bbbd86ea75b3b86dd041c59ac134073b5c98c.jpeg</url></resource></object>
+    <object id="24_206135088" type="image" x="-9477.95" y="-1461.3" r="0" s="2.4613903157342043">
+      <source w="900" h="1600">4589350638<mask x="0" y="0" w="900" h="675"/>
+      <url>4589350638.jpeg</url></source>
+      <sourceUrl>PieChart.jpeg</sourceUrl>
+    <resource><id>4589350638</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/e/8/4/083b477e3b5fbd5613e635d2cd10b59cb7f08.jpeg</url></resource></object>
+    <object id="25_206135088" type="image" x="-12564.6" y="-1705.9" r="0" s="2.4613903157342043">
+      <source w="900" h="1600">4589350728<mask x="0" y="0" w="900" h="874"/>
+      <url>4589350728.jpeg</url></source>
+      <sourceUrl>DoubleBarGraph.jpeg</sourceUrl>
+    <resource><id>4589350728</id><url>http://0103.static.prezi.com.s3.amazonaws.com/media/3/e/4/9879cf876502d01af3e70a6c866dbe12e0c88.jpeg</url></resource></object>
   </zui-table>
   <background>
-    <layer depth="7.460211123733429" fadescale="0.3182988175442573">
-      <object id="background4249042670" type="image" x="2679.0098779401396" y="3238.431993566582" r="0" s="43.30364474816294">
+    <layer depth="6.268741234713452" fadescale="0.378796362843235">
+      <object id="background4249042670" type="image" x="2251.145364589027" y="2721.2222063397357" r="0" s="36.38762213881435">
         <source w="1901" h="1472" bt="254.55" bl="586.85">4249042670<url>4249042670.swf</url></source>
         <sourceUrl>lego_bg2-01.swf</sourceUrl>
         <extra>
@@ -481,16 +615,64 @@
       <eagle o="46_30863873"/>
     </s>
     <s>
-      <eagle o="54_30863873"/>
+      <eagle o="59_30863873"/>
     </s>
     <s>
-      <eagle o="59_30863873"/>
+      <buildin o="1_206135088"/>
+    </s>
+    <s>
+      <buildin o="5_206135088"/>
+    </s>
+    <s>
+      <buildin o="6_206135088"/>
     </s>
     <s>
       <eagle o="9"/>
     </s>
     <s>
       <eagle o="2"/>
+    </s>
+    <s>
+      <buildin o="10_206135088"/>
+    </s>
+    <s>
+      <buildin o="8_206135088"/>
+    </s>
+    <s>
+      <eagle o="11_206135088"/>
+    </s>
+    <s>
+      <buildin o="15_206135088"/>
+    </s>
+    <s>
+      <buildin o="16_206135088"/>
+    </s>
+    <s>
+      <eagle o="12_206135088"/>
+    </s>
+    <s>
+      <buildin o="18_206135088"/>
+    </s>
+    <s>
+      <buildin o="19_206135088"/>
+    </s>
+    <s>
+      <eagle o="13_206135088"/>
+    </s>
+    <s>
+      <buildin o="22_206135088"/>
+    </s>
+    <s>
+      <buildin o="23_206135088"/>
+    </s>
+    <s>
+      <buildin o="24_206135088"/>
+    </s>
+    <s>
+      <buildin o="25_206135088"/>
+    </s>
+    <s>
+      <eagle o="18"/>
     </s>
     <s>
       <eagle o="65_30863873"/>
@@ -505,10 +687,7 @@
       <buildin o="17"/>
     </s>
     <s>
-      <eagle o="18"/>
-    </s>
-    <s>
-      <eagle o="2_30863873"/>
+      <eagle o="0_206135088"/>
     </s>
   </path>
   <style type="text/css"><![CDATA[
@@ -791,5 +970,5 @@ ZPoly
 }
 
 ]]></style>
-  <hash>193fb3e8</hash>
-<sync><oid>haiq4clxpbds</oid><title>the</title><hash>193fb3e8</hash></sync><config>bJ48nztcQ6tJuBJlo9472bwXJ58r9IWomkx/DQbtSoUoK6VJQfs6l50x/LfGOaSXgQlgbOS7S0m9Be0HCf7d3L5EVAOv1q8XEpJqx7b01u6Ngi5IgCpR28npyykqq5Jm+lcBVGtJg1M3MKRa6vvyGedOQ5qah+MtIJsnaaS4JeX83Ooxp4yN0wVxmnxymUAtn9ZDAyglPKimXSzQ+KEywp7dU40HgDTLPfvQDysH9vTMJ6LOcShLxaLM39258pOY7I+KgyExhZWPTcy6XwCkFpgynLSgQLMCa3m5QeHobj6wKgwrd3MXvrsQV3Y1+zN/Z554MRXNFUEZmSaIorBKsA==</config></zuiprezi>
+  <hash>30697854</hash>
+<sync><oid>haiq4clxpbds</oid><title>project-4-presentation</title><hash>30697854</hash></sync><config>HBSGAw55OM9A3sQlI3MIbBiA5vCzLRc7ISMC4VJj8NUJvu3dejuURmVWBrGiXVIV13y6vTNaGWuLpkNkvd9d870wFckHC7N/P7K2mOBYwKGknFYOsQXhhFFesUoLrW+LIyGR5V7cLUO7owTYzzroqXAjmvfRgX8jek2Yh02OR+VAQzty1v5RukO003Ws2d3azlH2qkfR3GHHk0a0TW63MzDlcM3Pm1axqdEGJ0AMhCBFo1SerxEIak91HjoL/Stdi4+l+N90lf50vEJSJ3VcLAD7eweXSEKpCMv7i7vNOEVQDxTnG5mtV+dxeav+7oAgW8nte+R61t9y70La1upAxg==</config></zuiprezi>
