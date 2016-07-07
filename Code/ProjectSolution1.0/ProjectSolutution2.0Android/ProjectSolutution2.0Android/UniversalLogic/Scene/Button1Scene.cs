@@ -18,9 +18,9 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
     {
         Picture Graph;
         Picture Legend;
-        //GenericButton testo;
-        //DynamicButtonHorizontal backtoMainmenu;
         List<Duodata<string, int>> data;
+
+        //Create scene for Button 1
         public Button1Scene(GraphicsDevice graphDevice, string ID) : base(graphDevice, ID)
         {
             data = DataAccess.dataAccess.BoxPNeighbourhood();
@@ -88,21 +88,9 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             data.Add(five);
 
 
-
-
-
-            //data.Add(new Duodata<string, int>("lol", 10));
-            //data.Add(new Duodata<string, int>("lol", 33));
-            //data.Add(new Duodata<string, int>("lol", 10));
-            //data.Add(new Duodata<string, int>("lol", 10));
-            //Texture2D temp = ARGBtoTexture2D.ARGBtoTexture2d(BarChart.Make(testdata), graphDevice);
-            //meme = new Picture(temp, new Point(0), new Point(temp.Width, temp.Height));
-
-            //testo = new GenericButton(new Point(0), new Point(10), Color.Azure, graphDevice);
-            //backtoMainmenu = new DynamicButtonHorizontal(1000, 200, 0.10, 0.90, Color.YellowGreen, graphDevice);
-            //backtoMainmenu.SetDelegate(new Action(() => SceneManager.ChangeScene("MainMenuScene")));
         }
 
+        //Draw the bar chart
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
             if(Legend == null)
@@ -121,8 +109,6 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             }
             Graph.draw(spritebatch, Offset);
             Legend.draw(spritebatch, Offset);
-            //testo.Draw(spritebatch, Offset);
-            //backtoMainmenu.Draw(spritebatch, Offset);
         }
         public override void WindowsDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
@@ -130,7 +116,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         }
         protected override void AndroidLogic()
         {
-            //backtoMainmenu.Click(Offset);
+
         }
         protected override void WindowsLogic()
         {

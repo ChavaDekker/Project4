@@ -20,6 +20,8 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         DynamicButtonHorizontal Save;
         DynamicButtonHorizontal Delete;
         string ErrorShow= "";
+
+        //Button 5 scene
         public Button5Scene(GraphicsDevice graphDevice, string ID) : base(graphDevice, ID)
         {
             Save = new DynamicButtonHorizontal(200, 200, 0.25, 0.75, Color.Red, graphDevice);
@@ -31,11 +33,9 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             Save.SetDelegate(new Action(() => LocationApplication.SaveCurrentLocationToFile()));
             Delete.SetDelegate(new Action(() => LocationApplication.DeleteLocationFile()));
 
-            //Save.SetDelegate(new Action(() => SceneManager.ChangeScene("MainMenuScene")));
-            //Delete.SetDelegate(new Action(() => SceneManager.ChangeScene("MainMenuScene")));
-            //Maxnegoffset = new Point(-1000, 0);
         }
 
+        //Draw buttons for location app
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
             Save.Draw(spritebatch, Offset);

@@ -27,6 +27,8 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         DynamicButtonHorizontal dynamiclol7;
         DynamicButtonHorizontal dynamiclol8;
 
+
+        //Button logic
         public MainMenuScene(GraphicsDevice graphDevice, string ID) : base(graphDevice, ID)
         {
             Maxnegoffset = new Point(0, -1200);
@@ -63,6 +65,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             dynamiclol8.SetText("S2");
         }
 
+        //draw buttons
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
             dynamicTest.Draw(spritebatch, Offset);

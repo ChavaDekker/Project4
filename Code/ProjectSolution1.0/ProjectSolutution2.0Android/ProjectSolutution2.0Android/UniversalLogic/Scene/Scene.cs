@@ -28,6 +28,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             //Could make this a visitor pattern instead? Is it already a visitor pattern?
         }
 
+        //keeps offset within bounds
         private void ScreenOffset()
         {
             Offset += InputAcces.input.GetDeltaSwipe();
@@ -49,6 +50,8 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             }
         }
 
+
+        
         public void AndroidUpdate()
         {
             ScreenOffset();

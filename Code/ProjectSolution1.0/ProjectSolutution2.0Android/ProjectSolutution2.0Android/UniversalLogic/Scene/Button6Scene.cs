@@ -17,11 +17,14 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
 {
     public class Button6Scene : Scene
     {
+
+        //Button 6 scene
         public Button6Scene(GraphicsDevice graphDevice, string ID) : base(graphDevice, ID)
         {
             
         }
 
+        //refresh background color
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
             graphDevice.Clear(Color.Aquamarine);

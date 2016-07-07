@@ -19,6 +19,8 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         Picture memes;
         Picture directiontest;
         List<Duodata<string, int>> Data = new List<Duodata<string, int>>();
+
+        //button 4 scene
         public Button4Scene(GraphicsDevice graphDevice, string ID) : base(graphDevice, ID)
         {
             
@@ -31,6 +33,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             memes = new Picture(testo, new Point(0), new Point(500));
         }
 
+        //Pie chart
         public override void AndroidDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
             memes.draw(spritebatch, Offset);
