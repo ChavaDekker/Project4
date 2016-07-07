@@ -18,6 +18,8 @@ namespace ProjectSolutution2._0Android.UniversalLogic
     class AndroidInput : Input
     {
         TouchCollection Lastinput = TouchPanel.GetState();
+
+        //Click state of screen
         public bool DidClick()
         {
             if (Lastinput.Count == 0) {
@@ -31,6 +33,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic
             
         }
 
+        //If click was within defined points
         public bool DidClickInArea(Point LTop, Point RBottom)
         {
             if (DidClick())
@@ -48,6 +51,8 @@ namespace ProjectSolutution2._0Android.UniversalLogic
             return false;
         }
 
+
+        //Swipe logic
         public Point GetDeltaSwipe()
         {
             TouchCollection current = TouchPanel.GetState();

@@ -3,6 +3,7 @@
 using System;
 namespace ProjectSolutution2._0Android.UniversalLogic
 {
+    //defines the ARGB value of a pixel (Alpha, Red, Green, Blue)
     public class ARGB
     {
         public byte a;
