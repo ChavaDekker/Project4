@@ -17,6 +17,15 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         private static List<Scene> SceneStack = new List<Scene>();
         private static Dictionary<string, Scene> SceneDict = new Dictionary<string, Scene>();
 
+        public static Scene getAScene(string ID)
+        {
+            if (SceneDict.ContainsKey(ID))
+            {
+                return SceneDict[ID];
+            }
+            return null;
+        }
+
         public static void ChangeScene(string ID)
         {
             PopSceneFromStack();

@@ -1,18 +1,122 @@
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
 namespace ProjectSolutution2._0Android.UniversalLogic
 {
     public static class BarChart
     {
-        private static ARGB[,] Axis(List<Duodata<string, int>> aDuodataList)
+        private static Texture2D Pixel;
+        private static RenderTarget2D Axis(List<Duodata<string, int>> aDuodataList, RenderTarget2D target, SpriteBatch spriteBatch, GraphicsDevice graphDevice, int maxvalue)
         {
+            int paddingx = 100;
+            int paddingy = 200;
+            int linethickness = 5;
+            int marklenght = 5;
+            int textoffsetyaxis = 50;
+            int textoffsetxaxis = 10;
+            int widthofColumn = target.Width / (aDuodataList.Count * 2);
+            Color backgroundColor = new Color(0, 0, 0, 0);
 
-            throw new System.Exception("Not implemented");
+            RenderTarget2D NewTarget = new RenderTarget2D(graphDevice, target.Width + paddingx * 2, target.Height + paddingy * 2);
+
+            LineChart.drawline(new Point(0), new Point(0, target.Height), spriteBatch, linethickness, Pixel);
+            LineChart.drawline(new Point(0, target.Height - linethickness), new Point(target.Width, target.Height - linethickness), spriteBatch, linethickness, Pixel);
+
+            spriteBatch.End();
+            graphDevice.SetRenderTarget(NewTarget);
+            graphDevice.Clear(backgroundColor);
+            spriteBatch.Begin();
+
+            spriteBatch.Draw(target, new Rectangle(new Point(paddingx, 0), new Point(target.Width, target.Height)), Color.White);
+
+
+            for (int i = 0; i < 10; i++)
+            {
+                LineChart.drawline(new Point(paddingx - marklenght, i * target.Height / 10), new Point(paddingx, i * target.Height / 10), spriteBatch, linethickness, Pixel);
+                TextDrawing.Drawtext(new Point(paddingx - textoffsetyaxis, i * target.Height / 10), (maxvalue - maxvalue / 10 * i).ToString(), spriteBatch);
+            }
+
+
+            for (int i = 0; i < aDuodataList.Count; i++)
+            {
+                LineChart.drawline(new Point((i * 2 + 1) * widthofColumn + paddingx, target.Height), new Point((i * 2 + 1) * widthofColumn + paddingx, target.Height + marklenght), spriteBatch, linethickness, Pixel);
+                TextDrawing.Drawtext(new Point((i * 2 + 1) * widthofColumn + paddingx - textoffsetxaxis, target.Height + textoffsetxaxis), ((char)(65 + i)).ToString(), spriteBatch);
+            }
+
+            return NewTarget;
         }
-        public static ARGB[,] Legenda(List<Duodata<string, int>> aDuodataList)
+        public static Texture2D Legend(List<Duodata<string, int>> aDuodataList, GraphicsDevice graphDevice, SpriteBatch spriteBatch)
         {
-            throw new System.Exception("Not implemented");
+            int width = 500;
+            int lineheight = 40;
+            int height = lineheight * (aDuodataList.Count);
+            Color BackgroundColor = new Color(0, 0, 0, 0);
+
+            RenderTarget2D target = new RenderTarget2D(graphDevice, width, height);
+            graphDevice.SetRenderTarget(target);
+            graphDevice.Clear(BackgroundColor);
+
+            spriteBatch.Begin();
+
+            for (int i = 0; i < aDuodataList.Count; i++)
+            {
+                TextDrawing.Drawtext(new Point(0, lineheight * i), ((char)(65 + i)).ToString() + "  :  " + aDuodataList[i].GetAttr1(), spriteBatch);
+            }
+            spriteBatch.End();
+            graphDevice.SetRenderTarget(null);
+            return target;
         }
+
+        public static Texture2D Make2(List<Duodata<string, int>> DuodataList, GraphicsDevice graphdevice, SpriteBatch spriteBatch)
+        {
+            int width = 500;
+            int height = 500;
+            Color backroundColor = new Color(0, 0, 0, 0);
+            Color barcolor = Color.Red;
+
+            int maxvalue = 0;
+            int elements = DuodataList.Count;
+
+            int widthofColumn = width / (elements * 2);
+
+            foreach(Duodata<string, int> i  in DuodataList)
+            {
+                if(i.GetAttr2() > maxvalue)
+                {
+                    maxvalue = i.GetAttr2();
+                }
+            }
+
+
+            Pixel = new Texture2D(graphdevice, 1, 1);
+            Color[] pixel = new Color[1];
+            pixel[0] = Color.White;
+            Pixel.SetData<Color>(pixel);
+
+            RenderTarget2D target = new RenderTarget2D(graphdevice, width, height);
+            graphdevice.SetRenderTarget(target);
+            graphdevice.Clear(backroundColor);
+            spriteBatch.Begin();
+
+            Duodata<string, int> temp;
+            for (int i = 0; i < elements; i++)
+            {
+                temp = DuodataList[i];
+
+                spriteBatch.Draw(Pixel, new Rectangle(new Point((i * 2 + 1) * widthofColumn, height - height * temp.GetAttr2() / maxvalue), new Point(widthofColumn, height * temp.GetAttr2() / maxvalue)), barcolor);
+                
+            }
+
+            target = Axis(DuodataList, target, spriteBatch, graphdevice, maxvalue);
+
+
+            spriteBatch.End();
+            graphdevice.SetRenderTarget(null);
+
+            return target;
+        }
+
         public static ARGB[,] Make(List<Duodata<string, int>> aDuodataList)
         {
             int GHeight = 500;

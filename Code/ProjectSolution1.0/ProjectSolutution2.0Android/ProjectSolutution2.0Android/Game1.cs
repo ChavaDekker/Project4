@@ -46,6 +46,8 @@ namespace ProjectSolutution2._0Android
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
+
+            SceneManager.AddSceneToDict(new ChooseNeighbourhoodScene(this.GraphicsDevice, "ChooseNeighbourhoodScene"));
             SceneManager.AddSceneToDict(new Testscene(this.GraphicsDevice, "TestScene"));
             SceneManager.AddSceneToDict(new Button1Scene(this.GraphicsDevice, "Button1Scene"));
             SceneManager.AddSceneToDict(new Button2Scene(this.GraphicsDevice, "Button2Scene"));

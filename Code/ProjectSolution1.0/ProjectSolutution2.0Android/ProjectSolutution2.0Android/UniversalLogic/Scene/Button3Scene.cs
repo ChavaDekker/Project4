@@ -24,8 +24,13 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         string namedata2 = "group2";
         Color data1color = Color.Red;
         Color data2color = Color.Blue;
+        DynamicButtonHorizontal ChooseNeighbourhood;
+        string chosenneighbourhood = "";
         public Button3Scene(GraphicsDevice graphDevice, string ID) : base(graphDevice, ID)
         {
+            ChooseNeighbourhood = new DynamicButtonHorizontal(400, 200, 0.25, 0.75, Color.Crimson, graphDevice);
+            ChooseNeighbourhood.SetText("Choose neighbourhood");
+            ChooseNeighbourhood.SetDelegate(new Action(() => SceneManager.AddSceneOnStack("ChooseNeighbourhoodScene")));
             data1 = new List<Duodata<string, int>>();
             data2 = new List<Duodata<string, int>>();
 
@@ -66,6 +71,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
             }
             GroupedBarchart.draw(spritebatch, Offset);
             Legend.draw(spritebatch, Offset);
+            ChooseNeighbourhood.Draw(spritebatch, Offset);
         }
         public override void WindowsDraw(SpriteBatch spritebatch, GraphicsDevice graphDevice)
         {
@@ -73,11 +79,22 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Scene
         }
         protected override void AndroidLogic()
         {
-
+            ChooseNeighbourhood.Click(Offset);
         }
         protected override void WindowsLogic()
         {
 
+        }
+
+        public override void SetParaMeters(params string[] args)
+        {
+            int index = 0;
+            if(args.Length > index)
+            {
+                chosenneighbourhood = args[index]; //index 0
+                index++;
+                SceneManager.PopSceneFromStack();
+            }
         }
     }
 }
