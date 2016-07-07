@@ -19,11 +19,19 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Data_Table_Processing
 
         public FilterOut(string NameOfColumn, string Field, Table table)
         {
-
-            throw new NotImplementedException();
+            SavedTable = table;
+            NameColumn = NameOfColumn;
+            FieldContent = Field;
         }
-        public override string[,] GetTable()
+        public override StringTable GetTable()
         {
+            StringTable temp = SavedTable.GetTable();
+            List<String> Column = temp.GetColumn(NameColumn);
+            List<int> Toremove = new List<int>();
+            for(int i = 0; i<Column.Count; i++)
+            {
+
+            }
             throw new NotImplementedException();
         }
     }

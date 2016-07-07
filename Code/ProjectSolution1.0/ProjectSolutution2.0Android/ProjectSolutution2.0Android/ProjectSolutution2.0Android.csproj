@@ -78,6 +78,8 @@
     <Compile Include="UniversalLogic\ARGBtoTexture2D.cs" />
     <Compile Include="UniversalLogic\Barchart.cs" />
     <Compile Include="UniversalLogic\Button.cs" />
+    <Compile Include="UniversalLogic\Data Table Processing\BikeBoxWholeTable.cs" />
+    <Compile Include="UniversalLogic\Data Table Processing\BikeTheftWhole.cs" />
     <Compile Include="UniversalLogic\Data Table Processing\CountOnColumnElement.cs" />
     <Compile Include="UniversalLogic\Data Table Processing\DataprocessingInitialisation.cs" />
     <Compile Include="UniversalLogic\Data Table Processing\FilterOnly.cs" />
@@ -121,6 +123,12 @@
     <Content Include="Content\Textfile.spritefont">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <AndroidAsset Include="Content\fietsdiefstal-rotterdam-2011-2013.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidAsset>
+    <AndroidAsset Include="Content\Fietstrommels-maart-2013.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </AndroidAsset>
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />

@@ -14,7 +14,7 @@ namespace ProjectSolutution2._0Android.UniversalLogic.Data_Table_Processing
 {
     abstract class TableDecorator : Table
     {
-        Table SavedTable;
-        public abstract string[,] GetTable();
+        protected Table SavedTable;
+        public abstract StringTable GetTable();
     }
 }
